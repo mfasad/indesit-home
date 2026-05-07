@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Indesit WIUN 81: как снять плату управления своими руками — Индезит Хоум</title>
+    <meta name="description" content="Подробная инструкция, как снять плату в стиральной машине Indesit WIUN 81. Диагностика, демонтаж модуля, проверка контактов и устранение ошибок электроники.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/s/st/stiralnaya-mashina-indezit-wiun-81-kak-snyat-platu.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Indesit WIUN 81: как снять плату управления своими руками">
+    <meta property="og:description" content="Подробная инструкция, как снять плату в стиральной машине Indesit WIUN 81. Диагностика, демонтаж модуля, проверка контактов и устранение ошибок электроники.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/razborka-tekhniki/">Разборка техники</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Indesit WIUN 81: как снять плату управления своими руками</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как снять и заменить плату управления Indesit WIUN 81</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#необходимые-инструменты-и-подготовка-рабочего-места">Необходимые инструменты и подготовка рабочего места</a></li><li><a href="#пошаговая-инструкция-по-снятию-верхней-крышки">Пошаговая инструкция по снятию верхней крышки</a></li><li><a href="#демонтаж-электронного-блока-управления">Демонтаж электронного блока управления</a></li><li><a href="#типичные-неисправности-и-их-признаки">Типичные неисправности и их признаки</a></li><li><a href="#сборка-и-проверка-работоспособности">Сборка и проверка работоспособности</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Неисправность электронного модуля в стиральной машине <em>Indesit WIUN 81</em> часто проявляется отказом устройства запускать цикл стирки или хаотичным миганием индикаторов на панели управления. Если после проверки электропитания и целостности сетевого фильтра симптомы сохраняются, а диагностика указывает на сбой в «мозгах» агрегата, единственным решением становится демонтаж и дефектовка <strong>блока управления</strong>. Правильное извлечение платы требует соблюдения техники безопасности и точного порядка действий, так как неаккуратное обращение с хрупкими шлейфами может привести к окончательному выходу техники из строя.</p>
+
+<p>Перед началом любых работ необходимо полностью обесточить appliance, вынув вилку из розетки, и подготовить инструмент: крестовую отвертку, плоскогубцы и, желательно, мультиметр для последующей проверки цепей. Владельцы модели <em>WIUN 81</em> должны знать, что электроника здесь расположена в верхней части корпуса, что упрощает доступ, но требует внимательности при работе с проводами высокого напряжения. Ошибки при сборке часто приводят к коротким замыканиям, поэтому каждый шаг нужно выполнять осознанно.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Перед тем как снять плату, обязательно сделайте фото всех подключенных разъемов. Перепутанные контакты могут вызвать короткое замыкание и повредить уцелевшие элементы схемы.</p>
+</blockquote>
+
+<h2>Диагностика неисправностей электронного модуля</
+<p>h2></p>
+<p>Прежде чем приступать к физической разборке, стоит убедиться, что проблема кроется именно в электронике, а не в исполнительных механизмах. Стиральная машина <em>Indesit WIUN 81</em> оснащена системой самодиагностики, которая сигнализирует о проблемах миганием лампочек. Например, одновременное мигание индикаторов температуры и отжима часто указывает на проблемы с нагревом или датчиками, но если машина не реагирует на кнопки вообще, вероятен пробой <strong>силовых ключей</strong> или выход из строя блока питания модуля.</p>
+
+<p>Частой причиной поломки становится попадание влаги внутрь корпуса или скачки напряжения в сети. Визуальный осмотр платы после извлечения часто reveals сгоревшие дорожки, вздувшиеся конденсаторы или почерневшие участки текстолита. Если на модуле видны следы гари или оплавленный пластик, ремонт в домашних условиях без профессионального оборудования может быть нецелесообразен.</p>
+
+<div class="poll-widget" id="poll-1c095234"><div class="poll-widget-question">📊 Какой симптом наблюдается у вашей машины?</div><div class="poll-widget-option" data-poll="1c095234" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Мигают все индикаторы</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="1c095234" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Машина не включается</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="1c095234" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Ошибка нагрева (F01, F02)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="1c095234" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Стирка прерывается на середине</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2 id="необходимые-инструменты-и-подготовка-рабочего-места">Необходимые инструменты и подготовка рабочего места</h2>
+<p>Для качественного проведения работ по демонтажу платы в модели <em>Indesit WIUN 81</em> потребуется минимальный набор инструментов, который найдется у большинства домашних мастеров. Основное требование — чистота и хорошее освещение, так как мелкие детали и разъемы требуют внимательного отношения. Не стоит проводить ремонт на весу или при плохом свете, это увеличивает риск повреждения хрупких элементов.</p>
+
+<p>Вам понадобятся:</p>
+<ul>
+<li>🔧 Крестовая отвертка (размер PH2) для откручивания винтов корпуса и хомутов.</li>
+<li>🔨 Плоская отвертка для аккуратного отжатия пластиковых защелок.</li>
+<li>🔦 Фонарик или дополнительная лампа для подсветки внутренних полостей.</li>
+<li>🧤 Диэлектрические перчатки (опционально, но желательно для защиты от статического электричества).</li>
+</ul>
+
+<p>Также рекомендуется иметь под рукой емкость для складывания винтов, чтобы не потерять их в процессе. Модель <strong>WIUN 81</strong> имеет компактный верхний люк, поэтому лишние предметы на столе будут только мешать. Заранее освободите пространство вокруг стиральной машины, отодвинув ее от стены минимум на 50-70 см для удобного доступа со всех сторон.</p>
+
+<h2 id="пошаговая-инструкция-по-снятию-верхней-крышки">Пошаговая инструкция по снятию верхней крышки</h2>
+<p>Доступ к электронному блоку в стиральной машине <em>Indesit WIUN 81</em> открывается только после демонтажа верхней металлической крышки. Этот процесс не требует снятия передней или задней панели, что значительно упрощает задачу. Однако важно действовать последовательно, чтобы не повредить лакокрасочное покрытие и крепежные элементы.</p>
+
+<p>Сначала необходимо открутить два винта, расположенных на задней верхней кромке корпуса. Они фиксируют крышку и предотвращают ее смещение при вибрации. После выкручивания крепежа крышку нужно сдвинуть назад (от себя) примерно на 2-3 сантиметра. Она должна легко выйти из зацепления с передним выступом.</p>
+
+<div class="checklist-block"><h4>☑️ Готовность к снятию крышки</h4><label class="check-item"><input type="checkbox"><span>Машинка отключена от сети</span></label><label class="check-item"><input type="checkbox"><span>Снят верхний лоток для порошка</span></label><label class="check-item"><input type="checkbox"><span>Откручены винты сзади</span></label><label class="check-item"><input type="checkbox"><span>Крышка сдвинута назад и снята</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Если крышка не сдвигается, не применяйте чрезмерную силу — проверьте, не остался ли забытым крепеж или не мешает ли шланг. В некоторых модификациях <em>WIUN 81</em> может потребоваться предварительное снятие лотка для моющих средств, хотя чаще всего он не препятствует доступу к верхним винтам. После снятия крышки откроется вид на внутренние компоненты, включая противовес и верхнюю часть барабана.</p>
+
+<h2 id="демонтаж-электронного-блока-управления">Демонтаж электронного блока управления</h2>
+<p>Электронный модуль в модели <em>Indesit WIUN 81</em> расположен в правом верхнем углу (если смотреть спереди), сразу под снятой крышкой. Он закрыт пластиковым кожухом или установлен в нише, защищенной от прямого попадания воды. Для извлечения платы необходимо сначала освободить доступ к самому контейнеру модуля.</p>
+
+<p>Процесс снятия включает следующие этапы:</p>
+<ul>
+<li>🔌 Отсоединение всех разъемов: аккуратно потяните за корпус коннектора, не дергая за провода.</li>
+<li>🔩 Снятие крепежа: открутите винты, фиксирующие пластиковый бокс модуля к корпусу машины.</li>
+<li>📦 Извлечение бокса: выньте пластиковый контейнер вместе с платой наружу.</li>
+<li>🛠️ Раскрытие модуля: снимите крышку бокса и отщелкните плату от пластиковых держателей.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Разъемы проводки могут быть плотно зафиксированы. Используйте плоскую отвертку, чтобы слегка приподнять фиксатор, но не ковыряйте сами контакты, чтобы не сломать их.</p>
+</blockquote>
+
+<p>После извлечения платы из пластикового бокса можно произвести визуальный осмотр. Ищите следы окисления, особенно в нижней части, куда могла затекать вода. Часто в моделях <strong>Indesit</strong> встречается проблема отгорания контактов реле или вздутия конденсаторов в цепи питания. Если вы планируете пайку, убедитесь, что у вас есть соответствующие навыки и инструменты.</p>
+
+
+
+<h2 id="типичные-неисправности-и-их-признаки">Типичные неисправности и их признаки</h2>
+<p>Понимание того, что именно вышло из строя, поможет решить, стоит ли ремонтировать плату или проще заменить ее на новую. В стиральных машинах <em>Indesit WIUN 81</em> наиболее уязвимыми элементами являются симисторы управления двигателем и ТЭНом, а также сам микропроцессор.</p>
+
+<p>Ниже приведена таблица распространенных проблем и их вероятных причин на плате:</p>
+
+<table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Вероятная причина на плате</th>
+<th>Необходимое действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Машина гудит, но не крутится</td>
+<td>Пробой симистора двигателя</td>
+<td>Замена симистора или модуля</td>
+</tr>
+<tr>
+<td>Не греет воду (ошибка F01)</td>
+<td>Сгорело реле ТЭНа</td>
+<td>Перепайка реле</td>
+</tr>
+<tr>
+<td>Самопроизвольно включается</td>
+<td>Короткое замыкание в цепи кнопок</td>
+<td>Чистка платы, замена кнопок</td>
+</tr>
+<tr>
+<td>Полное отсутствие реакции</td>
+<td>Неисправность блока питания</td>
+<td>Диагностика конденсаторов</td>
+</tr>
+</tbody>
+</table>
+
+<p>Если вы обнаружили черный нагар или оплавленный пластик в районе компонента, это явный признак перегрузки. В таких случаях простая замена детали может не помочь, если не устранена первопричина (например, короткое замыкание в самом ТЭНе или двигателе). Всегда проверяйте исполнительные механизмы мультиметром перед установкой новой или восстановленной платы.</p>
+
+
+
+<h2 id="сборка-и-проверка-работоспособности">Сборка и проверка работоспособности</h2>
+<p>После проведения ремонтных работ или замены модуля на новый, необходимо выполнить обратную сборку. Установите плату в пластиковый бокс, убедившись, что все защелки встали на свои места. Подключите разъемы согласно сделанным ранее фотографиям или маркировке. Особое внимание уделите заземлению — оно должно быть подключено надежно.</p>
+
+<p>Вставьте бокс с модулем в нишу корпуса <em>Indesit WIUN 81</em> и прикрутите его. Перед окончательной установкой верхней крышки рекомендуется выполнить пробный запуск. Включите машину в сеть и запустите режим «Слив» или короткую стирку. Если машина набрала воду, нагрела ее (проверьте рукой шланг) и начала вращать барабан, значит, <strong>электроника</strong> функционирует корректно.</p>
+
+
+
+<p>Завершающим этапом станет установка верхней крышки. Наденьте ее на корпус, сдвиньте вперед до щелчка и закрутите фиксирующие винты сзади. Не забудьте проверить, не пережаты ли провода между корпусом и крышкой.</p>
+
+<details>
+<summary>Можно ли заменить плату Indesit WIUN 81 на универсальный модуль?</summary>
+<p>Да, существуют универсальные модули управления, которые можно адаптировать для стиральных машин Indesit. Однако это требует перепайки контактов и настройки под конкретный двигатель и ТЭН. Для модели WIUN 81 проще и надежнее найти оригинальную плату или аналог с той же маркировкой, чтобы избежать сложностей с прошивкой и подключением.</p>
+</details>
+
+<details>
+<summary>Почему сгорает плата после замены?</summary>
+<p>Частая причина повторного выхода из строя — неисправность исполнительных механизмов. Если пробит ТЭН или есть замыкание в обмотке двигателя, скачок напряжения ударит по новой плате. Также проблема может быть в плохом контакте заземления или скачках напряжения в бытовой сети.</p>
+</details>
+
+<details>
+<summary>Где найти маркировку платы для поиска замены?</summary>
+<p>Маркировка обычно нанесена белым шрифтом на саму текстолитовую плату (например, код начинается с C00... или аналогичный индекс Indesit/Ariston). Также номер указан на наклейке, приклеенной к пластиковому боксу. Искать запчасти лучше именно по этому коду.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#необходимые-инструменты-и-подготовка-рабочего-места">Необходимые инструменты и подготовка рабочего места</a></li><li><a href="#пошаговая-инструкция-по-снятию-верхней-крышки">Пошаговая инструкция по снятию верхней крышки</a></li><li><a href="#демонтаж-электронного-блока-управления">Демонтаж электронного блока управления</a></li><li><a href="#типичные-неисправности-и-их-признаки">Типичные неисправности и их признаки</a></li><li><a href="#сборка-и-проверка-работоспособности">Сборка и проверка работоспособности</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/i/in/indesit-wiun-104-kak-otkryt.html" class="related-card">Как открыть стиральную машину Indesit WIUN 104: разборка и ремонт</a></li><li><a href="/articles/k/ka/kak-pravilno-snyat-verkhnyuyu-kryshku-stiralnoj-mashiny-indezit.html" class="related-card">Как снять крышку стиральной машины Indesit: инструкция</a></li><li><a href="/articles/k/ka/kak-snyat-bojnik-s-barabana-stiralnoj-mashiny-indezit.html" class="related-card">Как снять бойник с барабана стиральной машины Indesit: инструкция</a></li><li><a href="/articles/k/ka/kak-snyat-vnizu-kryshku-u-kholodilnika-indezit.html" class="related-card">Как снять нижнюю крышку холодильника Indesit: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-otsoedinit-baraban-stiralnoj-mashiny-indezit.html" class="related-card">Как отсоединить барабан стиральной машины Indesit: пошаговая инструкция</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/i/in/indesit-wiun-104-kak-otkryt.html" class="related-bottom-card"><span class="related-bottom-title">Как открыть стиральную машину Indesit WIUN 104: разборка и ремонт</span><span class="related-bottom-desc">Подробная инструкция по вскрытию стиральной машины Indesit WIUN 104. Снятие бака, замена подшипников</span></a><a href="/articles/k/ka/kak-pravilno-snyat-verkhnyuyu-kryshku-stiralnoj-mashiny-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как снять крышку стиральной машины Indesit: инструкция</span><span class="related-bottom-desc">Пошаговая инструкция: как правильно снять верхнюю крышку стиральной машины Indesit. Фото этапов, спи</span></a><a href="/articles/k/ka/kak-snyat-bojnik-s-barabana-stiralnoj-mashiny-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как снять бойник с барабана стиральной машины Indesit: инструкция</span><span class="related-bottom-desc">Пошаговое руководство по снятию бойника с барабана Indesit. Узнайте, как заменить ТЭН, почистить бак</span></a><a href="/articles/k/ka/kak-snyat-vnizu-kryshku-u-kholodilnika-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как снять нижнюю крышку холодильника Indesit: пошаговая инструкция</span><span class="related-bottom-desc">Подробное руководство, как снять цокольную панель холодильника Indesit для ремонта. Снятие фальш-пан</span></a><a href="/articles/k/ka/kak-otsoedinit-baraban-stiralnoj-mashiny-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как отсоединить барабан стиральной машины Indesit: пошаговая инструкция</span><span class="related-bottom-desc">Подробная инструкция по разборке бака стиральной машины Indesit. Как снять барабан, проверить подшип</span></a><a href="/articles/k/ka/kak-pomenyat-petli-na-kholodilnike-indezit-video-na-russkom.html" class="related-bottom-card"><span class="related-bottom-title">Как поменять петли на холодильнике Индезит: видео инструкция</span><span class="related-bottom-desc">Пошаговая инструкция, как поменять петли на холодильнике Индезит. Видео на русском языке, схема пере</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

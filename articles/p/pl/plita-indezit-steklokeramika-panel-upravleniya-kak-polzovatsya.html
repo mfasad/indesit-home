@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Панель управления Indesit стеклокерамика: как пользоваться — Индезит Хоум</title>
+    <meta name="description" content="Подробное руководство по панели управления плиты Indesit стеклокерамика. Как пользоваться, расшифровка индикаторов, настройка таймера и устранение ошибок.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/p/pl/plita-indezit-steklokeramika-panel-upravleniya-kak-polzovatsya.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Панель управления Indesit стеклокерамика: как пользоваться">
+    <meta property="og:description" content="Подробное руководство по панели управления плиты Indesit стеклокерамика. Как пользоваться, расшифровка индикаторов, настройка таймера и устранение ошибок.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/plity-i-dukhovki/">Плиты и духовки</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Панель управления Indesit стеклокерамика: как пользоваться</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Панель управления Indesit стеклокерамика: как пользоваться</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-элементы-интерфейса-и-их-назначение">Основные элементы интерфейса и их назначение</a></li><li><a href="#пошаговая-инструкция-по-включению-и-настройке-нагрева">Пошаговая инструкция по включению и настройке нагрева</a></li><li><a href="#использование-таймера-и-дополнительных-функций">Использование таймера и дополнительных функций</a></li><li><a href="#система-безопасности-и-блокировка-от-детей">Система безопасности и блокировка от детей</a></li><li><a href="#индикация-остаточного-тепла-и-энергосбережение">Индикация остаточного тепла и энергосбережение</a></li><li><a href="#диагностика-ошибок-через-панель-управления">Диагностика ошибок через панель управления</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Непосредственное управление варочной панелью Indesit со стеклокерамическим покрытием осуществляется через сенсорные или поворотные регуляторы, расположенные на лицевой торцевой части устройства, где каждая зона нагрева активируется только после нажатия основной кнопки включения с последующим выбором мощности в течение нескольких секунд.</p>
+<p>Электроника современных моделей <em>Indesit</em> требует четкой последовательности действий, так как система безопасности блокирует случайные нажатия и предотвращает перегрев при неправильной эксплуатации. Пользователь должен отчетливо слышать звуковой сигнал подтверждения каждого действия, что свидетельствует о корректной работе микроконтроллера и принятии команды.</p>
+<p>Владельцы часто сталкиваются с трудностями именно на этапе первичной активации, когда устройство находится в режиме ожидания, но не реагирует на касания. Это штатное поведение системы защиты, требующее разблокировки интерфейса перед началом готовки.</p>
+
+<h2 id="основные-элементы-интерфейса-и-их-назначение">Основные элементы интерфейса и их назначение</h2>
+<p>Центральным элементом системы контроля является главный выключатель, обозначенный символом с прерывистой окружностью. Именно с нажатия этой клавиши начинается любой цикл работы, так как она переводит электронную плату из спящего режима в активный.</p>
+<p>Для каждой из четырех конфорок предусмотрен индивидуальный регулятор мощности, который может быть выполнен в виде сенсорной шкалы с делениями от 1 до 9 или поворотного переключателя с аналогичной градуировкой. Цифровое обозначение позволяет точно дозировать тепловую энергию для разных кулинарных процессов.</p>
+<ul>
+ <li>🔴 Индикатор остаточного тепла загорается красным цветом, если температура поверхности превышает 60 градусов Цельсия.</li>
+ <li>⏱️ Таймер обратного отсчета позволяет автоматизировать процесс приготовления и отключить нагрев через заданный промежуток времени.</li>
+ <li>🔒 Блокировка от детей предотвращает изменение установленных параметров во время работы устройства.</li>
+ <li>🔊 Звуковой сигнализатор издает короткие гудки при нажатии кнопок или при возникновении неисправностей.</li>
+</ul>
+<p>Современные модели <strong>стеклокерамических плит</strong> оснащены дисплеем, на котором отображается текущее время, установленная мощность и коды ошибок в случае их возникновения. Визальный контроль параметров значительно упрощает эксплуатацию и позволяет быстро диагностировать проблемы.</p>
+
+<blockquote>⚠️ Внимание: Никогда не накрывайте панель управления влажными тканями или полотенцами во время работы, так как это может привести к перегреву электроники и ложному срабатыванию системы защиты.</blockquote>
+
+<h2 id="пошаговая-инструкция-по-включению-и-настройке-нагрева">Пошаговая инструкция по включению и настройке нагрева</h2>
+<p>Процесс активации нагревательных элементов требует соблюдения строгого алгоритма, игнорирование которого является самой распространенной причиной того, что плита «не включается». Сначала необходимо убедиться, что устройство подключено к электросети и находится под напряжением.</p>
+<p>Нажмите и удерживайте кнопку включения основной сети в течение 1-2 секунд до появления светового индикатора на дисплее. После этого выберите конкретную конфорку, коснувшись соответствующего символа «+» или «-», либо повернув механический переключатель.</p>
+<div class="checklist-block"><h4>☑️ Чек-лист активации плиты</h4><label class="check-item"><input type="checkbox"><span>Проверка подключения к электросети</span></label><label class="check-item"><input type="checkbox"><span>Нажатие кнопки включения сети</span></label><label class="check-item"><input type="checkbox"><span>Выбор зоны нагрева в течение 10 секунд</span></label><label class="check-item"><input type="checkbox"><span>Установка уровня мощности</span></label><label class="check-item"><input type="checkbox"><span>Подтверждение звуковым сигналом</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+<p>Важно выполнить выбор зоны нагрева в течение короткого временного интервала (обычно 10 секунд) после активации сети, иначе система автоматически вернется в режим ожидания для экономии энергии. Регулировка температуры происходит ступенчато, что позволяет подобрать оптимальный режим для кипячения воды или томления блюд.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Полезный совет: Используйте максимальную мощность (9) только для быстрого закипания воды, а затем сразу снижайте нагрев до уровня 3-4 для поддержания температуры, что сэкономит электроэнергию.</p></div>
+
+<h2 id="использование-таймера-и-дополнительных-функций">Использование таймера и дополнительных функций</h2>
+<p>Функционал <em>Indesit</em> часто включает встроенный тайминг-модуль, который может работать независимо от процесса нагрева или управлять длительностью приготовления. Для активации этой опции необходимо нажать кнопку с изображением часов.</p>
+<p>После активации режима таймирования, используя регуляторы мощности или специальные кнопки «+» и «-», установите желаемое время в минутах. По истечении установленного периода устройство подаст продолжительный звуковой сигнал, а в некоторых моделях автоматически отключит нагрев.</p>
+<table>
+ <thead>
+ <tr>
+ <th>Функция</th>
+ <th>Обозначение</th>
+ <th>Действие</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Сеть</td>
+ <td>Прерывистый круг</td>
+ <td>Включение/выключение питания</td>
+ </tr>
+ <tr>
+ <td>Таймер</td>
+ <td>Часы</td>
+ <td>Установка времени готовки</td>
+ </tr>
+ <tr>
+ <td>Блокировка</td>
+ <td>Замок/Ключ</td>
+ <td>Защита от детей</td>
+ </tr>
+ <tr>
+ <td>Остаточное тепло</td>
+ <td>Буква H или точка</td>
+ <td>Индикация горячей поверхности</td>
+ </tr>
+ </tbody>
+</table>
+<p>Некоторые продвинутые модификации позволяют использовать таймер как обычную кухню, не привязывая его к работе конфорок. Это удобно для контроля времени маринования продуктов или выпечки в духовке, если она интегрирована.</p>
+
+<h2 id="система-безопасности-и-блокировка-от-детей">Система безопасности и блокировка от детей</h2>
+<p>Защита от несанкционированного доступа является критически важным элементом эксплуатации, особенно в домах с маленькими детьми или домашними животными. Активация режима блокировки полностью отключает реакцию панели на касания, кроме кнопки выключения сети.</p>
+<p>Для включения защиты необходимо найти клавишу с изображением замка и удерживать ее нажатой в течение 3-5 секунд, пока не загорится соответствующий светодиодный индикатор. В этом состоянии любые попытки изменить мощность или включить конфорку будут игнорироваться процессором.</p>
+<ul>
+ <li>🔑 Для разблокировки повторите процедуру удержания кнопки замка до исчезновения индикатора.</li>
+ <li>🛑 При блокировке дисплей может показывать текущее время, но не реагирует на регулировку температуры.</li>
+ <li>⚡ Сбой в электросети может автоматически снять блокировку, что требует повторной активации защиты.</li>
+</ul>
+<p><strong>Электронная система</strong> обеспечивает надежность, но требует понимания логики работы: если вы забыли комбинацию или время удержания, обратитесь к инструкции конкретной модели, так как алгоритмы могут незначительно отличаться.</p>
+
+<details class="faq-item"><summary>Технические детали блокировки</summary><div class="faq-answer"><p>Механизм защиты реализован программно на уровне микроконтроллера. При активации прерывается цепь прохождения сигналов от сенсорной матрицы к исполнительным реле. Это означает, что даже физическое повреждение сенсора в заблокированном состоянии не приведет к включению нагрева.</p></div></details>
+
+<h2 id="индикация-остаточного-тепла-и-энергосбережение">Индикация остаточного тепла и энергосбережение</h2>
+<p>Одной из ключевых особенностей стеклокерамики <em>Indesit</em> является высокая теплоемкость материала, который долго сохраняет температуру после отключения питания. Специальный индикатор «H» (Hot) или мигающая точка предупреждает пользователя об опасности ожога.</p>
+<p>Этот сигнал загорается автоматически, если температура поверхности превышает 60°C, и гаснет только после полного остывания зоны. Игнорирование этого предупреждения может привести к серьезным травмам или порче посуды, не предназначенной для высоких температур.</p>
+<p>Использование остаточного тепла позволяет экономить электроэнергию: можно выключать конфорку за 5-10 минут до окончания приготовления, и блюдо дойдет до готовности на тепловой инерции стекла. Это особенно эффективно для блюд, требующих длительного томления.</p>
+
+<blockquote>⚠️ Внимание: Индикатор остаточного тепла не работает, если плита была включена менее 1 минуты, так как стекло не успевает прогреться до критической температуры, однако поверхность все равно может быть горячей.</blockquote>
+
+<h2 id="диагностика-ошибок-через-панель-управления">Диагностика ошибок через панель управления</h2>
+<p>Электроника плиты постоянно проводит самодиагностику, и при обнаружении аномалий выводит на дисплей специальные коды ошибок, такие как <code>F1</code>, <code>F2</code> или <code>F5</code>. Эти сообщения помогают быстро идентифицировать неисправный узел без разборки устройства.</p>
+<p>Например, код, связанный с перегревом, может указывать на неисправность датчика температуры или засорение вентиляционных отверстий. Коды, связанные с «залипанием» кнопок, часто появляются при попадании влаги или жира в зазоры между сенсором и стеклом.</p>
+<div class="poll-widget" id="poll-0faf5975"><div class="poll-widget-question">📊 Что чаще всего мешает работе панели?</div><div class="poll-widget-option" data-poll="0faf5975" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Пролитая жидкость</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="0faf5975" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Жировой налет</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="0faf5975" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Скачки напряжения</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="0faf5975" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Механическое повреждение</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+<p>Для сброса большинства временных ошибок достаточно отключить прибор от электросети на 15-20 минут, что приведет к перезагрузке контроллера. Если после включения ошибка появляется повторно, требуется профессиональный ремонт и замена дефектных компонентов.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Главный вывод: Большинство проблем с управлением решается правильной последовательностью включения и регулярной очисткой поверхности от загрязнений, препятствующих работе сенсора.</p></div>
+
+<details>
+ <summary>Что делать, если панель управления не реагирует на касания?</summary>
+ <p>В первую очередь проверьте, активирована ли функция блокировки от детей. Если замок не горит, протрите поверхность сухой мягкой тканью, так как даже тонкая пленка жира или влаги может нарушать контакт. Убедитесь, что вы касаетесь панели пальцем, а не костяшкой или предметом.</p>
+</details>
+
+<details>
+ <summary>Можно ли использовать абразивные средства для чистки панели?</summary>
+ <p>Категорически не рекомендуется применять порошки с твердыми частицами, металлические губки или агрессивную химию. Это приведет к появлению микроцарапин, которые со временем могут вызвать разрушение стеклокерамики и ухудшение работы сенсорных датчиков.</p>
+</details>
+
+<details>
+ <summary>Как понять, что сенсорная панель вышла из строя?</summary>
+ <p>Признаком неисправности сенсора является хаотичное включение индикаторов, самопроизвольное изменение мощности или полное отсутствие реакции на нажатия при исправной электросети. В таких случаях требуется замена сенсорной платы или всего модуля управления.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#основные-элементы-интерфейса-и-их-назначение">Основные элементы интерфейса и их назначение</a></li><li><a href="#пошаговая-инструкция-по-включению-и-настройке-нагрева">Пошаговая инструкция по включению и настройке нагрева</a></li><li><a href="#использование-таймера-и-дополнительных-функций">Использование таймера и дополнительных функций</a></li><li><a href="#система-безопасности-и-блокировка-от-детей">Система безопасности и блокировка от детей</a></li><li><a href="#индикация-остаточного-тепла-и-энергосбережение">Индикация остаточного тепла и энергосбережение</a></li><li><a href="#диагностика-ошибок-через-панель-управления">Диагностика ошибок через панель управления</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-vystavit-chasy-na-elektroplite-indezit.html" class="related-card">Как выставить часы на электроплите Индезит: полная инструкция</a></li><li><a href="/articles/k/ka/kak-vklyuchit-verkhnyuyu-gorelku-v-dukhovke-gazovoj-plity-indezit.html" class="related-card">Как включить верхнюю горелку в духовке Indesit: инструкция</a></li><li><a href="/articles/k/ka/kak-vklyuchit-induktsionnuyu-plitu-indesit.html" class="related-card">Как включить индукционную плиту Indesit: инструкция</a></li><li><a href="/articles/k/ka/kak-vklyuchit-dukhovku-indezit-gazovaya-staraya-model.html" class="related-card">Как включить духовку Индезит: газовая старая модель</a></li><li><a href="/articles/p/po/pochemu-otklyuchaetsya-gaz-v-dukhovke-indezit.html" class="related-card">Почему отключается газ в духовке Индезит: причины и решения</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-vystavit-chasy-na-elektroplite-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как выставить часы на электроплите Индезит: полная инструкция</span><span class="related-bottom-desc">Подробное руководство по настройке времени на электроплитах Indesit. Устранение мигания индикаторов,</span></a><a href="/articles/k/ka/kak-vklyuchit-verkhnyuyu-gorelku-v-dukhovke-gazovoj-plity-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как включить верхнюю горелку в духовке Indesit: инструкция</span><span class="related-bottom-desc">Подробная инструкция по активации верхнего ТЭНа в духовке Indesit. Разбор режимов, переключателей и </span></a><a href="/articles/k/ka/kak-vklyuchit-induktsionnuyu-plitu-indesit.html" class="related-bottom-card"><span class="related-bottom-title">Как включить индукционную плиту Indesit: инструкция</span><span class="related-bottom-desc">Пошаговое руководство, как включить индукционную плиту Indesit. Настройка зон, блокировка от детей, </span></a><a href="/articles/k/ka/kak-vklyuchit-dukhovku-indezit-gazovaya-staraya-model.html" class="related-bottom-card"><span class="related-bottom-title">Как включить духовку Индезит: газовая старая модель</span><span class="related-bottom-desc">Полная инструкция: как включить газовую духовку Индезит старого образца. Розжиг, работа электроподжи</span></a><a href="/articles/p/po/pochemu-otklyuchaetsya-gaz-v-dukhovke-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Почему отключается газ в духовке Индезит: причины и решения</span><span class="related-bottom-desc">Почему отключается газ в духовке Индезит? Полный разбор причин: термопара, газовый клапан, датчики. </span></a><a href="/articles/k/ka/kak-prigotovit-gril-v-dukhovke-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как приготовить гриль в духовке Индезит: настройки и режимы</span><span class="related-bottom-desc">Подробная инструкция, как включить и использовать гриль в духовке Indesit. Настройки температуры, та</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

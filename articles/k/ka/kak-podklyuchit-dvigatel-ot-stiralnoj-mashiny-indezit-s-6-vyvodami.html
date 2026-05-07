@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Подключение двигателя Indesit с 6 выводами: схема и инструкция — Индезит Хоум</title>
+    <meta name="description" content="Как подключить двигатель от стиральной машины Indesit с 6 выводами? Полная схема, распиновка тахогенератора, проверка щеток и запуск мотора для самоделок.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/k/ka/kak-podklyuchit-dvigatel-ot-stiralnoj-mashiny-indezit-s-6-vyvodami.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Подключение двигателя Indesit с 6 выводами: схема и инструкция">
+    <meta property="og:description" content="Как подключить двигатель от стиральной машины Indesit с 6 выводами? Полная схема, распиновка тахогенератора, проверка щеток и запуск мотора для самоделок.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/elektrika-i-datchiki/">Электрика и датчики</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Подключение двигателя Indesit с 6 выводами: схема и инструкция</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как подключить двигатель от стиральной машины Indesit с 6 выводами</h1>
+                    
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+
+<p>Прямое соединение контактов мотора <em>Indesit</em> без предварительной идентификации обмоток часто приводит к короткому замыканию или поломке платы управления, если не знать точную схему конкретного экземпляра. Двигатели с шестью выводами обычно представляют собой коллекторные агрегаты, где два контакта отходят от таходатчика, два — от щеток, и два — от статорной обмотки, однако цветовая маркировка проводов у разных производителей (например, <em>Wellings</em>, <em>Sole</em> или <em>Acc</em>) может кардинально отличаться. Ошибочное подключение напряжения 220 вольт к клеммам тахогенератора мгновенно выводит из строя датчик оборотов, что делает невозможным дальнейшую диагностику без замены узла.</p>
+
+<p>Перед началом любых работ необходимо полностью обесточить устройство и извлечь мотор из корпуса стиральной машины, так как визуальный осмотр часто не дает 100% гарантии правильности подключения без прозвонки мультиметром. Владелец техники должен понимать, что стандартный <strong>алгоритм поиска</strong> пары контактов требует последовательного измерения сопротивления между всеми возможными комбинациями выводов. Игнорирование этого этапа и попытка запустить мотор «наугад» чреваты не только выходом из строя самого двигателя, но и повреждением домашней электросети или травмами от искрения.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Перед подключением к сети 220В убедитесь, что вы не подаете напряжение на контакты таходатчика, так как это приведет к его необратимому повреждению и возможному возгоранию проводки.</p>
+</blockquote>
+
+<h2>Идентификация выводов и прозвонка мультиметром</
+
+<p>Первым шагом в процессе <strong>диагностики</strong> является визуальный осмотр колодки или жгута проводов, выходящих из корпуса двигателя <em>Indesit</em>. Чаще всего провода имеют разную цветовую маркировку, но полагаться только на цвет нельзя, так как завод-изготовитель мог использовать разные стандарты в разные годы выпуска. Необходимо подготовить мультиметр, переведя его в режим измерения сопротивления (Ом) с пределом до 2 кОм, чтобы начать методичную проверку каждой пары контактов.</p>
+
+<p>В первую очередь следует найти пару проводов, идущих от таходатчика, так как их сопротивление обычно составляет от 50 до 70 Ом, а сами провода часто (но не всегда) тоньше остальных и могут быть выведены на отдельный разъем. Оставшиеся четыре контакта делятся на две группы: обмотка статора и щеточный узел, причем сопротивление щеток обычно варьируется в пределах 10-15 Ом, а сопротивление обмотки статора может быть схожим или немного большим в зависимости от мощности мотора. Для точного определения необходимо прозвонить все комбинации: если прибор показывает сопротивление, значит, вы нашли пару, относящуюся к одной цепи, если показывает единицу или ноль — ищите другую комбинацию.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При прозвонке не касайтесь металлических щупов руками, так как сопротивление кожи может исказить показания прибора, особенно на малых значениях сопротивления обмоток.</p>
+</blockquote>
+
+<h2>Схема подключения коллекторного мотора</
+
+<p>После успешной идентификации всех трех пар контактов (таходатчик, щетки, статор) можно переходить к составлению схемы подключения для запуска двигателя вне стиральной машины. Для вращения вала мотора необходимо создать замкнутую электрическую цепь, в которой ток проходит через обмотку статора и щеточный узел последовательно или параллельно, в зависимости от желаемого направления вращения и схемы управления. Стандартная схема для прямого запуска подразумевает последовательное соединение одного вывода статора с одной щеткой, а оставшиеся два контакта подключаются к сети 220 вольт.</p>
+
+<p>Направление вращения вала можно изменить, поменяв местами подключение щеток относительно обмотки статора, что особенно актуально при использовании двигателя в самодельных станках или точильных устройствах. Важно использовать <strong>изоляционные материалы</strong> высокого качества при скрутке или пайке проводов, так как работающий двигатель вибрирует и греется, что может привести к оплавлению изоляции и короткому замыканию.</p>
+
+<details class="faq-item"><summary>Схема реверса</summary><div class="faq-answer"><p>Для изменения направления вращения поменяйте местами два провода, идущие от щеток, относительно проводов обмотки статора. Это переключит полярность магнитного поля ротора.</p></div></details>
+
+<h2>Роль таходатчика в системе управления</
+
+<p>Тахогенератор, или таходатчик, представляет собой миниатюрную катушку с магнитным сердечником, установленную на задней части вала двигателя, и его основная функция — передача информации о скорости вращения на электронный модуль управления. При работе в составе стиральной машины <em>Indesit</em> сигнал с этого датчика позволяет плате регулировать подачу напряжения, обеспечивая равномерный отжим и соблюдение заданных программ, однако при прямом подключении к сети он не участвует в создании вращающего момента. Если вы планируете использовать двигатель в самоделке без платы управления, контакты таходатчика можно оставить свободными, но их нельзя замыкать между собой или с другими контактами.</p>
+
+<p>В некоторых современных схемах управления наличие сигнала с таходатчика является обязательным условием для запуска, поэтому при сборке собственного контроллера на базе Arduino или других микроконтроллеров придется эмулировать этот сигнал или считывать его для обратной связи. Повреждение обмотки таходатчика или отхождение магнита приводит к тому, что мотор либо не запускается, либо резко набирает максимальные обороты («уходит в разнос»), что крайне опасно.</p>
+
+<div class="poll-widget" id="poll-630f7939"><div class="poll-widget-question">📊 Какой инструмент вы используете для диагностики?</div><div class="poll-widget-option" data-poll="630f7939" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Мультиметр (тестер): Индикаторная отвертка: Визуальный осмотр: У меня нет инструментов</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2>Запуск двигателя с регулятором оборотов</
+
+<p>Для полноценного использования двигателя от стиральной машины <em>Indesit</em> в хозяйственных целях одного прямого подключения к сети недостаточно, так как мотор будет работать на максимальных оборотах, что часто неприемлемо. Для регулировки скорости вращения необходимо использовать специальные регуляторы мощности на базе симисторов, которые позволяют плавно изменять напряжение, подаваемое на обмотки, сохраняя при этом крутящий момент. Простые диммеры для ламп накаливания не подходят для этой цели, так как двигатель является индуктивной нагрузкой и требует более сложной схемы управления с обратной связью или запасом мощности.</p>
+
+<p>При сборке или покупке регулятора важно учитывать максимальный ток, который потребляет ваш мотор в рабочем режиме, обычно это значение составляет от 10 до 15 Ампер, и выбирать компоненты с запасом. Правильно собранный блок управления не только регулирует скорость, но и защищает двигатель от перегрева и скачков напряжения в сети, продлевая срок его службы.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Используйте регуляторы с встроенным предохранителем и радиатором охлаждения для симистора, чтобы избежать перегрева при длительной работе под нагрузкой.</p></div>
+
+<h2>Проверка исправности щеточного узла</
+
+<p>Состояние <strong>графитовых щеток</strong> является критическим фактором для стабильной работы коллекторного двигателя, и их износ часто становится причиной отказа техники или нестабильного вращения. В двигателях <em>Indesit</em> щетки прижимаются к коллектору пружинами, и по мере стирания графита контакт ухудшается, что может приводить к искрению, треску и потере мощности. Для проверки необходимо визуально осмотреть длину щеток: если их рабочая часть составляет менее 1-1.5 см, их необходимо заменить на новые оригинальные или совместимые аналоги.</p>
+
+<p>Также стоит обратить внимание на состояние коллектора (медных пластин на роторе): он должен быть чистым, без черных нагаров и глубоких борозд. При наличии нагара его можно аккуратно почистить мелкой наждачной бумагой или ветошью, смоченной в спирте, но ни в коем случае не использовать агрессивные химические растворители, которые могут повредить изоляцию обмоток.</p>
+
+<div class="checklist-block"><h4>☑️ Диагностика перед запуском</h4><label class="check-item"><input type="checkbox"><span>Проверка сопротивления обмоток мультиметром: Визуальный осмотр целостности проводов: Проверка длины графитовых щеток: Оценка состояния коллектора на наличие нагара</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<h2>Таблица типичных значений сопротивления</
+
+<p>Для удобства диагностики ниже приведена таблица с ориентировочными значениями сопротивления для различных узлов стандартного двигателя стиральной машины <em>Indesit</em>. Следует помнить, что точные цифры могут незначительно отличаться в зависимости от конкретной модели мотора и года его выпуска, поэтому всегда ориентируйтесь на наличие замкнутой цепи и отсутствие короткого замыкания на корпус.</p>
+
+<table>
+<thead>
+<tr>
+<th>Тип узла</th>
+<th>Ожидаемое сопротивление (Ом)</th>
+<th>Признак неисправности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Обмотка статора</td>
+<td>10 - 40 Ом</td>
+<td>Обрыв (бесконечность) или КЗ (0 Ом)</td>
+</tr>
+<tr>
+<td>Щеточный узел</td>
+<td>10 - 15 Ом</td>
+<td>Нестабильное показание, искрение</td>
+</tr>
+<tr>
+<td>Таходатчик</td>
+<td>50 - 70 Ом</td>
+<td>Обрыв катушки, потеря магнита</td>
+</tr>
+<tr>
+<td>Изоляция на корпус</td>
+<td>Бесконечность</td>
+<td>Любое значение указывает на пробой</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Техника безопасности и меры предосторожности</
+
+<p>Работа с электрическим током напряжением 220 вольт требует строгого соблюдения правил безопасности, так как пренебрежение ими может стоить жизни или здоровья. Все соединения должны быть выполнены при полностью отключенном питании, а перед первым запуском собранную схему необходимо тщательно проверить на отсутствие коротких замыканий и надежность изоляции всех контактов. <mark>Категорически запрещается оставлять работающий двигатель без надежного крепления, так как вибрация может сместить его и привести к удару током или механическим повреждениям.</mark></p>
+
+<p>При первом включении рекомендуется использовать устройство защитного отключения (УЗО) или дифференциальный автомат, чтобы мгновенно обесточить цепь в случае утечки тока. Также не стоит забывать, что работающий коллекторный мотор может создавать радиопомехи и искрить, поэтому не размещайте рядом легковоспламеняющиеся вещества или чувствительную электронику.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Главный принцип безопасности: никогда не прикасайтесь к токоведущим частям под напряжением и всегда используйте надежную изоляцию соединений.</p></div>
+
+<details>
+<summary>Можно ли запустить двигатель без платы управления?</summary>
+<p>Да, коллекторный двигатель можно запустить напрямую, соединив последовательно обмотку статора и щетки, и подав на них 220В. Однако он будет работать на максимальных оборотах, и регулировать скорость без дополнительного регулятора не получится.</p>
+</details>
+
+<details>
+<summary>Почему двигатель гудит, но не вращается?</summary>
+<p>Это может указывать на заклинивание подшипников, износ щеток, межвитковое замыкание в обмотках или отсутствие контакта в цепи. Также возможно, что стерлись щетки и не достают до коллектора.</p>
+</details>
+
+<details>
+<summary>Как определить, сгорел ли таходатчик?</summary>
+<p>Необходимо прозвонить его мультиметром. Если прибор показывает бесконечное сопротивление (обрыв) или ноль (короткое замыкание), датчик неисправен. В норме он показывает активное сопротивление около 50-70 Ом.</p>
+</details>
+
+<details>
+<summary>Опасно ли использовать двигатель от стиралки для точила?</summary>
+<p>Использование возможно, но требует надежного крепления и защиты от пыли. Коллекторные моторы имеют высокие обороты, что может быть опасно при работе с тонкими абразивными кругами без редуктора.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-podklyuchit-rkt-2-k-kholodilniku-indezit.html" class="related-card">Как подключить РКТ 2 к холодильнику Индезит: схема и инструкция</a></li><li><a href="/articles/k/ka/kak-pomenyat-mozgi-na-stiralnoj-mashine-indezit.html" class="related-card">Как поменять мозги на стиральной машине Индезит: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-proverit-datchik-ottajki-na-kholodilnike-indezit.html" class="related-card">Как проверить датчик оттайки на холодильнике Indesit: пошагово</a></li><li><a href="/articles/k/ka/kak-nastroit-pressostat-indezit.html" class="related-card">Как настроить прессостат Indesit: пошаговая инструкция</a></li><li><a href="/articles/s/st/stiralnaya-mashina-indezit-prokruchivaet-programmy-chto-delat.html" class="related-card">Стиральная машина Indesit прокручивает программы: причины и ремонт</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-podklyuchit-rkt-2-k-kholodilniku-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как подключить РКТ 2 к холодильнику Индезит: схема и инструкция</span><span class="related-bottom-desc">Подробная инструкция по подключению термостата РКТ-2 в холодильниках Indesit. Схема распиновки, заме</span></a><a href="/articles/k/ka/kak-pomenyat-mozgi-na-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как поменять мозги на стиральной машине Индезит: пошаговая инструкция</span><span class="related-bottom-desc">Подробный гид по замене модуля управления в стиральной машине Indesit. Диагностика неисправностей, р</span></a><a href="/articles/k/ka/kak-proverit-datchik-ottajki-na-kholodilnike-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить датчик оттайки на холодильнике Indesit: пошагово</span><span class="related-bottom-desc">Подробная инструкция: как проверить датчик оттайки на холодильнике Indesit мультиметром. Симптомы не</span></a><a href="/articles/k/ka/kak-nastroit-pressostat-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как настроить прессостат Indesit: пошаговая инструкция</span><span class="related-bottom-desc">Узнайте, как настроить прессостат стиральной машины Indesit. Диагностика, регулировка винтом, таблиц</span></a><a href="/articles/s/st/stiralnaya-mashina-indezit-prokruchivaet-programmy-chto-delat.html" class="related-bottom-card"><span class="related-bottom-title">Стиральная машина Indesit прокручивает программы: причины и ремонт</span><span class="related-bottom-desc">Стиральная машина Indesit прокручивает программы и не стирает? Узнайте, как устранить сбой модуля, п</span></a><a href="/articles/k/ka/kak-proverit-takhometr-stiralnoj-mashiny-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить тахометр стиральной машины Индезит: тест мультиметром</span><span class="related-bottom-desc">Подробная инструкция: как проверить тахометр двигателя стиральной машины Индезит мультиметром. Симпт</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

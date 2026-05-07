@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Как проверить светодиоды Indesit 15000530 02: пошаговая диагностика — Индезит Хоум</title>
+    <meta name="description" content="Подробная инструкция по проверке LED-индикаторов Indesit 15000530 02 мультиметром. Диагностика модуля управления, поиск неисправностей и коды ошибок.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/1/15/15000530-02-indesit-led-kak-proverit-ee-rabotosposobnost.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить светодиоды Indesit 15000530 02: пошаговая диагностика">
+    <meta property="og:description" content="Подробная инструкция по проверке LED-индикаторов Indesit 15000530 02 мультиметром. Диагностика модуля управления, поиск неисправностей и коды ошибок.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/elektrika-i-datchiki/">Электрика и датчики</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как проверить светодиоды Indesit 15000530 02: пошаговая диагностика</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Диагностика и проверка работоспособности LED-модуля Indesit 15000530 02</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#визуальная-оценка-состояния-панели-и-платы">Визуальная оценка состояния панели и платы</a></li><li><a href="#необходимый-инструмент-для-диагностики">Необходимый инструмент для диагностики</a></li><li><a href="#алгоритм-проверки-светодиодов-мультиметром">Алгоритм проверки светодиодов мультиметром</a></li><li><a href="#анализ-кодов-ошибок-через-мигание-индикаторов">Анализ кодов ошибок через мигание индикаторов</a></li><li><a href="#диагностика-цепей-питания-и-шлейфов">Диагностика цепей питания и шлейфов</a></li><li><a href="#программный-сброс-и-тестирование">Программный сброс и тестирование</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Отказ индикаторов на панели управления стиральной машины часто сигнализирует о серьезных сбоях в электронике или механике устройства. <strong>Модуль управления</strong> перестает получать обратную связь от датчиков, из-за чего стирка может прерываться или вообще не начинаться. Код ошибки или мигающая комбинация лампочек — это первый ключ к разгадке проблемы, который нельзя игнорировать.</p>
+<p>Для правильной идентификации неисправности в моделях бренда <em>Indesit</em> с артикулом платы <strong>15000530 02</strong> необходимо провести визуальный осмотр и инструментальную диагностику. Часто проблема кроется не в сгоревшем светодиоде, а в окисленных контактах или нарушении целостности дорожек на печатной плате. Понимание принципа работы <strong>электронной начинки</strong> позволит сэкономить время на поиск дефекта.</p>
+<p>В этом руководстве мы разберем безопасные методы тестирования <strong>LED-индикаторов</strong> и цепей управления. Вы узнаете, как отличить программный сбой от аппаратной поломки, используя доступный инструмент. Грамотный подход к диагностике исключит необходимость замены дорогостоящих узлов без реальной на то причины.</p>
+
+<h2 id="визуальная-оценка-состояния-панели-и-платы">Визуальная оценка состояния панели и платы</h2>
+<p>Первичный осмотр является критически важным этапом, который часто недооценивают. Перед тем как брать в руки <strong>мультиметр</strong>, внимательно изучите состояние лицевой панели и внутренностей модуля управления. Ищите следы перегрева, потемнения пластика или характерный запах гари, который указывает на выгорание электронных компонентов.</p>
+<p>Особое внимание уделите контактным группам. В условиях повышенной влажности ванной комнаты на медных контактах часто образуется оксидная пленка, препятствующая прохождению тока. Если вы видите зеленоватый налет или коррозию, их необходимо аккуратно зачистить, так как это может восстановить работу <strong>индикаторной панели</strong>.</p>
+<blockquote>
+<p>⚠️ Внимание: Перед любым осмотром внутренностей стиральной машины обязательно отключите устройство от электрической сети! Остаточное напряжение в конденсаторах может быть опасным, поэтому дайте технике постоять выключенной 10-15 минут.</p>
+</blockquote>
+<p>Проверьте целостность шлейфов, соединяющих панель с основным модулем. Микротрещины в изоляции или переломы жил часто становятся причиной хаотичного мигания лампочек. В моделях <em>Indesit</em> с артикулом <strong>15000530 02</strong> разъемы могут ослабевать от вибрации при отжиме, поэтому их стоит поджать или переподключить.</p>
+
+<h2 id="необходимый-инструмент-для-диагностики">Необходимый инструмент для диагностики</h2>
+<p>Для качественного проведения работ вам потребуется минимальный набор инструментов, который найдется у любого домашнего мастера. Основным прибором станет цифровой <strong>мультиметр</strong>, позволяющий измерять напряжение и проверять целостность цепей. Без него диагностика электроники превращается в гадание на кофейной гуще.</p>
+<div class="checklist-block"><h4>☑️ Инструменты для проверки LED</h4><label class="check-item"><input type="checkbox"><span>Цифровой мультиметр</span></label><label class="check-item"><input type="checkbox"><span>Набор отверток</span></label><label class="check-item"><input type="checkbox"><span>Изопропиловый спирт</span></label><label class="check-item"><input type="checkbox"><span>Лупа или увеличительное стекло</span></label><label class="check-item"><input type="checkbox"><span>Пинцет для мелких деталей</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+<p>Дополнительно приготовьте изопропиловый спирт и мягкую кисть для очистки контактов от окислов. Если потребуется выпаивать элементы, не забудьте про паяльник с тонким жалом и припой. Для моделей <em>Indesit</em> часто требуется крестовая отвертка PH2 для снятия задней крышки и доступа к модулю.</p>
+<p>Важно, чтобы ваш измерительный прибор был исправен и имел заряженные батареи. Ложные показания тестера могут привести к ошибочным выводам и замене исправных деталей. Всегда проверяйте <strong>работоспособность щупов</strong> перед началом измерений, замыкая их между собой в режиме прозвонки.</p>
+
+<h2 id="алгоритм-проверки-светодиодов-мультиметром">Алгоритм проверки светодиодов мультиметром</h2>
+<p>Самый надежный способ проверить <strong>LED-индикаторы</strong> — это прозвонка каждого из них в режиме проверки диодов. Для этого необходимо демонтировать панель управления или получить доступ к обратной стороне печатной платы, где расположены контакты светодиодов. Будьте осторожны, чтобы не повредить хрупкие пластиковые защелки корпуса.</p>
+<p>Переключите мультиметр в режим проверки диодов (обычно обозначается символом диода). Красный щуп прижмите к аноду, а черный к катоду светодиода. Исправный элемент должен засветиться, а на экране прибора отобразится падение напряжения, обычно в диапазоне от 1.5 до 2.5 Вольт для красных индикаторов.</p>
+<details class="faq-item"><summary>Что делать, если светодиод не горит?</summary><div class="faq-answer"><p>Если при прямом подключении светодиод не загорается, попробуйте поменять полярность щупов. Если и в обратном направлении свечения нет, а мультиметр показывает единицу (обрыв) или ноль (короткое замыкание), значит, LED-элемент неисправен и требует замены.</p></div></details>
+<p>В плате <strong>15000530 02</strong> светодиоды могут быть распаяны последовательно или параллельно. Если сгорел один элемент в последовательной цепи, остальные также могут не работать. В таком случае проверяйте каждый <strong>источник света</strong> индивидуально, при необходимости выпаивая их для точной диагностики вне схемы.</p>
+<blockquote>
+<p>⚠️ Внимание: Не подавайте напряжение выше 3 Вольт на светодиод напрямую от источника питания без токоограничивающего резистора. Это гарантированно приведет к перегоранию исправного элемента.</p>
+</blockquote>
+
+<h2 id="анализ-кодов-ошибок-через-мигание-индикаторов">Анализ кодов ошибок через мигание индикаторов</h2>
+<p>Стиральные машины <em>Indesit</em> сообщают о неисправностях черезную последовательность мигания лампочек. Понимание этой «азбуки Морзе» позволяет быстро определить узел, требующий вмешательства. На панели могут гореть разные комбинации, каждая из которых соответствует конкретному <strong>коду ошибки</strong>.</p>
+<div class="poll-widget" id="poll-559abacf"><div class="poll-widget-question">📊 Какой индикатор мигает чаще всего у вашей машины?</div><div class="poll-widget-option" data-poll="559abacf" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Индикатор замка двери</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="559abacf" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Индикатор температуры</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="559abacf" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Индикатор отжима</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="559abacf" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Все индикаторы сразу</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+<p>Например, одновременное мигание индикаторов «Замок» и «Температура» часто указывает на проблемы с нагревом воды или ТЭНом. Если мигает только индикатор замка, проблема может крыться в блокираторе люка (УБЛ) или проводке к нему. Артикульная плата <strong>15000530 02</strong> обрабатывает сигналы датчиков и транслирует их в понятный для пользователя вид.</p>
+<p>Ниже приведена таблица с наиболее распространенными комбинациями мигания для быстрой диагностики:</p>
+<table>
+<thead>
+<tr>
+<th>Мигающие индикаторы</th>
+<th>Возможная причина</th>
+<th>Код ошибки</th>
+<th>Действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Замок + Температура</td>
+<td>Неисправность ТЭНа или датчика</td>
+<td>F05 / F07</td>
+<td>Прозвонить ТЭН</td>
+</tr>
+<tr>
+<td>Замок + Отжим</td>
+<td>Проблема с прессостатом</td>
+<td>F04</td>
+<td>Проверить трубку</td>
+</tr>
+<tr>
+<td>Температура + Отжим</td>
+<td>Сбой модуля управления</td>
+<td>F06</td>
+<td>Перезагрузка</td>
+</tr>
+<tr>
+<td>Все индикаторы</td>
+<td>Критический сбой электроники</td>
+<td>F15</td>
+<td>Замена модуля</td>
+</tr>
+</tbody>
+</table>
+<p>Запомните, что коды могут варьироваться в зависимости от конкретной модификации прошивки. Однако базовая логика диагностики через <strong>световую индикацию</strong> остается единой для большинства моделей бренда. Всегда сверяйтесь с технической документацией для вашей конкретной серии.</p>
+
+<h2 id="диагностика-цепей-питания-и-шлейфов">Диагностика цепей питания и шлейфов</h2>
+<p>Если сами светодиоды исправны, но не загораются, проблема может быть в цепях питания. Необходимо проверить наличие напряжения на входе в модуль управления. Используйте мультиметр в режиме измерения постоянного тока (<strong>DC Voltage</strong>), чтобы убедиться, что блок питания выдает необходимые 5 или 12 Вольт.</p>
+<p>Частой причиной отказа является повреждение шлейфа, соединяющего панель индикации с основной платой. Вибрации при работе машины приводят к перетиранию проводов или ослаблению контакта в разъеме. Аккуратно извлеките шлейф, осмотрите его на предмет заломов и почистите контакты <strong>изопропиловым спиртом</strong>.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Используйте ластик для аккуратной очистки окисленных контактов на шлейфах. Это простой и эффективный способ восстановить проводимость без химии.</p></div>
+<p>Проверьте целостность дорожек на самой плате <strong>15000530 02</strong>. Иногда из-за попадания влаги или заводского брака они могут быть перегоревшими. В режиме прозвонки сопротивление исправной дорожки должно быть близко к нулю. Если мультиметр показывает обрыв, восстановите соединение тонким проводком.</p>
+
+<h2 id="программный-сброс-и-тестирование">Программный сброс и тестирование</h2>
+<p>Иногда аппаратная часть полностью исправна, а проблема кроется в программном сбое контроллера. В этом случае помогает полный сброс настроек или перезагрузка модуля. Отключите стиральную машину от сети на 20-30 минут, чтобы конденсаторы полностью разрядились, а память <strong>микроконтроллера</strong> очистилась.</p>
+<p>После включения попробуйте запустить тестовую программу. На многих моделях <em>Indesit</em> это делается комбинацией кнопок, например, удержанием кнопки «Пуск» и «Дополнительные функции» в течение 5-7 секунд. Машина перейдет в сервисный режим, где все индикаторы должны загореться sequentially.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Если после программного сброса и проверки питания индикаторы не работают, вероятна неисправность самого модуля управления или панели индикации.</p></div>
+<p>В сервисном режиме можно проверить отклик каждого датчика. При изменении параметров (открытие двери, набор воды) соответствующие индикаторы должны реагировать. Это позволяет локализовать проблему до уровня конкретного узла, не разбирая машину полностью.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Можно ли эксплуатировать машину, если не горит один индикатор?</summary>
+<p>Если машина выполняет все функции нормально, стирает, греет и отжим</div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#визуальная-оценка-состояния-панели-и-платы">Визуальная оценка состояния панели и платы</a></li><li><a href="#необходимый-инструмент-для-диагностики">Необходимый инструмент для диагностики</a></li><li><a href="#алгоритм-проверки-светодиодов-мультиметром">Алгоритм проверки светодиодов мультиметром</a></li><li><a href="#анализ-кодов-ошибок-через-мигание-индикаторов">Анализ кодов ошибок через мигание индикаторов</a></li><li><a href="#диагностика-цепей-питания-и-шлейфов">Диагностика цепей питания и шлейфов</a></li><li><a href="#программный-сброс-и-тестирование">Программный сброс и тестирование</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-otregulirovat-pressostat-sma-indezit.html" class="related-card">Как отрегулировать прессостат Indesit: пошаговая инструкция</a></li><li><a href="/articles/r/rt/rtt-1-6-indezit-kak-proverit-rabotosposobnost.html" class="related-card">Реле РТТ 1-6 Индезит: как проверить и заменить</a></li><li><a href="/articles/k/ka/kak-pomenyat-pressostat-v-stiralnoj-mashine-indezit.html" class="related-card">Как поменять прессостат в стиральной машине Indesit: пошагово</a></li><li><a href="/articles/k/ka/kak-prozvonit-fps-stiralnoj-mashiny-indezit-multimetrom.html" class="related-card">Как прозвонить ФПС стиральной машины Indesit мультиметром</a></li><li><a href="/articles/k/ko/kondensator-stiralnoj-mashiny-indezit-dlya-chego-sluzhit.html" class="related-card">Конденсатор стиральной машины Индезит: функции и замена</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-otregulirovat-pressostat-sma-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как отрегулировать прессостат Indesit: пошаговая инструкция</span><span class="related-bottom-desc">Узнайте, как отрегулировать прессостат стиральной машины Indesit. Диагностика, настройка уровней, та</span></a><a href="/articles/r/rt/rtt-1-6-indezit-kak-proverit-rabotosposobnost.html" class="related-bottom-card"><span class="related-bottom-title">Реле РТТ 1-6 Индезит: как проверить и заменить</span><span class="related-bottom-desc">Проверка реле РТТ 1-6 в стиральных машинах Indesit. Инструкция по диагностике мультиметром, признаки</span></a><a href="/articles/k/ka/kak-pomenyat-pressostat-v-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как поменять прессостат в стиральной машине Indesit: пошагово</span><span class="related-bottom-desc">Инструкция по замене датчика уровня воды в стиралке Индезит. Симптомы поломки, проверка трубки, коды</span></a><a href="/articles/k/ka/kak-prozvonit-fps-stiralnoj-mashiny-indezit-multimetrom.html" class="related-bottom-card"><span class="related-bottom-title">Как прозвонить ФПС стиральной машины Indesit мультиметром</span><span class="related-bottom-desc">Подробная инструкция по проверке фильтра помех (ФПС) стиральной машины Indesit. Диагностика мультиме</span></a><a href="/articles/k/ko/kondensator-stiralnoj-mashiny-indezit-dlya-chego-sluzhit.html" class="related-bottom-card"><span class="related-bottom-title">Конденсатор стиральной машины Индезит: функции и замена</span><span class="related-bottom-desc">Зачем нужен конденсатор в стиральной машине Индезит? Подробный разбор функций, признаков поломки и и</span></a><a href="/articles/k/ka/kak-proverit-modul-upravleniya-stiralnoj-mashiny-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить модуль управления стиральной машины Индезит: диагностика</span><span class="related-bottom-desc">Проверка модуля управления стиральной машины Индезит: коды ошибок, мигание индикаторов, прозвонка ко</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

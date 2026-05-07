@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Регулятор температуры Indesit: устройство и настройка — Индезит Хоум</title>
+    <meta name="description" content="Как работает регулятор холодильника Индезит. Настройка, причины сбоев, замена термостата своими руками. Таблицы температур и коды ошибок.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/k/kh/kholodilnik-indezit-kak-rabotaet-regulyator.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Регулятор температуры Indesit: устройство и настройка">
+    <meta property="og:description" content="Как работает регулятор холодильника Индезит. Настройка, причины сбоев, замена термостата своими руками. Таблицы температур и коды ошибок.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/kholodilniki/">Холодильники</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Регулятор температуры Indesit: устройство и настройка</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Принцип работы и настройка регулятора температуры холодильника Indesit</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#устройство-механического-термостата-в-холодильниках-индезит">Устройство механического термостата в холодильниках Индезит</a></li><li><a href="#электронное-управление-температурой-отличия-от-механики">Электронное управление температурой: отличия от механики</a></li><li><a href="#типичные-симптомы-неисправности-регулятора">Типичные симптомы неисправности регулятора</a></li><li><a href="#диагностика-и-проверка-термостата-мультиметром">Диагностика и проверка термостата мультиметром</a></li><li><a href="#инструкция-по-замене-регулятора-температуры">Инструкция по замене регулятора температуры</a></li><li><a href="#настройка-температурного-режима-и-калибровка">Настройка температурного режима и калибровка</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body"><p>Если ваш холодильник Indesit перестал выключаться или, наоборот, не набирает нужную холодную температуру, первым делом необходимо проверить работу регулятора, так как именно этот узел отвечает за цикличность включения компрессора. Механический термостат или электронный датчик постоянно считывают показания термочувствительного элемента внутри камеры и подают команду на разрыв или замыкание электрической цепи управления мотором. Некорректная работа этого компонента приводит либо к размораживанию продуктов, либо к образованию ледяной шубы и перерасходу электроэнергии, поэтому понимание принципа его действия критически важно для первичной диагностики.</p>
+
+<p>В основе системы регулирования лежит <strong>термостат</strong>, который представляет собой герметичную систему, заполненную газом или жидкостью, чувствительной к изменениям температуры. Когда воздух в камере нагревается выше установленного порога, рабочее вещество расширяется, и мембрана замыкает контакты, запуская компрессор. При достижении заданных низких значений происходит обратный процесс: вещество сжимается, мембрана размыкает контакты, и агрегат переходит в режим ожидания. В моделях с электронным управлением <em>Indesit</em> роль механического клапана выполняет цифровой датчик, передающий данные на модуль управления, однако физический принцип контроля температуры остается неизменным.</p>
+
+<p>Пользователь может самостоятельно провести базовую проверку исправности устройства, если холодильник начал вести себя нехарактерно. Для этого достаточно повернуть ручку регулятора в крайнее положение «выключено» или минимального холода и прислушаться: должен раздаться характерный щелчок размыкания контактов. Если щелчка нет, а компрессор продолжает гудеть, или же, наоборот, техника молчит при любом положении ручки, то <strong>терморегулятор</strong> требует замены или глубокой диагностики электрической цепи.</p>
+
+<h2 id="устройство-механического-термостата-в-холодильниках-индезит">Устройство механического термостата в холодильниках Индезит</h2>
+<p>Конструкция механического регулятора в холодильниках <em>Indesit</em> представляет собой надежный, но простой механизм, состоящий из нескольких ключевых элементов. Основным рабочим органом является сильфонная трубка, заполненная фреоном или другим хладагентом, которая реагирует на тепловое расширение. Эта трубка соединена с герметичной камерой, внутри которой находится подвижная мембрана, связанная с группой электрических контактов. При изменении температуры давление внутри системы меняется, что приводит в движение мембрану и переключает состояние контактов.</p>
+<ul>
+<li>🔧 <strong>Сильфонная трубка</strong> — чувствительный элемент, который крепится к испарителю или помещается в камеру, напрямую реагируя на тепло.</li>
+<li>⚙️ <strong>Регулировочная пружина</strong> — позволяет пользователю задавать желаемую температуру путем изменения давления на мембрану через поворот ручки.</li>
+<li>🔌 <strong>Контактная группа</strong> — электрический узел, который размыкает или замыкает цепь питания компрессора в зависимости от положения мембраны.</li>
+</ul>
+<p>Важно отметить, что в некоторых моделях <em>Indesit</em> с системой No Frost термостат может иметь дополнительные выводы для управления вентилятором или нагревателем оттайки. Механический износ контактов со временем приводит к их подгоранию или залипанию, что является частой причиной неисправностей. Понимание того, как устроен ваш <strong>регулятор температуры</strong>, поможет избежать ошибок при его замене или настройке.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Перед любыми манипуляциями с электрическими компонентами холодильника Indesit обязательно отключайте устройство от сети во избежание поражения электрическим током.</p>
+</blockquote>
+
+<h2 id="электронное-управление-температурой-отличия-от-механики">Электронное управление температурой: отличия от механики</h2>
+<p>Современные холодильники <em>Indesit</em> все чаще оснащаются электронными модулями управления, где функцию регулятора берет на себя микропроцессорная система. В таких моделях нет классической сильфонной трубки с газом; вместо нее используются терморезисторы (датчики NTC), сопротивление которых меняется в зависимости от температуры окружающей среды. Эти датчики передают сигналы на основную плату управления, которая программно решает, когда включить компрессор, вентилятор или систему оттайки.</p>
+<p>Главным преимуществом электронной системы является высокая точность поддержания температурного режима и возможность отображения текущих показателей на дисплее. Однако диагностика таких систем требует специального подхода. Если механический термостат можно «прозвонить» мультиметром, то для проверки электронного датчика часто необходимо измерять его сопротивление при различных температурах и сравнивать показания с этлонными таблицами производителя. Сбой в электронном <strong>терморегуляторе</strong> может быть вызван не только поломкой самого датчика, но и неисправностью управляющей платы.</p>
+<details class="faq-item"><summary>Таблица сопротивлений датчиков</summary><div class="faq-answer"><p>Типовые значения сопротивления термодатчиков Indesit при разных температурах: При +25°C сопротивление составляет около 10 кОм, при 0°C — около 30 кОм, при -18°C — около 150 кОм. Значительное отклонение от этих значений указывает на неисправность элемента.</p></div></details>
+<p>Пользователи электронных моделей могут столкнуться с ситуацией, когда холодильник работает некорректно из-за сбоя в программе или «зависания» модуля. В таких случаях часто помогает полная перезагрузка устройства: отключение от сети на 15-20 минут позволяет сбросить ошибки и перезапустить систему контроля температуры.</p>
+
+<h2 id="типичные-симптомы-неисправности-регулятора">Типичные симптомы неисправности регулятора</h2>
+<p>Определить, что регулятор температуры в вашем холодильнике <em>Indesit</em> вышел из строя, можно по ряду характерных признаков. Часто пользователи замечают, что агрегат начинает работать без перерывов, пытаясь достигнуть недостижимого холода, или же включается слишком редко, позволяя продуктам портиться. Эти симптомы указывают на то, что цепь управления компрессором нарушена, и сигнал о достижении целевой температуры не поступает или игнорируется.</p>
+<ul>
+<li>❄️ <strong>Непрерывная работа компрессора</strong> — холодильник гудит постоянно, на стенках камеры образуется лед, продукты в основной камере могут перемерзать.</li>
+<li>🌡️ <strong>Отсутствие холода</strong> — компрессор не включается совсем или работает очень короткими циклами, температура в камерах близка к комнатной.</li>
+<li>💡 <strong>Скачки температуры</strong> — продукты то подтаивают, то замерзают, что говорит о неправильной калибровке или «залипании» контактов регулятора.</li>
+</ul>
+<p>Еще одним явным признаком неисправности механического термостата является отсутствие характерного щелчка при повороте ручки регулировки. В исправном состоянии вы должны слышать этот звук при переходе через точки включения и выключения. Если же холодильник <em>Indesit</em> молчит даже при экстремальных настройках, вероятнее всего, контакты внутри термостата окислились или сгорели, требуя замены узла.</p>
+
+<div class="poll-widget" id="poll-c0286dee"><div class="poll-widget-question">📊 Как ведет себя ваш холодильник Indesit?</div><div class="poll-widget-option" data-poll="c0286dee" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Работает без остановок</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="c0286dee" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Не набирает холод</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="c0286dee" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Включается и выключается хаотично</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="c0286dee" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Издает странные звуки</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2 id="диагностика-и-проверка-термостата-мультиметром">Диагностика и проверка термостата мультиметром</h2>
+<p>Для точного определения причины сбоя в работе холодильника <em>Indesit</strong> необходимо провести инструментальную диагностику термостата с помощью мультиметра. Этот метод позволяет с высокой долей вероятности определить, исправен ли механический переключатель или проблема кроется в другом узле, например, в пусковом реле или самом компрессоре. Перед началом проверки устройство должно быть полностью отключено от электросети.</p>
+<p>Процесс проверки начинается с демонтажа терморегулятора. После извлечения ручки и снятия защитной панели необходимо отсоединить провода от контактов термостата, предварительно сфотографировав схему подключения, чтобы не перепутать их при сборке. Затем мультиметр переводится в режим прозвонки или измерения сопротивления, и щупы подключаются к контактам регулятора.</p>
+<div class="checklist-block"><h4>☑️ Чек-лист проверки термостата</h4><label class="check-item"><input type="checkbox"><span>Отключить холодильник от сети</span></label><label class="check-item"><input type="checkbox"><span>Снять ручку регулятора и защитную панель</span></label><label class="check-item"><input type="checkbox"><span>Сфотографировать подключение проводов</span></label><label class="check-item"><input type="checkbox"><span>Прозвонить контакты в положении «включено»</span></label><label class="check-item"><input type="checkbox"><span>Охладить чувствительный элемент и проверить размыкание</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+<p>В нормальном состоянии (при комнатной температуре) контакты механического термостата должны быть замкнуты, и мультиметр покажет близкое к нулю сопротивление или издаст звуковой сигнал. Чтобы проверить размыкание, чувствительную трубку или корпус термостата нужно охладить (например, поместив в морозилку на несколько минут). Если после охлаждения цепь не разрывается, или если она разомкнута уже при комнатной температуре, <strong>терморегулятор</strong> считается неисправным и требует замены.</p>
+
+<h2 id="инструкция-по-замене-регулятора-температуры">Инструкция по замене регулятора температуры</h2>
+<p>Замена регулятора температуры в холодильнике <em>Indesit</strong> — процедура, доступная для выполнения в домашних условиях при наличии базовых инструментов и аккуратности. Процесс начинается с покупки подходящей запчасти: важно подобрать аналог с идентичными параметрами, особенно длиной капиллярной трубки и температурным диапазоном, так как универсальных решений здесь не существует.</p>
+<table>
+<thead>
+<tr>
+<th>Модель Indesit</th>
+<th>Тип регулятора</th>
+<th>Расположение</th>
+<th>Особенности замены</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Indesit C 138 G</td>
+<td>Механический TAM 112</td>
+<td>Внутри камеры, слева</td>
+<td>Трубка вставлена в пластиковый канал</td>
+</tr>
+<tr>
+<td>Indesit DF 520</td>
+<td>Механический K 59</td>
+<td>Внутри камеры, справа</td>
+<td>Требуется аккуратный изгиб трубки</td>
+</tr>
+<tr>
+<td>Indesit SBS 2010</td>
+<td>Электронный датчик</td>
+<td>За задней стенкой</td>
+<td>Необходимо снятие пластиковых панелей</td>
+</tr>
+<tr>
+<td>Indesit ER 18</td>
+<td>Механический ТАМ 133</td>
+<td>Снаружи, над дверью</td>
+<td>Доступ через верхнюю крышку</td>
+</tr>
+</tbody>
+</table>
+<p>При установке нового термостата особое внимание следует уделить прокладке чувствительной трубки. Она должна плотно прилегать к испарителю или входить в штатное отверстие на ту же глубину, что и старая. Чрезмерный изгиб или натяжение трубки могут привести к ее повреждению и утечке рабочего вещества, что сделает новый регулятор неработоспособным сразу после установки.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Ключевой момент: Длина капиллярной трубки нового термостата должна быть равна или чуть больше старой; излишки можно аккуратно скрутить, но укорачивать трубку категорически запрещено.</p></div>
+<p>После подключения проводов согласно сделанной ранее фотографии и фиксации корпуса, можно собрать панель управления. Первый запуск холодильника <em>Indesit</strong> после замены рекомендуется производить без нагрузки, дав системе выйти на режим в течение нескольких часов.</p>
+
+<h2 id="настройка-температурного-режима-и-калибровка">Настройка температурного режима и калибровка</h2>
+<p>Правильная настройка регулятора температуры — залог энергоэффективной работы холодильника <em>Indesit</em> и сохранности продуктов. Оптимальным значением для основной камеры считается диапазон от +2 до +5 градусов Цельсия, что соответствует среднему положению ручки регулятора или цифре 3 на механической шкале. Установка экстремальных значений (максимальный холод) без необходимости приводит к повышенной нагрузке на компрессор.</p>
+<p>Если вы заметили, что продукты в основной камере подмерзают у задней стенки, а в дверце, наоборот, теплеют, возможно, требуется корректировка положения термостата. В механических моделях это делается поворотом ручки: по часовой стрелке температура понижается, против часовой — повышается. В электронных моделях настройка производится через панель управления, где можно задать точные значения для каждой зоны.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Полезный совет: Не устанавливайте регулятор на максимальный холод сразу после загрузки большого количества теплых продуктов. Дайте холодильнику время выйти на режим в штатном положении, чтобы избежать образования излишней наледи.</p></div>
+<p> Регулярная проверка уплотнителей двери также помогает поддерживать стабильный температурный режим.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Почему холодильник Indesit не выключается даже после замены термостата?</summary>
+<p>Если замена регулятора не помогла, причина может крыться в утечке фреона, неисправности компрессора или проблемах с теплоизоляцией. Также стоит проверить исправность пускового реле мотора.</p>
+</details>
+<details>
+<summary>Можно ли использовать универсальный термостат для ремонта Indesit?</summary>
+<p>Использовать универсальные аналоги можно, но только если их температурные характеристики и длина капиллярной трубки совпадают с оригиналом. Неправильный подбор приведет к некорректной работе холодильника.</p>
+</details>
+<details>
+<summary>Как понять, что сломался электронный датчик, а не плата управления?</summary>
+<p>Для этого нужно прозвонить датчик мультиметром при разных температурах. Если его сопротивление меняется согласно таблице, а холодильник не работает, вероятна неисправность платы. Если сопротивление не меняется или показывает обрыв — виноват датчик.</p>
+</details>
+<details>
+<summary>Что делать, если ручка регулятора крутится бесконечно?</summary>
+<p>Это признак механической поломки внутреннего штока термостата. В таком случае регулировка температуры невозможна, и узел подлежит обязательной замене.</p>
+</details>
+<details>
+<summary>Влияет ли температура в помещении на работу регулятора?</summary>
+<p>Да, если в комнате слишком холодно (ниже +10°C), холодильник с одним термостатом может не включаться, так как датчик «думает», что холод уже есть. Для таких условий требуются модели с климатическим классом SN или специальные обогреватели зоны оттайки.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#устройство-механического-термостата-в-холодильниках-индезит">Устройство механического термостата в холодильниках Индезит</a></li><li><a href="#электронное-управление-температурой-отличия-от-механики">Электронное управление температурой: отличия от механики</a></li><li><a href="#типичные-симптомы-неисправности-регулятора">Типичные симптомы неисправности регулятора</a></li><li><a href="#диагностика-и-проверка-термостата-мультиметром">Диагностика и проверка термостата мультиметром</a></li><li><a href="#инструкция-по-замене-регулятора-температуры">Инструкция по замене регулятора температуры</a></li><li><a href="#настройка-температурного-режима-и-калибровка">Настройка температурного режима и калибровка</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/kh/kholodilnik-indezit-pochemu-ne-okhlazhdaet.html" class="related-card">Холодильник Indesit не охлаждает: причины и ремонт</a></li><li><a href="/articles/k/kh/kholodilnik-indezit-szadi-pochemu-trubka-kapaet.html" class="related-card">Почему капает трубка сзади холодильника Indesit: причины</a></li><li><a href="/articles/k/ka/kak-proverit-teplovoe-rele-na-kholodilnike-indezit.html" class="related-card">Как проверить тепловое реле на холодильнике Индезит: пошаговая инструкция</a></li><li><a href="/articles/c/ch/chem-mozhno-prikleit-rezinku-na-dvertse-kholodilnika-indezit.html" class="related-card">Чем приклеить резинку на дверце холодильника Indesit: методы</a></li><li><a href="/articles/k/ka/kak-prodiagnostirovat-kholodilnik-indezit.html" class="related-card">Как продиагностировать холодильник Indesit: коды ошибок и тесты</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/kh/kholodilnik-indezit-pochemu-ne-okhlazhdaet.html" class="related-bottom-card"><span class="related-bottom-title">Холодильник Indesit не охлаждает: причины и ремонт</span><span class="related-bottom-desc">Почему холодильник Индезит перестал морозить? Разбор причин: компрессор, фреон, датчики. Диагностика</span></a><a href="/articles/k/kh/kholodilnik-indezit-szadi-pochemu-trubka-kapaet.html" class="related-bottom-card"><span class="related-bottom-title">Почему капает трубка сзади холодильника Indesit: причины</span><span class="related-bottom-desc">Узнайте, почему капает трубка сзади холодильника Indesit. Разбор причин: засор, лед, поломка ТЭНа. И</span></a><a href="/articles/k/ka/kak-proverit-teplovoe-rele-na-kholodilnike-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить тепловое реле на холодильнике Индезит: пошаговая инструкция</span><span class="related-bottom-desc">Детальное руководство по диагностике теплового реле холодильника Indesit. Узнайте, как прозвонить пу</span></a><a href="/articles/c/ch/chem-mozhno-prikleit-rezinku-na-dvertse-kholodilnika-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Чем приклеить резинку на дверце холодильника Indesit: методы</span><span class="related-bottom-desc">Узнайте, чем приклеить резинку на дверце холодильника Indesit. Эффективные способы, выбор клея, поша</span></a><a href="/articles/k/ka/kak-prodiagnostirovat-kholodilnik-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как продиагностировать холодильник Indesit: коды ошибок и тесты</span><span class="related-bottom-desc">Подробная инструкция по самодиагностике холодильников Индезит. Как войти в сервисный режим, расшифро</span></a><a href="/articles/k/kh/kholodilnik-indezit-dvukhkamernyj-gde-nakhoditsya-termostat.html" class="related-bottom-card"><span class="related-bottom-title">Где находится термостат в двухкамерном холодильнике Indesit</span><span class="related-bottom-desc">Точное расположение термостата в двухкамерных холодильниках Indesit. Инструкция по доступу, проверке</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

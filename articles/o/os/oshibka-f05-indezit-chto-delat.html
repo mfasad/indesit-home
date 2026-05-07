@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Ошибка F05 Indesit: как устранить и что делать — Индезит Хоум</title>
+    <meta name="description" content="Почему горит F05 на стиральной машине Indesit? Полный гид по диагностике датчика слива, проверке помпы и чистке фильтра своими руками.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/o/os/oshibka-f05-indezit-chto-delat.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ошибка F05 Indesit: как устранить и что делать">
+    <meta property="og:description" content="Почему горит F05 на стиральной машине Indesit? Полный гид по диагностике датчика слива, проверке помпы и чистке фильтра своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/ustranenie-oshibok/">Устранение ошибок</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Ошибка F05 Indesit: как устранить и что делать</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Ошибка F05 Indesit: диагностика и устранение неисправностей датчика слива</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-системы-слива-и-роль-прессостата">Принцип работы системы слива и роль прессостата</a></li><li><a href="#первичная-диагностика-и-визуальный-осмотр">Первичная диагностика и визуальный осмотр</a></li><li><a href="#чистка-сливного-фильтра-и-проверка-крыльчатки">Чистка сливного фильтра и проверка крыльчатки</a></li><li><a href="#диагностика-и-замена-сливного-насоса">Диагностика и замена сливного насоса</a></li><li><a href="#проверка-датчика-уровня-воды-и-электрических-цепей">Проверка датчика уровня воды и электрических цепей</a></li><li><a href="#сброс-ошибки-и-тестовый-запуск">Сброс ошибки и тестовый запуск</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Код F05 на дисплее или индикаторах стиральной машины Indesit сигнализирует о критической неисправности в системе слива воды, которая обычно возникает на этапе откачки жидкости после стирки или полоскания. Электронный модуль управления фиксирует отсутствие сигнала от прессостата (датчика уровня воды) о том, что бак пуст, хотя команда на включение сливного насоса уже была отправлена. В этот момент автоматика блокирует дальнейшее выполнение программы, чтобы предотвратить затопление помещения или выход из строя электроники из-за работы двигателя вхолостую.</p>
+
+<p>Основной причиной появления <strong>ошибки F05</strong> чаще всего становится механическая блокировка крыльчатки помпы посторонними предметами, такими как монеты, пуговицы или ворс, либо выход из строя самого сливного насоса. Также проблема может крыться в засорении патрубков, соединяющих бак с насосом и канализацией, или в нарушении электрического контакта в цепи управления. Понимание того, что система не может корректно считать уровень воды, помогает быстрее локализовать узел, требующий вмешательства, будь то чистка фильтра или замена датчика.</p>
+
+<p>Пользователю необходимо немедленно остановить цикл стирки и отключить устройство от электросети перед началом любых диагностических работ. Попытки продолжить стирку или игнорирование сигнала тревоги могут привести к перегоранию обмотки двигателя насоса или повреждению модуля управления токами утечки. Правильная последовательность действий при появлении кода неисправности позволяет во многих случаях восстановить работоспособность техники без вызова мастера.</p>
+
+<h2 id="принцип-работы-системы-слива-и-роль-прессостата">Принцип работы системы слива и роль прессостата</h2>
+<p>Для корректного функционирования стиральной машины <em>Indesit</em> критически важна синхронизация между сливным насосом и датчиком уровня воды. Прессостат отслеживает изменение давления в воздушной трубке, которое напрямую зависит от количества воды в баке. Когда модуль управления дает команду на слив, он ожидает, что через определенное время давление в системе изменится, и датчик подаст сигнал об освобождении бака. Если этого не происходит, на панели загорается <strong>индикатор ошибки F05</strong>.</p>
+
+<p>Система защиты построена так, чтобы исключить работу насоса «на сухую» или, наоборот, попытку нагрева воды при полном баке, если слив не произошел. В моделях с цифровым дисплеем код высвечивается явно, в то время как в бюджетных сериях с лампочками комбинация индикаторов может варьироваться. <mark>Ключевым элементом здесь является не только сам насос, но и целостность воздушного тракта, идущего к датчику.</mark> Нарушение герметичности этого тракта приводит к искажению показаний давления.</p>
+
+<p>Электронный блок управления постоянно опрашивает состояние всех узлов. При фиксации рассинхронизации между поданным напряжением на помпу и фактическим уровнем воды в баке, программа аварийно останавливается. Это стандартная защитная реакция для всех современных моделей бытовой техники. Понимание этого алгоритма помогает исключить ложные диагнозы, когда пользователь меняет исправную помпу, хотя проблема была в трубке или контактах.</p>
+
+<h2 id="первичная-диагностика-и-визуальный-осмотр">Первичная диагностика и визуальный осмотр</h2>
+<p>Первым шагом при появлении кода <strong>F05</strong> должен стать тщательный визуальный осмотр доступных узлов без полной разборки корпуса. Часто причина банальна и кроется в пережатом сливном шланге или загрязненном фильтре грубой очистки. Необходимо проверить, нет ли заломов на гофрированной трубке, соединяющей машину с канализацией, так как это создает избыточное давление, с которым насос не может справиться.</p>
+
+<p>Далее следует обратить внимание на состояние сливного фильтра, который обычно расположен в нижней передней части корпуса за декоративной панелью. Его засорение — самая частая причина того, что вода не уходит. Также стоит проверить целостность электрического кабеля и розетки, так как скачки напряжения могли повредить цепь управления. Если внешних повреждений нет, потребуется более глубокая диагностика.</p>
+
+<ul>
+<li>🔍 Проверьте сливной шланг на наличие перегибов, скруток и засоров в месте подключения к канализационной трубе.</li>
+<li>🧹 Осмотрите сливной фильтр на наличие крупного мусора, ниток и ворса, которые могут блокировать вращение крыльчатки.</li>
+<li>🔌 Убедитесь в надежности подключения сетевого шнура и отсутствии признаков оплавления на вилке или розетке.</li>
+</ul>
+
+<div class="poll-widget" id="poll-78c8810f"><div class="poll-widget-question">📊 Сталкивались ли вы с ошибкой F05 на своей технике Indesit?</div><div class="poll-widget-option" data-poll="78c8810f" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Да, это случалось впервые</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="78c8810f" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Ошибка появляется периодически</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="78c8810f" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Проблема возникла после замены деталей</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="78c8810f" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Никогда не видел этот код</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<p>Важно отметить, что перед началом любых работ по диагностике необходимо полностью перекрыть подачу воды и отсоединить шнур питания из розетки. Остаточная вода в баке может политься при откручивании фильтра, поэтому следует заранее подготовить плоскую емкость для ее сбора и половую тряпку. Игнорирование правил техники безопасности может привести к поражению электрическим током или повреждению напольного покрытия.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не пытайтесь запустить повторный цикл стирки или отжима, если на дисплее горит код F05. Принудительный запуск может привести к затоплению квартиры, так как вода не сможет покинуть бак.</p>
+</blockquote>
+
+<h2 id="чистка-сливного-фильтра-и-проверка-крыльчатки">Чистка сливного фильтра и проверка крыльчатки</h2>
+<p>Наиболее вероятной причиной появления <strong>ошибки F05</strong> является механическая преграда на пути движения воды. Сливной фильтр предназначен для улавливания крупных предметов, которые случайно попали в барабан вместе с бельем. Со временем там накапливается не только мелочь и пуговицы, но и плотный слой волокон ткани, который превращается в непроницаемую пробку. Для доступа к фильтру нужно снять нижнюю декоративную панель или открыть специальный лючок в цоколе машины.</p>
+
+<p>После откручивания пробки фильтра (предварительно подставив емкость) необходимо удалить весь скопившийся мусор. Особое внимание следует уделить самой крыльчатке насоса, которая видна в глубине отверстия. Она должна вращаться свободно, без заеданий. Часто внутрь насоса попадают косточки от бюстгальтеров, монеты или мелкие детали, которые блокируют вращение вала двигателя.</p>
+
+<div class="checklist-block"><h4>☑️ Чек-лист чистки системы слива</h4><label class="check-item"><input type="checkbox"><span>Слить воду через аварийный шланг или фильтр</span></label><label class="check-item"><input type="checkbox"><span>Выкрутить фильтр против часовой стрелки</span></label><label class="check-item"><input type="checkbox"><span>Удалить весь мусор и промыть фильтр водой</span></label><label class="check-item"><input type="checkbox"><span>Проверить свободный ход крыльчатки насоса пальцем</span></label><label class="check-item"><input type="checkbox"><span>Закрутить фильтр до упора и проверить герметичность</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Если крыльчатка прокручивается с трудом или издает скрежет, возможно, в подшипник насоса попала грязь или он изношен. В некоторых случаях посторонний предмет застревает между лопастями и корпусом, что не дает мотору развить необходимые обороты. После очистки нужно аккуратно собрать конструкцию и запустить режим «Слив» или «Полоскание» для проверки результата. Если вода уходит быстро и бесшумно, проблема решена.</p>
+
+<h2 id="диагностика-и-замена-сливного-насоса">Диагностика и замена сливного насоса</h2>
+<p>Если очистка фильтра не помогла и <strong>ошибка F05</strong> сохраняется, вероятнее всего, неисправен сам сливной насос. Двигатель помпы мог сгореть из-за длительной работы под нагрузкой или короткого замыкания. Проверить его можно мультиметром, прозвонив обмотку. В нормальном состоянии сопротивление обмотки составляет от 100 до 200 Ом. Если прибор показывает обрыв (бесконечность) или короткое замыкание (близко к нулю), насос требует замены.</p>
+
+<p>Также стоит проверить, приходит ли напряжение на контакты помпы в момент запуска программы слива. Если напряжение есть, но насос гудит и не крутится (при чистой крыльчатке), это верный признак заклинивания подшипника или межвиткового замыкания. Замена насоса в машинах <em>Indesit</em> часто производится без полного снятия бака, что упрощает ремонт. Новые насосы обычно поставляются в сборе с улиткой, что позволяет заменить и пластиковый корпус, если в нем образовались трещины.</p>
+
+<table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Вероятная причина</th>
+<th>Метод решения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Насос гудит, но не качает</td>
+<td>Заклинила крыльчатка или сгорела обмотка</td>
+<td>Очистка от мусора или замена насоса</td>
+</tr>
+<tr>
+<td>Насос молчит, напряжения нет</td>
+<td>Неисправность модуля управления или проводки</td>
+<td>Прозвонка цепи и проверка контактов</td>
+</tr>
+<tr>
+<td>Вода уходит медленно</td>
+<td>Засор в патрубке или канализации</td>
+<td>Прочистка сливной магистрали</td>
+</tr>
+<tr>
+<td>Постоянная ошибка F05</td>
+<td>Неисправен прессостат или датчик</td>
+<td>Замена датчика уровня воды</td>
+</tr>
+</tbody>
+</table>
+
+<p>При выборе новой помпы важно учитывать не только геометрические размеры, но и способ крепления, длину патрубка и конфигурацию электрического разъема. Универсальные насосы могут требовать доработки посадочного места или использования переходников. Рекомендуется подбирать запчасти по каталожному номеру, указанному на шильдике старого устройства, чтобы избежать проблем с установкой.</p>
+
+<details class="faq-item"><summary>Как правильно снять старый насос</summary><div class="faq-answer"><p>Для снятия насоса в машинах Indesit часто достаточно получить доступ снизу или спереди, сняв переднюю панель. Отсоедините фишку питания, ослабьте хомуты на патрубках и открутите 3-4 винта, крепящих корпус насоса к баку. Будьте готовы к тому, что из патрубков выльется остаток воды.</p></div></details>
+
+<h2 id="проверка-датчика-уровня-воды-и-электрических-цепей">Проверка датчика уровня воды и электрических цепей</h2>
+<p>Иногда проблема кроется не в механике, а в электронике, а именно в <strong>прессостате</strong>. Этот датчик может выдавать неверные показания из-за окисления контактов, обрыва провода или внутренней неисправности мембраны. Если датчик «залип» в положении «бак полон», модуль управления не будет включать насос или будет работать с ошибкой. Проверка осуществляется прозвонкой контактов датчика при изменении давления (можно дунуть в трубку).</p>
+
+<p>Также следует внимательно осмотреть воздушную трубку, идущую от бака к прессостату. Если она соскочила, треснула или забилась водой, сигнал о уровне воды передаваться не будет. Часто в нижней части этой трубки скапливается конденсат или грязь, образующая водяную пробку. Продувка трубки и проверка ее герметичности — обязательный этап диагностики. В некоторых случаях требуется замена самого шланга.</p>
+
+<ul>
+<li>🔌 Проверьте надежность соединения фишки проводов на контактах сливного насоса и прессостата.</li>
+<li>💨 Продуйте воздушную трубку датчика уровня воды, чтобы исключить наличие водяных пробок.</li>
+<li>📉 Измерьте сопротивление обмотки двигателя насоса мультиметром для выявления обрывов.</li>
+</ul>
+
+<p>Особое внимание стоит уделить состоянию проводки. Вибрации при отжиме могут привести к перетиранию изоляции проводов или ослаблению контактов в разъемах. Окисленные контакты создают дополнительное сопротивление, из-за чего насос не получает достаточной мощности для работы. Зачистка контактов и обработка их специальной смазкой для электроконтактов часто помогает устранить плавающие неисправности.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При работе с электрическими компонентами убедитесь, что машина полностью обесточена. Использование неисправных датчиков или насосов с поврежденной изоляцией опасно для жизни.</p>
+</blockquote>
+
+<h2 id="сброс-ошибки-и-тестовый-запуск">Сброс ошибки и тестовый запуск</h2>
+<p>После проведения всех ремонтных работ и замены неисправных деталей необходимо сбросить ошибку из памяти модуля управления. В большинстве моделей <em>Indesit</em> достаточно выключить машину кнопкой и отключить ее от сети на 15-20 минут. Это позволит электронике перезагрузиться и очистить буфер ошибок. Если код появился снова после включения, значит, причина не устранена полностью.</p>
+
+<p>Для проверки качества ремонта рекомендуется запустить тестовый режим или короткую программу стирки без белья. Следите за тем, как набирается и сливается вода. Насос должен работать ровно, без посторонних шумов и вибраций. Уровень воды должен соответствовать выбранной программе. Если цикл проходит успешно и машина разблокирует люк, ремонт можно считать завершенным.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Совет: При сборке машины обязательно проверьте все хомуты на патрубках. Плохо затянутый хомут может стать причиной протечки, которая выведет из строя модуль управления или пол.</p></div>
+
+<p>Если после замены насоса и чистки системы ошибка <strong>F05</strong> возвращается, возможно, неисправен сам модуль управления. Симистор, управляющий насосом, мог сгореть, или произошел обрыв дорожки на плате. В этом случае требуется профессиональная диагностика платы управления с прозвонкой цепей и, при необходимости, перепайка элементов или замена модуля целиком.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Главный вывод: В 90% случаев ошибка F05 устраняется простой чисткой сливного фильтра и крыльчатки насоса от мусора. Не спешите покупать новые запчасти, пока не проведете полную ревизию сливной системы.</p></div>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Можно ли продолжать стирку, если горит ошибка F05?</summary>
+<p>Нет, продолжать стирку нельзя. Машина заблокировала процесс, так как не может слить воду. Попытка игнорировать ошибку может привести к затоплению или сгоранию насоса. Необходимо сначала устранить причину блокировки.</p>
+</details>
+
+<details>
+<summary>Почему насос гудит, но воду не качает?</summary>
+<p>Скорее всего, крыльчатка насоса заблокирована посторонним предметом (монета, пуговица) или вышел из строя подшипник вала. Также возможен обрыв одной из фаз обмотки двигателя, из-за чего он не может набрать обороты.</p>
+</details>
+
+<details>
+<summary>Как часто нужно чистить сливной фильтр?</summary>
+<p>Рекомендуется проверять и чистить сливной фильтр раз в 3-6 месяцев, в зависимости от частоты стирок. Регулярная профилактика предотвратит появление ошибки F05 и продлит срок службы сливного насоса.</p>
+</details>
+
+<details>
+<summary>Можно ли заменить насос самостоятельно без снятия бака?</summary>
+<p>В большинстве моделей стиральных машин Indesit замена сливного насоса производится через дно или переднюю часть корпуса без необходимости извлекать бак. Однако доступ может быть ограничен, и потребуется частичная разборка агрегата.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#принцип-работы-системы-слива-и-роль-прессостата">Принцип работы системы слива и роль прессостата</a></li><li><a href="#первичная-диагностика-и-визуальный-осмотр">Первичная диагностика и визуальный осмотр</a></li><li><a href="#чистка-сливного-фильтра-и-проверка-крыльчатки">Чистка сливного фильтра и проверка крыльчатки</a></li><li><a href="#диагностика-и-замена-сливного-насоса">Диагностика и замена сливного насоса</a></li><li><a href="#проверка-датчика-уровня-воды-и-электрических-цепей">Проверка датчика уровня воды и электрических цепей</a></li><li><a href="#сброс-ошибки-и-тестовый-запуск">Сброс ошибки и тестовый запуск</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/h/h2/h2o-oshibka-stiralnoj-mashiny-indezit-kak-vyklyuchit.html" class="related-card">Ошибка H2O стиральной машины Индезит: как выключить и устранить</a></li><li><a href="/articles/p/po/pochemu-baraban-stiralnoj-mashiny-ne-krutitsya-no-programma-srabatyvaet-indesit.html" class="related-card">Стиральная машина Indesit: программа есть, барабан не крутится</a></li><li><a href="/articles/p/po/pochemu-klinit-baraban-v-stiralnoj-mashine-indezit.html" class="related-card">Почему клинит барабан в стиральной машине Индезит: причины</a></li><li><a href="/articles/k/ka/kak-perezagruzit-stiralnuyu-mashinku-indezit-wiul-103.html" class="related-card">Как перезагрузить стиральную машинку Indesit WIUL 103: сброс ошибок</a></li><li><a href="/articles/s/st/stiralnaya-mashina-indezit-oshibka-f02-chto-znachit.html" class="related-card">Indesit Ошибка F02: причины, диагностика и ремонт</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/h/h2/h2o-oshibka-stiralnoj-mashiny-indezit-kak-vyklyuchit.html" class="related-bottom-card"><span class="related-bottom-title">Ошибка H2O стиральной машины Индезит: как выключить и устранить</span><span class="related-bottom-desc">Горит индикатор H2O на стиральной машине Indesit? Узнайте причины блокировки, способы отключения реж</span></a><a href="/articles/p/po/pochemu-baraban-stiralnoj-mashiny-ne-krutitsya-no-programma-srabatyvaet-indesit.html" class="related-bottom-card"><span class="related-bottom-title">Стиральная машина Indesit: программа есть, барабан не крутится</span><span class="related-bottom-desc">Барабан стиральной машины Indesit не вращается, но вода набирается? Разбор причин: ремень, щетки, ТЭ</span></a><a href="/articles/p/po/pochemu-klinit-baraban-v-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Почему клинит барабан в стиральной машине Индезит: причины</span><span class="related-bottom-desc">Разбираем, почему клинит барабан в стиральной машине Индезит. Диагностика подшипников, ТЭНа, посторо</span></a><a href="/articles/k/ka/kak-perezagruzit-stiralnuyu-mashinku-indezit-wiul-103.html" class="related-bottom-card"><span class="related-bottom-title">Как перезагрузить стиральную машинку Indesit WIUL 103: сброс ошибок</span><span class="related-bottom-desc">Полная инструкция: как перезагрузить стиральную машину Indesit WIUL 103. Сброс ошибок, коды неисправ</span></a><a href="/articles/s/st/stiralnaya-mashina-indezit-oshibka-f02-chto-znachit.html" class="related-bottom-card"><span class="related-bottom-title">Indesit Ошибка F02: причины, диагностика и ремонт</span><span class="related-bottom-desc">Стиральная машина Indesit выдает ошибку F02? Узнайте, как проверить таходатчик и мотор, расшифровать</span></a><a href="/articles/k/ka/kak-perezagruzit-stiralku-indezit-wisl-82.html" class="related-bottom-card"><span class="related-bottom-title">Как перезагрузить стиралку Indesit Wisl 82: сброс ошибок и тесты</span><span class="related-bottom-desc">Подробная инструкция: как перезагрузить стиральную машину Indesit Wisl 82, сбросить ошибки, выполнит</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

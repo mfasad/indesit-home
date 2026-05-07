@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Indesit No Frost: как работает система, устройство и диагностика — Индезит Хоум</title>
+    <meta name="description" content="Разбираем, как работает холодильная система Indesit No Frost. Схема циркуляции, работа ТЭНа, таймера и вентилятора. Почему возникает наледь.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/i/in/indesit-no-frost-kak-rabotaet.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Indesit No Frost: как работает система, устройство и диагностика">
+    <meta property="og:description" content="Разбираем, как работает холодильная система Indesit No Frost. Схема циркуляции, работа ТЭНа, таймера и вентилятора. Почему возникает наледь.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/kholodilniki/">Холодильники</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Indesit No Frost: как работает система, устройство и диагностика</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Принцип работы и устройство системы No Frost в холодильниках Indesit</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#конструкция-испарителя-и-схема-циркуляции-воздушных-потоков">Конструкция испарителя и схема циркуляции воздушных потоков</a></li><li><a href="#алгоритм-циклической-разморозки-таймер-тэн-и-термопредохранитель">Алгоритм циклической разморозки: таймер, ТЭН и термопредохранитель</a></li><li><a href="#роль-датчиков-температуры-и-термостатов-в-автоматике-indesit">Роль датчиков температуры и термостатов в автоматике Indesit</a></li><li><a href="#типичные-неисправности-системы-no-frost-и-их-симптомы">Типичные неисправности системы No Frost и их симптомы</a></li><li><a href="#диагностика-и-проверка-элементов-системы-охлаждения">Диагностика и проверка элементов системы охлаждения</a></li><li><a href="#правила-эксплуатации-и-профилактика-обмерзания">Правила эксплуатации и профилактика обмерзания</a></li><li><a href="#вопросы-и-ответы-по-эксплуатации-no-frost">Вопросы и ответы по эксплуатации No Frost</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Система автоматической разморозки в холодильниках <em>Indesit</em> функционирует за счет принудительной циркуляции холодного воздуха, который нагнетается специальным вентилятором через испаритель, скрытый в задней стенке морозильной камеры. В отличие от статичного охлаждения, где холод опускается вниз естественным путем, здесь <strong>вентилятор</strong> активно прогоняет воздушные массы через радиатор, обеспечивая быстрое и равномерное снижение температуры во всех отсеках. Конденсат, образующийся на стенках испарителя, не превращается в ледяную шубу, а периодически удаляется нагревательным элементом, после чего вода стекает в поддон и испаряется.</p>
+
+<p>Владельцы техники часто замечают, что продукты в таких моделях быстрее обветриваются, если не использовать контейнеры или пленку, так как сухой движущийся поток воздуха интенсивно вытягивает влагу из незащищенных поверхностей. <mark>Критически важным узлом</mark> всей конструкции является алгоритм работы таймера или электронного модуля, который строго регламентирует чередование циклов охлаждения и разморозки. Если этот ритм сбивается из-за поломки датчика или залипания контактов, система перестает справляться с отводом влаги, что приводит к образованию ледяных пробок в воздуховодах.</p>
+
+<p>Понимание физики процесса помогает быстрее диагностировать неисправности, когда холодильник <em>Indesit</em> перестает морозить или начинает гудеть громче обычного. В штатном режиме работы компрессор нагнетает хладагент, который, проходя через капиллярную трубку и испаритель, забирает тепло из внутренней камеры. Воздух, охлажденный до заданных значений, подается в камеру, а теплый воздух засасывается обратно к испарителю для нового цикла, при этом влага из воздуха оседает на холодных трубках испарителя в виде инея.</p>
+
+<h2 id="конструкция-испарителя-и-схема-циркуляции-воздушных-потоков">Конструкция испарителя и схема циркуляции воздушных потоков</h2>
+<p>Основным теплообменным элементом в системе <strong>No Frost</strong> является испаритель, расположенный в нише за пластиковой панелью на задней стенке морозильного отделения. Он представляет собой змеевик из алюминиевых трубок с насаженными на них пластинами, которые увеличивают площадь теплообмена. Именно на этих пластинах оседает влага из продуктов и воздуха, превращаясь в тонкий слой инея в процессе работы компрессора.</p>
+
+<p>Для эффективного распределения холода используется мощный <strong>вентилятор</strong>, который устанавливается непосредственно перед испарителем или в специальном канале. При работе двигателя вентилятора создается разница давлений, заставляющая воздух циркулировать по замкнутому контуру: из камер холодильника через верхние и нижние воздуховоды воздух попадает к испарителю, охлаждается и возвращается обратно. Такая схема позволяет поддерживать одинаковую температуру на всех полках, независимо от их высоты.</p>
+
+<ul>
+<li>❄️ Испаритель скрыт за задней панелью и не контактирует напрямую с продуктами.</li>
+<li>💨 Вентилятор обеспечивает постоянный ток воздуха, предотвращая образование застойных зон.</li>
+<li>🌡️ Датчики контролируют температуру воздуха, а не самого испарителя, для более точной регулировки.</li>
+</ul>
+
+<p>Важно отметить, что между испарителем и внутренним объемом камеры существует система заслонок и каналов. В некоторых моделях <em>Indesit</em> с двумя компрессорами или системой Full No Frost такие каналы есть и в холодильном отделении, а в моделях с одним компрессором холодный воздух подается из морозилки в верхнюю камеру через специальное отверстие, регулируемое заслонкой <code> заслонка-термостат</code>.</p>
+
+<h2 id="алгоритм-циклической-разморозки-таймер-тэн-и-термопредохранитель">Алгоритм циклической разморозки: таймер, ТЭН и термопредохранитель</h2>
+<p>Ключевым отличием системы No Frost от капельной является наличие активного механизма удаления льда. В холодильниках <em>Indesit</em> этот процесс управляется таймером оттайки (в старых моделях) или электронным модулем управления (в новых). Устройство периодически прерывает цикл охлаждения и запускает цикл разморозки, обычно каждые 8-16 часов работы компрессора.</p>
+
+<p>В момент запуска разморозки компрессор и вентилятор отключаются, а на нагревательный элемент (<strong>ТЭН</strong>) подается напряжение. ТЭН, расположенный внизу испарителя или опоясывающий его нижнюю часть, начинает нагреваться и растапливать накопившийся иней. Образовавшаяся вода стекает по желобку в дренажное отверстие и далее в лоток, установленный над компрессором, где она испаряется под действием тепла от работающего мотора.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если ТЭН перегорит, лед перестанет таять и начнет нарастать, перекрывая каналы для воздуха. Холодильник будет гудеть, но не морозить.</p>
+</blockquote>
+
+<p>Контроль за температурой нагрева осуществляет <strong>термопредохранитель</strong> (термофузет). Это одноразовое устройство, которое разрывает цепь питания ТЭНа, если температура в нише испарителя превысит критическое значение (обычно около 70-80°C), предотвращая оплавление пластиковых деталей и пожар. После срабатывания термопредохранителя его необходимо заменять на новый, так как он не восстанавливается.</p>
+
+<h2 id="роль-датчиков-температуры-и-термостатов-в-автоматике-indesit">Роль датчиков температуры и термостатов в автоматике Indesit</h2>
+<p>За точность работы всей системы отвечают несколько датчиков, которые постоянно передают данные на модуль управления или механический регулятор. Основным элементом является датчик оттайки испарителя, который отслеживает степень прогрева радиатора во время цикла разморозки. Как только весь лед растает и температура поднимется до определенного уровня (обычно +5...+10°C), этот датчик дает команду на отключение ТЭНа.</p>
+
+<p>Вторым важным элементом является <strong>термостат</strong> или электронный датчик температуры воздуха в камере. Он определяет момент, когда нужно снова запустить компрессор для охлаждения. В механических моделях <em>Indesit</em> используется капиллярный термостат, чувствительная колба которого расположена в воздушном потоке. В современных моделях эту функцию выполняют NTC-термисторы, сопротивление которых меняется в зависимости от температуры.</p>
+
+<ul>
+<li>🔧 Датчик оттайки предотвращает работу ТЭНа "вхолостую" после таяния льда.</li>
+<li>🧊 Термостат регулирует длительность работы компрессора для поддержания заданного режима.</li>
+<li>🔌 Модуль управления анализирует показания всех сенсоров для оптимизации энергопотребления.</li>
+</ul>
+
+<details class="faq-item"><summary>Диагностика датчиков</summary><div class="faq-answer"><p>Как проверить датчик оттайки мультиметром</p></div></details>
+<p>Для проверки датчика оттайки необходимо снять с него клеммы и прозвонить мультиметром в режиме измерения сопротивления. При комнатной температуре он должен показывать определенное сопротивление (обычно несколько кОм), а при сильном охлаждении (если поместить его в морозилку) — сопротивление должно изменяться или цепь размыкаться/замыкаться в зависимости от типа. Если прибор показывает обрыв или ноль при комнатной температуре, датчик неисправен.</p>
+<details class="faq-item"><summary>END-->
+
+<h2 id="типичные-неисправности-системы-no-frost-и-их-симптомы">Типичные неисправности системы No Frost и их симптомы</h2>
+<p>Нарушение работы любого из элементов системы приводит к характерным симптомам, по которым можно выявить поломку. Самой распространенной проблемой является образование "шубы" или ледяного комка на испарителе, который блокирует работу вентилятора. В этом случае пользователь слышит посторонний шум, треск или гудение, а температура в камерах начинает расти, так как холодный воздух не может циркулировать.</p>
+
+<p>Часто выходит из строя сам <strong>вентилятор</strong>. Если его моторчик сгорает или крыльчатка заклинивает из-за обмерзания втулки, циркуляция воздуха прекращается полностью. В результате в морозильной камере может быть холодно только возле задней стенки, а в холодильном отделении температура поднимается до плюсовой. Также возможен обрыв проводки, идущей к вентилятору, который часто перемерзает или перетирается.</p>
+
+<blockquote>
+<p>⚠️ Внимание</summary><div class="faq-answer"><p> Длительная работа холодильника с забитыми льдом воздуховодами приводит к перегрузке и выходу из строя компрессора.</p>
+</blockquote>
+
+<p>Еще одной частой причиной неисправности является засорение дренажного отверстия. Если талая вода не успевает уходить, она замерзает в канале, образуя ледяную пробку. С каждым циклом этот ледяной массив растет, пока полностью не перекроет отток, и вода не начнет выливаться внутрь камеры или под холодильник.</p>
+
+
+<p>Сгорел ТЭН оттайки</p>
+<p>Неисправен таймер/модуль</p>
+<p>Заклинил вентилятор</p>
+<p>Засорился дренаж</p>
+
+
+<h2 id="диагностика-и-проверка-элементов-системы-охлаждения">Диагностика и проверка элементов системы охлаждения</h2>
+<p>Для точного определения причины сбоя в работе <em>Indesit</em> необходимо провести последовательную проверку всех узлов. Начинать диагностику следует с визуального осмотра испарителя. Для этого потребуется снять заднюю панель в морозильной камере, предварительно разморозив холодильник в течение суток, если он полностью забит льдом.</p>
+
+<p>Проверка электрической цепи ТЭНа и термопредохранителя выполняется с помощью мультиметра. Необходимо прозвонить каждый элемент на предмет обрыва. Сопротивление исправного ТЭНа обычно составляет от 200 до 400 Ом, в то время как термопредохранитель должен показывать "ноль" (замкнутую цепь) при комнатной температуре. Если ТЭН греется, но не отключается, проблема может быть в залипании контактов таймера.</p>
+
+<p>| Элемент системы | Признак неисправности | Метод проверки | Норма сопротивления |</p>
+<p>| :--- | :--- | :--- | :--- |</p>
+<p>| ТЭН оттайки | Лед не тает, наледь на испарителе | Прозвонка мультиметром | 200–400 Ом |</p>
+<p>| Термопредохранитель | ТЭН не включается или не выключается | Прозвонка на обрыв | 0 Ом (замкнут) |</p>
+<p>| Вентилятор | Шум, отсутствие холода в камерах | Проверка вращения и питания | Зависит от обмотки |</p>
+<p>| Таймер/Модуль | Нет перехода в режим оттайки | Замер времени циклов | По схеме |</p>
+
+
+<p>Отключить холодильник от сети на 24 часа</p>
+<p>Снять заднюю панель морозильной камеры</p>
+<p>Проверить чистоту дренажного отверстия</p>
+<p>Осмотреть лопасти вентилятора на предмет льда</p>
+
+
+<h2 id="правила-эксплуатации-и-профилактика-обмерзания">Правила эксплуатации и профилактика обмерзания</h2>
+<p>Чтобы система No Frost работала долго и без сбоев, важно соблюдать правила эксплуатации. Не следует загружать в камеры горячие продукты, так как резкий скачок влажности приведет к ускоренному образованию инея на испарителе и перегрузке системы оттайки. Также необходимо следить за плотностью закрытия дверей, поскольку постоянный приток теплого влажного воздуха из комнаты быстро выводит систему из строя.</p>
+
+<p>Регулярная, хотя бы раз в год, профилактическая разморозка поможет избежать многих проблем. Даже если система автоматическая, полное отключение техники на сутки позволяет прочистить дренажные каналы и проверить состояние уплотнителей. В моделях <em>Indesit</em> с механическим управлением также рекомендуется периодически проверять положение регулятора температуры, чтобы избежать работы компрессора в режиме нон-стоп.</p>
+
+<ul>
+<li>🚫 Не ставьте горячие кастрюли и блюда в камеру хранения.</li>
+<li>🧼 Следите за чистотой уплотнительных резинок на дверях.</li>
+<li>🔌 Обеспечьте зазор в 5-10 см для вентиляции конденсатора сзади.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Использование острых предметов для скалывания льда внутри камер категорически запрещено — это может повредить испаритель и привести к утечке фреона.</p>
+</blockquote>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Совет эксперта по уходу</p></div>
+<p>Если вы заметили, что холодильник начал работать дольше обычного или чаще включается, проверьте плотность прилегания двери. Часто проблема кроется в перекосе двери или загрязнении уплотнителя, а не в поломке электроники.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>END</p></div>
+
+<h2 id="вопросы-и-ответы-по-эксплуатации-no-frost">Вопросы и ответы по эксплуатации No Frost</h2>
+<details>
+<summary>Почему в холодильнике Indesit No Frost на стенках все равно появляется вода?</summary>
+<p>Появление конденсата или воды на стенках может свидетельствовать о засорении дренажного отверстия, неплотном закрытии двери или размещении в камере продуктов с открытой поверхностью, которые активно испаряют влагу. Также это может быть признаком неисправности датчика оттайки.</p>
+</details>
+
+<details>
+<summary>Как часто должна включаться оттайка в системе No Frost?</summary>
+<p>В зависимости от модели и настроек таймера, цикл оттайки в холодильниках <em>Indesit</em> запускается каждые 8, 12 или 16 часов работы компрессора. Длительность самой оттайки обычно составляет от 15 до 30 минут, в зависимости от количества накопившегося льда.</p>
+</details>
+
+<details>
+<summary>Можно ли эксплуатировать холодильник, если не работает вентилятор?</summary>
+<p>Эксплуатация возможна, но неэффективна. Без вентилятора холод не будет поступать в холодильное отделение (в однокомпрессорных моделях), а в морозилке образуются зоны с разной температурой. Компрессор будет работать на износ, пытаясь компенсировать отсутствие циркуляции.</p>
+</details>
+
+<details>
+<summary>Что делать, если после разморозки холодильник не включается?</summary>
+<p>Необходимо проверить, высох ли полностью дренажный поддон и внутренности ниши испарителя. Если влаги нет, следует прозвонить цепь питания компрессора: пусковое реле, термостат и проводку. Возможно, при разморозке вода попала на электрические контакты.</p>
+</details>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Главный вывод</p></div>
+<p>Система No Frost в холодильниках Indesit — это надежный механизм, требующий лишь периодического контроля за чистотой дренажа и исправностью уплотнителей. Своевременная диагностика ТЭНа и вентилятора позволяет избежать дорогостоящего ремонта компрессора.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>END</p></div></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#конструкция-испарителя-и-схема-циркуляции-воздушных-потоков">Конструкция испарителя и схема циркуляции воздушных потоков</a></li><li><a href="#алгоритм-циклической-разморозки-таймер-тэн-и-термопредохранитель">Алгоритм циклической разморозки: таймер, ТЭН и термопредохранитель</a></li><li><a href="#роль-датчиков-температуры-и-термостатов-в-автоматике-indesit">Роль датчиков температуры и термостатов в автоматике Indesit</a></li><li><a href="#типичные-неисправности-системы-no-frost-и-их-симптомы">Типичные неисправности системы No Frost и их симптомы</a></li><li><a href="#диагностика-и-проверка-элементов-системы-охлаждения">Диагностика и проверка элементов системы охлаждения</a></li><li><a href="#правила-эксплуатации-и-профилактика-обмерзания">Правила эксплуатации и профилактика обмерзания</a></li><li><a href="#вопросы-и-ответы-по-эксплуатации-no-frost">Вопросы и ответы по эксплуатации No Frost</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-ustanovit-temperaturu-kholodilnika-indezit.html" class="related-card">Как установить температуру в холодильнике Индезит: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-bystro-razmorozit-morozilnuyu-kameru-v-kholodilnike-indezit.html" class="related-card">Как быстро разморозить морозильную камеру Indesit: инструкция</a></li><li><a href="/articles/k/ka/kak-proverit-termorele-kholodilnika-indezit.html" class="related-card">Как проверить термореле холодильника Indesit: полная инструкция</a></li><li><a href="/articles/k/ka/kak-pomenyat-lampochku-v-kholodilnike-indezit-nou-frost.html" class="related-card">Замена лампочки в холодильнике Indesit No Frost: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-zamenit-uplotnitel-na-kholodilnike-indezit-video-na-russkom.html" class="related-card">Замена уплотнителя на холодильнике Индезит: видео и фото инструкция</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-ustanovit-temperaturu-kholodilnika-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как установить температуру в холодильнике Индезит: пошаговая инструкция</span><span class="related-bottom-desc">Подробное руководство по настройке температурного режима холодильников Indesit. Разбор механических </span></a><a href="/articles/k/ka/kak-bystro-razmorozit-morozilnuyu-kameru-v-kholodilnike-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как быстро разморозить морозильную камеру Indesit: инструкция</span><span class="related-bottom-desc">Полное руководство по разморозке холодильника Indesit. Эффективные методы ускорить процесс без вреда</span></a><a href="/articles/k/ka/kak-proverit-termorele-kholodilnika-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить термореле холодильника Indesit: полная инструкция</span><span class="related-bottom-desc">Подробное руководство по диагностике термореле в холодильниках Indesit. Проверка мультиметром, симпт</span></a><a href="/articles/k/ka/kak-pomenyat-lampochku-v-kholodilnike-indezit-nou-frost.html" class="related-bottom-card"><span class="related-bottom-title">Замена лампочки в холодильнике Indesit No Frost: пошаговая инструкция</span><span class="related-bottom-desc">Узнайте, как поменять лампочку в холодильнике Индезит Ноу Фрост. Подробный разбор моделей, выбор LED</span></a><a href="/articles/k/ka/kak-zamenit-uplotnitel-na-kholodilnike-indezit-video-na-russkom.html" class="related-bottom-card"><span class="related-bottom-title">Замена уплотнителя на холодильнике Индезит: видео и фото инструкция</span><span class="related-bottom-desc">Подробная инструкция, как заменить уплотнитель на холодильнике Indesit своими руками. Видео-гайд, вы</span></a><a href="/articles/k/ka/kak-vklyuchit-morozilnik-indezit-nou-frost.html" class="related-bottom-card"><span class="related-bottom-title">Как включить морозильник Indesit No Frost: инструкция</span><span class="related-bottom-desc">Правильное включение морозильной камеры Indesit No Frost после разморозки или покупки. Настройка тер</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

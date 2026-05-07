@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Как проверить двигатель стиральной машины Indesit: диагностика — Индезит Хоум</title>
+    <meta name="description" content="Подробная инструкция, как проверить двигатель на стиральной машине Индезит. Тест мультиметром, поиск неисправностей щеток и таходатчика своими руками.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/k/ka/kak-proverit-dvigatel-na-stiralnoj-mashine-indezit.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить двигатель стиральной машины Indesit: диагностика">
+    <meta property="og:description" content="Подробная инструкция, как проверить двигатель на стиральной машине Индезит. Тест мультиметром, поиск неисправностей щеток и таходатчика своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/elektrika-i-datchiki/">Электрика и датчики</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как проверить двигатель стиральной машины Indesit: диагностика</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как проверить двигатель стиральной машины Indesit: пошаговая диагностика</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#первичная-визуальная-диагностика-и-подготовка">Первичная визуальная диагностика и подготовка</a></li><li><a href="#демонтаж-двигателя-для-детального-осмотра">Демонтаж двигателя для детального осмотра</a></li><li><a href="#проверка-щеточного-узла-на-износ">Проверка щеточного узла на износ</a></li><li><a href="#диагностика-обмоток-статора-и-ротора-мультиметром">Диагностика обмоток статора и ротора мультиметром</a></li><li><a href="#тестирование-таходатчика-датчика-холла">Тестирование таходатчика (датчика Холла)</a></li><li><a href="#анализ-состояния-коллектора-и-подшипников">Анализ состояния коллектора и подшипников</a></li><li><a href="#частые-ошибки-при-проверке-и-их-устранение">Частые ошибки при проверке и их устранение</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+
+<p>Неожиданный отказ стиральной машины <em>Indesit</em> в разгар стирки часто вызывает панику, но опытные мастера знают, что во многих случаях проблема кроется в электродвигателе. <strong>Диагностика мотора</strong> позволяет точно определить, нуждается ли узел в замене или достаточно простой профилактики. Владельцы техники этой марки часто сталкиваются с износом графитовых элементов или выходом из строя электронных компонентов управления.</p>
+
+<p>Своевременное выявление неисправности помогает избежать более серьезных поломок, таких как сгорание модуля управления или заклинивание барабана. <strong>Проверка двигателя</strong> требует соблюдения техники безопасности и наличия минимального набора инструментов. В этой статье мы детально разберем алгоритм действий, который поможет вам самостоятельно оценить состояние электромотора.</p>
+
+<p>Не стоит игнорировать первые признаки нестабильной работы, такие как посторонний шум или отсутствие вращения барабана при включенном насосе. <em>Коллекторный двигатель</em>, устанавливаемый в большинстве моделей <em>Indesit</em>, имеет определенную конструкцию, позволяющую провести ревизию основных узлов без сложного оборудования. Грамотный подход к диагностике сэкономит бюджет и время на ожидание мастера.</p>
+
+<h2 id="первичная-визуальная-диагностика-и-подготовка">Первичная визуальная диагностика и подготовка</h2>
+
+<p>Прежде чем приступать к разборке и использованию измерительных приборов, необходимо провести внешний осмотр. Часто признаки неисправности видны невооруженным глазом или слышны при работе агрегата. <strong>Визуальная проверка</strong> помогает локализовать проблему еще до демонтажа тяжелых узлов.</p>
+
+<p>Обратите внимание на характер шума: если слышен свист или скрежет, это может указывать на износ подшипников или трение ротора о статор. Также важным индикатором является запах гари, который свидетельствует о перегреве обмоток или коротком замыкании. <em>Стиральная машина Indesit</em> при таких симптомах должна быть немедленно отключена от сети.</p>
+
+<ul>
+<li>🔍 Осмотрите заднюю стенку корпуса на наличие оплавлений или почернений в районе мотора.</li>
+<li>👂 Прислушайтесь к звукам при попытке запуска: гудение без вращения говорит о заклинивании.</li>
+<li>👃 Резкий запах паленой пластмассы или изоляции — верный признак электрической неисправности.</li>
+</ul>
+
+<p>Помните, что любые работы внутри корпуса можно проводить только после полного отключения устройства от электросети. <strong>Безопасность</strong> является приоритетом, так как конденсаторы могут сохранять остаточный заряд.</p>
+
+<blockquote>⚠️ Внимание: Никогда не начинайте разборку, если машина только что работала. Дайте двигателю и нагревательному элементу полностью остыть, чтобы избежать ожогов.</blockquote>
+
+<h2 id="демонтаж-двигателя-для-детального-осмотра">Демонтаж двигателя для детального осмотра</h2>
+
+<p>Для качественной проверки мотор часто требуется извлечь из корпуса машинки. В моделях <em>Indesit</em> этот процесс обычно не занимает много времени, но требует аккуратности. <strong>Доступ к двигателю</strong> осуществляется через заднюю панель агрегата.</p>
+
+<p>Сначала снимите верхнюю крышку, открутив два винта сзади, затем переверните машину или наклоните ее, чтобы получить доступ к низу. Отсоедините ремень привода и открутите крепления мотора. Важно не повредить прилегающие шланги и проводку при извлечении узла.</p>
+
+<div class="checklist-block"><h4>☑️ Подготовка к снятию мотора</h4><label class="check-item"><input type="checkbox"><span>Отключить машину от сети</span></label><label class="check-item"><input type="checkbox"><span>Снять верхнюю крышку</span></label><label class="check-item"><input type="checkbox"><span>Ослабить натяжение ремня</span></label><label class="check-item"><input type="checkbox"><span>Отсоединить фишки проводов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>После извлечения осмотрите состояние коллектора. Если на медных ламелях виден черный нагар или искривление пластин, это потребует дополнительной чистки или замены узла. <strong>Ротор</strong> должен вращаться свободно, без рывков и заеданий.</p>
+
+<ul>
+<li>🔧 Отсоедините разъемы проводов, запомнив их расположение.</li>
+<li>🛠️ Используйте ключ или отвертку для снятия болтов крепления двигателя к баку.</li>
+<li>🧹 Очистите пространство вокруг мотора от пыли и ворса перед установкой обратно.</li>
+</ul>
+
+<p>Если двигатель оснащен отдельным конденсатором (в старых моделях), проверьте его на вздутие. В современных <em>Indesit</em> с прямым управлением конденсатор часто встроен в модуль или отсутствует.</p>
+
+<h2 id="проверка-щеточного-узла-на-износ">Проверка щеточного узла на износ</h2>
+
+<p>Наиболее частой причиной остановки мотора в стиральных машинах <em>Indesit</em> является критический износ щеток. Эти графитовые элементы передают ток на коллектор и со временем стираются. <strong>Длина щетки</strong> является ключевым параметром для оценки их состояния.</p>
+
+<p>Для проверки снимите щеткодержатели, которые обычно крепятся по бокам двигателя. Извлеките графитовые бруски и измерьте их длину. Если рабочий торец имеет длину менее 1.5 см, необходима срочная замена. <em>Новые щетки</em> должны плотно прилегать к коллектору.</p>
+
+<table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Норма</th>
+<th>Критическое состояние</th>
+<th>Действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Длина щетки</td>
+<td>1.5 - 2.0 см</td>
+<td>Менее 1.0 см</td>
+<td>Замена</td>
+</tr>
+<tr>
+<td>Пружина</td>
+<td>Упругая</td>
+<td>Растянута/Сломана</td>
+<td>Замена пружины</td>
+</tr>
+<tr>
+<td>Контакт</td>
+<td>Плотный</td>
+<td>Зазор/Люфт</td>
+<td>Регулировка</td>
+</tr>
+<tr>
+<td>Поверхность</td>
+<td>Ровная</td>
+<td>Выкрошена</td>
+<td>Замена узла</td>
+</tr>
+</tbody>
+</table>
+
+<p>При установке новых щеток рекомендуется притереть их к коллектору, запустив мотор на низких оборотах вхолостую. <strong>Искрение</strong> при работе не должно быть чрезмерным; легкое голубоватое свечение допустимо.</p>
+
+<blockquote>⚠️ Внимание: При замене щеток обязательно очистите коллектор от графитовой пыли, иначе новый комплект сгорит за несколько циклов.</blockquote>
+
+<div class="poll-widget" id="poll-19eb2ac8"><div class="poll-widget-question">📊 Какой износ щеток вы обнаружили?</div><div class="poll-widget-option" data-poll="19eb2ac8" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Менее 1 см (критический)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="19eb2ac8" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">1-1.5 см (средний)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="19eb2ac8" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Более 1.5 см (норма)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="19eb2ac8" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Щетки отсутствуют/сломаны</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2 id="диагностика-обмоток-статора-и-ротора-мультиметром">Диагностика обмоток статора и ротора мультиметром</h2>
+
+<p>Если механическая часть исправна, переходим к электрической проверке. <strong>Мультиметр</strong> — главный инструмент в этой процедуре. Переключите прибор в режим измерения сопротивления (Ом) на предел 2000 Ом или 2 кОм.</p>
+
+<p>Для проверки обмоток статора приложите щупы к концам проводов, идущих от катушек. Сопротивление должно быть в пределах 2-15 Ом, в зависимости от конкретной модели <em>Indesit</em>. Если прибор показывает единицу (бесконечность), значит, в цепи обрыв. <strong>Нулевое сопротивление</strong> указывает на короткое замыкание.</p>
+
+<p>Ротор (якорь) проверяется прозвонкой ламелей коллектора. Сопротивление между соседними ламелями должно быть одинаковым. Разброс значений говорит о межвитковом замыкании, что приводит к потере мощности и перегреву.</p>
+
+<ul>
+<li>⚡ Проверьте сопротивление между ламелями коллектора и валом ротора (должно быть бесконечность).</li>
+<li>📉 Запишите показания для каждой пары ламелей для сравнения.</li>
+<li>🔌 Убедитесь, что нет контакта обмоток с металлическим корпусом двигателя.</li>
+</ul>
+
+<p>Важно учитывать, что нагрев может влиять на показания, поэтому"холодная" прозвонка дает более точные результаты. Если обнаружено межвитковое замыкание, перемотка обычно экономически нецелесообразна, проще <strong>заменить двигатель</strong>.</p>
+
+<details class="faq-item"><summary>Что такое межвитковое замыкание?</summary><div class="faq-answer"><p>Это нарушение изоляции между витками обмотки,ющее снижению сопротивления и резкому росту тока. Двигатель гудит, греется и теряет мощность, часто выбивая автомат в щитке.</p></div></details>
+
+<h2 id="тестирование-таходатчика-датчика-холла">Тестирование таходатчика (датчика Холла)</h2>
+
+<p>Таходатчик отвечает за контроль скорости вращения вала и передачу данных на модуль управления. В машинах <em>Indesit</em> он часто выходит из строя или теряет контакт. <strong>Неисправность датчика</strong> приводит к тому, что машина не может набрать обороты для отжима.</p>
+
+<p>Датчик расположен на торце двигателя. Снимите его и проверьте сопротивление катушки, если это индукционный тип, или наличие напряжения, если это датчик Холла. Обычно сопротивление составляет около 60-150 Ом. <em>Отклонение от нормы</em> говорит о дефекте элемента.</p>
+
+<p>Также проверьте целостность проводов, идущих от датчика к разъему. Они часто перетираются или окисляются. Надежный контакт — залог правильной работы системы управления скоростью.</p>
+
+<blockquote>⚠️ Внимание: При установке таходатчика убедитесь, что магнитное кольцо на валу двигателя не смещено и не имеет трещин.</blockquote>
+
+<h2 id="анализ-состояния-коллектора-и-подшипников">Анализ состояния коллектора и подшипников</h2>
+
+<p>Коллектор должен иметь чистый медный цвет без черных полос и нагара. Если ламели почернели, аккуратно зачистите их ластиком или мягкой ветошью, смоченной в спирте. <strong>Глубокие борозды</strong> между ламелями требуют проточки на токарном станке или замены ротора.</p>
+
+<p>Подшипники проверяются на слух и тактильно. Вращение вала должно быть бесшумным. Люфт вала в разные стороны указывает на износ подшипников, что в скором времени приведет к разрушению сальника и течи воды на двигатель.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Для смазки подшипников используйте только термостойкие смазки, предназначенные для высоких скоростей вращения, обычное масло быстро высохнет.</p></div>
+
+<p>Если при вращении рукой чувствуется"перекат" шариков или слышен хруст, подшипниковый узел требует замены. В двигателях <em>Indes</em>it часто используются подшипники размера 6202 или 6203.</p>
+
+<h2 id="частые-ошибки-при-проверке-и-их-устранение">Частые ошибки при проверке и их устранение</h2>
+
+<p>При самостоятельной диагностике новички часто допускают ошибки, которые приводят к ложным выводам. Например, отсутствие вращения при прозвонке в статике не всегда означает поломку. <strong>Модуль управления</strong> может блокировать запуск при неисправности других датчиков.</p>
+
+<p>Частой ошибкой является игнирование состояния контактов в разъемах. Окисление клемм может создавать высокое переходное сопротивление, имитирующее обрыв обмотки. Всегда зачищайте контакты перед финальной сборкой.</p>
+
+<ul>
+<li>🚫 Не проверяйте сопротивление под напряжением — это сожжет мультиметр.</li>
+<li>🚫 Не игнорируйте состояние ремня, который может быть растянут или соскальзывать.</li>
+<li>🚫 Не забудьте проверить целостность проводов, идущих к мотору от платы.</li>
+</ul>
+
+<p>Если все проверки пройдены успешно, но мотор не работает, проблема может крыться в симисторе управления на плате или в программном сбое. <em>Двигатель Indesit</em> надежен, и если электрическая часть цела, стоит обратить внимание на электронику.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Если электрические параметры двигателя в норме, но он не крутится, проблема в 80% случаев кроется в модуле управления или таходатчике.</p></div>
+
+<details>
+<summary>Можно ли проверить двигатель без мультиметра?</summary>
+<p>Без мультиметра полноценно проверить обмотки на короткое замыкание или обрыв невозможно. Однако можно визуально оценить состояние щеток, коллектора и подшипников. Подключение напрямую к сети 220В возможно только для опытных пользователей с соблюдением мер безопасности, но это не даст точных данных о состоянии обмоток.</p>
+</details>
+
+<details>
+<summary>Почему двигатель гудит, но не вращается?</summary>
+<p>Гудение указывает на то, что ток на обмотки поступает, но вращения нет. Причины: заклинивший подшипник, межвитковое замыкание, неисправность пускового конденсатора (в старых моделях) или проблема с модулем управления, который не дает команду на старт.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять щетки в Indesit?</summary>
+<p>Ресурс щеток составляет в среднем 5-7 лет активной эксплуатации. Частота стирок и вес загружаемого белья напрямую влияют на скорость их износа. Рекомендуется проверять их состояние каждые 3 года.</p>
+</details>
+
+<details>
+<summary>Можно ли отремонтировать сгоревший двигатель?</summary>
+<p>Если сгорела изоляция обмоток (видно почернение и чувствуется запах гари), перемотка в домашних условиях невозможна. Заводская перемотка стоит дорого, поэтому в таких случаях рациональнее купить новый или восстановленный двигатель.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#первичная-визуальная-диагностика-и-подготовка">Первичная визуальная диагностика и подготовка</a></li><li><a href="#демонтаж-двигателя-для-детального-осмотра">Демонтаж двигателя для детального осмотра</a></li><li><a href="#проверка-щеточного-узла-на-износ">Проверка щеточного узла на износ</a></li><li><a href="#диагностика-обмоток-статора-и-ротора-мультиметром">Диагностика обмоток статора и ротора мультиметром</a></li><li><a href="#тестирование-таходатчика-датчика-холла">Тестирование таходатчика (датчика Холла)</a></li><li><a href="#анализ-состояния-коллектора-и-подшипников">Анализ состояния коллектора и подшипников</a></li><li><a href="#частые-ошибки-при-проверке-и-их-устранение">Частые ошибки при проверке и их устранение</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-snyat-pressostat-v-stiralnoj-mashine-indezit.html" class="related-card">Как снять прессостат в стиральной машине Индезит: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-proverit-motor-stiralnoj-mashiny-indezit-ne-snimaya.html" class="related-card">Как проверить мотор стиральной машины Indesit без снятия: диагностика</a></li><li><a href="/articles/k/ka/kak-proshivayut-stiralnye-mashiny-indezit.html" class="related-card">Как прошивают стиральные машины Indesit: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-posmotret-ten-v-stiralnoj-mashine-indezit.html" class="related-card">Как проверить ТЭН в стиральной машине Indesit: инструкция</a></li><li><a href="/articles/c/ch/chto-takoe-takhogenerator-v-stiralnoj-mashine-indezit.html" class="related-card">Тахогенератор в стиральной машине Indesit: устройство, проверка, замена</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-snyat-pressostat-v-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как снять прессостат в стиральной машине Индезит: пошаговая инструкция</span><span class="related-bottom-desc">Полное руководство по замене датчика уровня воды Indesit. Снятие, проверка, коды ошибок, таблица кон</span></a><a href="/articles/k/ka/kak-proverit-motor-stiralnoj-mashiny-indezit-ne-snimaya.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить мотор стиральной машины Indesit без снятия: диагностика</span><span class="related-bottom-desc">Проверка двигателя стиральной машины Indesit без снятия. Тест щеток, обмоток и таходатчика мультимет</span></a><a href="/articles/k/ka/kak-proshivayut-stiralnye-mashiny-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как прошивают стиральные машины Indesit: пошаговая инструкция</span><span class="related-bottom-desc">Узнайте, как прошивают стиральные машины Indesit через программатор. Диагностика, выбор прошивки и у</span></a><a href="/articles/k/ka/kak-posmotret-ten-v-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить ТЭН в стиральной машине Indesit: инструкция</span><span class="related-bottom-desc">Подробная инструкция: как посмотреть ТЭН в стиральной машине Индезит. Проверка мультиметром, разборк</span></a><a href="/articles/c/ch/chto-takoe-takhogenerator-v-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Тахогенератор в стиральной машине Indesit: устройство, проверка, замена</span><span class="related-bottom-desc">Подробный разбор: что такое тахогенератор в стиральной машине Индезит. Причины поломок, коды ошибок </span></a><a href="/articles/k/ka/kak-regulirovat-pressostat-stiralnoj-mashiny-indesit.html" class="related-bottom-card"><span class="related-bottom-title">Как регулировать прессостат стиральной машины Indesit: пошаговая инструкция</span><span class="related-bottom-desc">Подробное руководство по настройке и регулировке датчика уровня воды в стиральных машинах Indesit. Д</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

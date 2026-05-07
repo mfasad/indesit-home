@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Диагностика стиральной машины Indesit дома: коды ошибок и проверки — Индезит Хоум</title>
+    <meta name="description" content="Как провести диагностику стиральной машины Indesit своими руками. Расшифровка кодов ошибок, проверка ТЭНа, слива и блокировки люка без мастера.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/k/ka/kak-provesti-diagnostiku-stiralnoj-mashiny-indezit-doma.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Диагностика стиральной машины Indesit дома: коды ошибок и проверки">
+    <meta property="og:description" content="Как провести диагностику стиральной машины Indesit своими руками. Расшифровка кодов ошибок, проверка ТЭНа, слива и блокировки люка без мастера.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/stiralnye-mashiny/">Стиральные машины</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Диагностика стиральной машины Indesit дома: коды ошибок и проверки</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Диагностика стиральной машины Indesit: пошаговая инструкция</h1>
+                    
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Неисправность стиральной машины <em>Indesit</em> часто проявляется резкой остановкой цикла стирки, миганием индикаторов или появлением буквенно-цифрового кода на дисплее. Самостоятельная диагностика начинается с анализа поведения агрегата: если барабан не вращается, а вода не набирается, проблема может крыться в отсутствии подачи электричества или закрытом кране, тогда как гудение насоса при отсутствии слива указывает на засор фильтра. Грамотный подход к поиску дефекта позволяет отсеять ложные тревоги, связанные с скачками напряжения в сети или ошибками пользователя, и сосредоточиться на реальном техническом состоянии узлов.</p>
+
+<p>Первичный визуальный осмотр и проверка базовых параметров часто помогают выявить очевидные причины сбоя, не требующие разборки корпуса. <strong>Диагностика стиральной машины</strong> в домашних условиях должна проводиться строго с соблюдением правил электробезопасности, так как работа с электроприборами под напряжением опасна для жизни. Понимание логики работы электроники <em>Indesit</em> дает возможность правильно интерпретировать сигналы панели управления и избежать ненужных трат на вызов специалиста для устранения простых неполадок.</p>
+
+<h2>Анализ индикации и кодов ошибок на дисплее</
+<p>Современные модели <em>Indesit</em> оснащены системой самодиагностики, которая выводит информацию о неисправностях в виде мигающих индикаторов или символов на экране. Если ваша модель не имеет цифрового дисплея, обратите внимание на ритм мигания лампочек «Стирка», «Полоскание» и «Отжим», так как каждая комбинация соответствует определенному узлу. <strong>Коды ошибок</strong> позволяют мгновенно сузить круг поиска: например, символ «F05» прямо указывает на проблемы со сливным насосом, а «F08» сигнализирует о залипании реле уровня воды.</p>
+
+<p>Для точной расшифровки необходимо свериться с инструкцией, так как одинаковое мигание на разных сериях может означать разные поломки. Электронный модуль фиксирует отклонения в работе датчиков и исполнительных механизмов, блокируя дальнейшую работу во избежание серьезных повреждений. <mark>Запомните последовательность мигания перед сбросом питания</mark>, чтобы иметь возможность точно определить код ошибки даже после перезагрузки устройства.</p>
+
+<ul>
+<li>🔍 F01 — Короткое замыкание в цепи управления двигателем, требуется проверка мотора и проводки.</li>
+<li>🌊 F05 — Неисправность сливного насоса или засор в системе откачки воды.</li>
+<li>🔥 F07 — Проблема с нагревательным элементом (ТЭН) или датчиком температуры.</li>
+<li>🔒 F10 — Неисправность системы блокировки люка (УБЛ) или обрыв цепи.</li>
+</ul>
+
+<h2>Первичная проверка подключения и подачи ресурсов</
+<p>Прежде чем приступать к сложным манипуляциям, необходимо убедиться в исправности внешних коммуникаций, обеспечивающих работу техники. Часто причиной «поломки» становится банальное отсутствие воды в магистрали или слабый напор, который не позволяет клапану открыться полностью. Проверьте, открыт ли запорный кран на подающей трубе, и убедитесь, что шланг подачи воды не перекручен и не передавлен корпусом машины.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Перед любым осмотром внутренних узлов обязательно отключите стиральную машину от электрической сети, вынув вилку из розетки.</p>
+</blockquote>
+
+<p>Давление воды в водопроводе является критическим параметром для корректной работы <strong>впускного клапана</strong>. Если напор слишком слабый, машина может долго набирать воду или вовсе не начинать стирку, выдавая ошибку перелива или недолива. Также стоит проверить состояние сетчатого фильтра, расположенного в месте подключения шланга к корпусу машины: известковые отложения и ржавчина могут полностью перекрыть ток воды.</p>
+
+<div class="poll-widget" id="poll-7d5b2534"><div class="poll-widget-question">📊 С какой проблемой вы столкнулись чаще всего?</div><div class="poll-widget-option" data-poll="7d5b2534" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Машина не сливает воду</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="7d5b2534" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Не греет воду</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="7d5b2534" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Не включается</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="7d5b2534" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Сильно вибрирует</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2>Диагностика системы слива и дренажного насоса</
+<p>Если стирка завершается с остатком воды в баке или машина останавливается перед отжимом, проблема кроется в системе водоотведения. Первым шагом всегда должна быть ревизия сливного фильтра, который находится в нижней части корпуса за декоративной панелью. Откройте лючок, подставьте плоскую емкость для остатков воды и выкрутите пробку против часовой стрелки, удалив все посторонние предметы: монеты, пуговицы, ворс и нитки.</p>
+
+<p>После очистки фильтра запустите режим «Слив» или «Отжим» и прислушайтесь к работе насоса. Характерный гул или гудение при отсутствии движения воды свидетельствуют о том, что крыльчатка помпы заблокирована или вышел из строя двигатель насоса. Отсутствие любых звуков при включении режима слива указывает на электрическую неисправность: обрыв проводки, сгоревшую обмотку мотора или неисправность модуля управления.</p>
+
+<div class="checklist-block"><h4>☑️ Чек-лист проверки слива</h4><label class="check-item"><input type="checkbox"><span>Открыть нижний люк и слить воду</span></label><label class="check-item"><input type="checkbox"><span>Очистить фильтр от мусора</span></label><label class="check-item"><input type="checkbox"><span>Проверить гофру насоса на засоры</span></label><label class="check-item"><input type="checkbox"><span>Включить режим слива и слушать насос</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2>Проверка нагревательного элемента и датчиков температуры</
+<p>Отсутствие нагрева воды — распространенная жалоба владельцев техники <em>Indesit</em>, которая легко диагностируется мультиметром. Для доступа к <strong>ТЭНу</strong> (нагревательному элементу) в большинстве моделей необходимо снять заднюю крышку корпуса, где он расположен по центру бака. Перед проведением замеров обязательно отсоедините клеммы питания от контактов нагревателя, чтобы избежать повреждения тестера.</p>
+
+<p>Переключите мультиметр в режим измерения сопротивления (Ом) и приложите щупы к контактам ТЭНа. Исправный элемент покажет значение в диапазоне от 20 до 60 Ом, в зависимости от мощности конкретной модели. Показатель, стремящийся к единице (бесконечность), говорит о внутреннем обрыве нихромовой спирали, а значение близкое к нулю — о коротком замыкании.</p>
+
+<table>
+<thead>
+<tr>
+<th>Параметр проверки</th>
+<th>Нормальное значение</th>
+<th>Признак неисправности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Сопротивление ТЭНа</td>
+<td>20–60 Ом</td>
+<td>Обрыв (∞) или КЗ (0)</td>
+</tr>
+<tr>
+<td>Пробой на корпус</td>
+<td>Нет (∞)</td>
+<td>Есть сопротивление (опасно!)</td>
+</tr>
+<tr>
+<td>Датчик температуры</td>
+<td>5–7 кОм (при 20°C)</td>
+<td>Значительное отклонение</td>
+</tr>
+</tbody>
+</table>
+
+<details class="faq-item"><summary>Как проверить ТЭН без мультиметра</summary><div class="faq-answer"><p>Если под рукой нет тестера, можно использовать контрольную лампу (лампочка с двумя проводами). Один провод подключается к контакту ТЭНа, второй — к фазе 220В (через предохранитель). Лампочка загорится, если спираль цела. Будьте крайне осторожны с высоким напряжением!</p></div></details>
+
+<h2>Тестирование двигателя и щеточного узла</
+<p>Двигатель в стиральных машинах <em>Indesit</em> чаще всего коллекторный, и его ресурс напрямую зависит от состояния графитовых щеток. Если барабан вращается рывками, слышен треск, искрение или машина вообще перестала крутить белье, необходимо inspectровать щеточно-коллекторный узел. Для этого двигатель придется извлечь из корпуса, отсоединив ремень привода и клеммные колодки.</p>
+
+<p>Длина графитовой части щетки не должна быть менее 1,5 см; если она стерлась до основания или пружина потеряла упругость, контакт с коллектором нарушается. Также осмотрите сам коллектор (медные пластины на роторе): он должен быть чистым, без черного нагара и глубоких борозд. При необходимости зачистите поверхность мелкой наждачной бумагой, но не используйте наждачку с крупным зерном, чтобы не повредить изоляцию между ламелями.</p>
+
+<ul>
+<li>🔧 Снимите ремень привода и проверьте его на растяжение и трещины.</li>
+<li>⚡ Прозвоните обмотки статора и ротора на предмет обрыва или межвиткового замыкания.</li>
+<li>🌪 Убедитесь, что тахогенератор (датчик оборотов) надежно закреплен на двигателе.</li>
+</ul>
+
+<h2>Диагностика системы блокировки люка (УБЛ)</
+<p>Блокировка дверцы — обязательное условие для начала стирки, и если замок не щелкает или машина не реагирует на закрытие люка, цикл не запустится. Устройство блокировки люка (УБЛ) представляет собой электромеханический узел, который при подаче напряжения сдвигает фиксатор и замыкает цепь питания машины. Характерный щелчок через 2-5 секунд после включения — признак исправной механики замка.</p>
+
+<p>Для проверки УБЛ можно подать напряжение 220В напрямую на контакты, соответствующие управлению замком (обычно это крайние контакты, но лучше смотреть схему конкретной модели). Если язычок не втягивается и не слышно характерного гудения или щелчка, устройство подлежит замене. Механическая поломка крючка на самой дверце также может имитировать неисправность электроники, поэтому осмотрите пластиковый элемент на предмет сколов.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не пытайтесь силой открыть люк во время работы программы или сразу после остановки, если горит индикатор блокировки. Это может привести к поломке механизма замка.</p>
+</blockquote>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Совет: Если замок заклинило и дверь не открывается, аккуратно потяните за язычок блокировки вверх или вниз (в зависимости от модели) одновременно с легким нажатием на дверцу, чтобы разблокировать механизм вручную.</p></div>
+
+<h2>Частые вопросы по диагностике Indesit</
+<details>
+<summary>Почему стиральная машина Indesit гудит, но не набирает воду?</summary>
+<p>Гудение при отсутствии набора воды чаще всего свидетельствует о неисправности впускного клапана. Электромагнитная катушка клапана получает напряжение и гудит, но механическая часть заклинила из-за ржавчины или мусора, либо забит фильтрующий элемент. Также причиной может быть недостаточное давление в водопроводе.</p>
+</details>
+
+<details>
+<summary>Что означает мигание всех индикаторов одновременно?</summary>
+<p>Одновременное мигание всех лампочек на панели управления обычно указывает на серьезную ошибку электроники или проблему с модулем управления. Это может быть связано с скачком напряжения, попаданием влаги на плату или выходом из строя одного из ключевых датчиков, который модуль не может корректно обработать.</p>
+</details>
+
+<details>
+<summary>Как сбросить ошибку на стиральной машине Indesit?</summary>
+<p>Для сброса ошибки попробуйте выключить машину кнопкой питания, а затем полностью обесточить ее, вынув вилку из розетки на 15–20 минут. После включения запустите программу «Слив» или «Отжим». Если ошибка повторяется, значит, неисправность носит физический характер и требует ремонта.</p>
+</details>
+
+<details>
+<summary>Можно ли стирать, если горит ошибка?</summary>
+<p>Эксплуатировать технику с горящей ошибкой категорически не рекомендуется. Электроника блокирует дальнейшие операции не просто так — это защитная реакция. Продолжение работы может привести к затоплению соседей, сгоранию ТЭНа или выходу из строя дорогостоящего модуля управления.</p>
+</details>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Главный вывод: 80% поломок стиральных машин Indesit можно диагностировать самостоятельно, обратив внимание на коды ошибок и выполнив базовые проверки мультиметром и визуальным осмотром.</p></div></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/i/in/indezit-w84tx-kak-vklyuchit.html" class="related-card">Indesit W84TX: как включить стиральную машину после отключения</a></li><li><a href="/articles/k/ka/kak-rabotaet-stiralnaya-mashina-indesit-wiun-82.html" class="related-card">Как работает стиральная машина Indesit WIUN 82: устройство и ремонт</a></li><li><a href="/articles/s/sk/skolko-vesit-stiralnaya-mashina-indezit-na-3-kg.html" class="related-card">Сколько весит стиральная машина Indesit на 3 кг: таблица моделей</a></li><li><a href="/articles/k/ka/kak-zamenit-manzhetu-na-stiralnoj-mashine-indezit-video-na-russkom.html" class="related-card">Замена манжеты на стиральной машине Indesit: видео и инструкция</a></li><li><a href="/articles/k/ka/kak-vklyuchit-mashinku-indezit-starogo-obraztsa.html" class="related-card">Как включить стиральную машину Indesit старого образца</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/i/in/indezit-w84tx-kak-vklyuchit.html" class="related-bottom-card"><span class="related-bottom-title">Indesit W84TX: как включить стиральную машину после отключения</span><span class="related-bottom-desc">Подробная инструкция, как включить стиральную машину Indesit W84TX. Разбор блокировки, ошибок, режим</span></a><a href="/articles/k/ka/kak-rabotaet-stiralnaya-mashina-indesit-wiun-82.html" class="related-bottom-card"><span class="related-bottom-title">Как работает стиральная машина Indesit WIUN 82: устройство и ремонт</span><span class="related-bottom-desc">Подробный разбор принципа работы стиральной машины Indesit WIUN 82. Устройство узлов, коды ошибок, д</span></a><a href="/articles/s/sk/skolko-vesit-stiralnaya-mashina-indezit-na-3-kg.html" class="related-bottom-card"><span class="related-bottom-title">Сколько весит стиральная машина Indesit на 3 кг: таблица моделей</span><span class="related-bottom-desc">Узнайте точный вес стиральной машины Индезит на 3 кг загрузки. Характеристики моделей, таблица габар</span></a><a href="/articles/k/ka/kak-zamenit-manzhetu-na-stiralnoj-mashine-indezit-video-na-russkom.html" class="related-bottom-card"><span class="related-bottom-title">Замена манжеты на стиральной машине Indesit: видео и инструкция</span><span class="related-bottom-desc">Пошаговая замена манжеты люка на стиральной машине Indesit. Видео на русском, список инструментов, с</span></a><a href="/articles/k/ka/kak-vklyuchit-mashinku-indezit-starogo-obraztsa.html" class="related-bottom-card"><span class="related-bottom-title">Как включить стиральную машину Indesit старого образца</span><span class="related-bottom-desc">Инструкция по запуску стиральных машин Indesit старых серий. Диагностика блокировки, ТЭНа и программ</span></a><a href="/articles/m/ma/mashinka-indezit-kuda-sypat-poroshok-v-1-ili-2.html" class="related-bottom-card"><span class="related-bottom-title">Куда сыпать порошок в стиральной машине Индезит: 1 или 2 отсек</span><span class="related-bottom-desc">Подробная инструкция: в какой отсек лотка засыпать порошок в стиральных машинах Indesit. Разбор знач</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

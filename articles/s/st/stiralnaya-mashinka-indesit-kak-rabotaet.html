@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Как работает стиральная машинка Indesit: устройство и принцип — Индезит Хоум</title>
+    <meta name="description" content="Подробный разбор того, как работает стиральная машина Indesit. Изучаем цикл стирки, работу ТЭНа, насоса и электроники для диагностики неисправностей.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/s/st/stiralnaya-mashinka-indesit-kak-rabotaet.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает стиральная машинка Indesit: устройство и принцип">
+    <meta property="og:description" content="Подробный разбор того, как работает стиральная машина Indesit. Изучаем цикл стирки, работу ТЭНа, насоса и электроники для диагностики неисправностей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/stiralnye-mashiny/">Стиральные машины</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как работает стиральная машинка Indesit: устройство и принцип</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Принцип работы стиральной машины Indesit: от забора воды до отжима</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#этап-забора-и-дозирования-воды">Этап забора и дозирования воды</a></li><li><a href="#нагрев-воды-и-активация-тэна">Нагрев воды и активация ТЭНа</a></li><li><a href="#вращение-барабана-и-работа-двигателя">Вращение барабана и работа двигателя</a></li><li><a href="#слив-воды-и-работа-насоса">Слив воды и работа насоса</a></li><li><a href="#режим-отжима-и-распределение-белья">Режим отжима и распределение белья</a></li><li><a href="#диагностика-типовых-сбоев-цикла">Диагностика типовых сбоев цикла</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Цикл стирки в автоматической машине <em>Indesit</em> запускается только после того, как электронный модуль управления получает сигнал от датчика уровня воды о достижении необходимого объема в баке. Без этого критического условия программа не перейдет к нагреву или вращению барабана, что является базовым принципом защиты устройства от работы «на сухую». Понимание этой последовательности действий позволяет пользователю самостоятельно определить, на каком именно этапе произошел сбой, если техника перестала выполнять команды или зависла посередине цикла.</p>
+<p>Весь процесс управляется микропроцессором, который считывает показания множества сенсоров и активирует исполнительные механизмы в строго определенном порядке. Нарушение работы любого узла, будь то засор фильтра или выход из строя <strong>ТЭНа</strong>, немедленно фиксируется системой, и машина либо останавливается, либо выдает код ошибки на дисплей. Именно поэтому знание алгоритма работы помогает отличить программный сбой от реальной поломки механической части.</p>
+
+<h2 id="этап-забора-и-дозирования-воды">Этап забора и дозирования воды</h2>
+<p>Процесс начинается с открытия электромагнитного клапана, который регулирует подачу холодной или горячей воды в зависимости от выбранной программы. В современных моделях <em>Indesit</em> часто используется система <strong>Aqua Energy</strong> или аналогичные технологии, где вода предварительно смешивается с моющим средством перед попаданием на белье, что повышает эффективность стирки при низких температурах. Давление в водопроводной сети должно быть достаточным (обычно от 1 до 10 бар), иначе клапан не откроется полностью или машина выдаст ошибку перелива/недолива.</p>
+<p>Вода проходит через лоток для порошка, вымывая химические средства, и попадает непосредственно в бак. Важно отметить, что модуль управления не «видит» воду визуально, он полагается исключительно на данные <strong>прессостата</strong> (датчика уровня воды). Этот компонент измеряет давление воздушной подушки в специальной трубке, соединенной с баком, и передает электрический сигнал на плату управления.</p>
+<ul>
+<li>💧 Электромагнитный клапан открывает подачу воды по сигналу процессора.</li>
+<li>🧪 Система смешивания активирует растворение порошка в лотке дозатора.</li>
+<li>🌡️ Датчик уровня (прессостат) контролирует объем набранной жидкости.</li>
+<li>🔒 Блокировка люка (УБЛ) проверяется перед началом основного цикла.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Если машина гудит, но вода не поступает, возможно, закрыт кран на входе или упало давление в системе водоснабжения, а не сломался сам клапан.</p>
+</blockquote>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Для продления срока службы впускных клапанов рекомендуется устанавливать магнитные фильтры на входную трубу, особенно в районах с жесткой водой и высоким содержанием ржавчины.</p></div>
+
+<h2 id="нагрев-воды-и-активация-тэна">Нагрев воды и активация ТЭНа</h2>
+<p>После того как бак наполнен, вступает в работу <strong>нагревательный элемент</strong> (ТЭН). Электроника подает напряжение на контакты ТЭНа только в том случае, если датчик температуры фиксирует значение ниже заданного программой. В машинах <em>Indesit</em> часто используются ТЭНы с покрытием из нержавеющей стали или эмалированные варианты, которые менее подвержены образованию накипи, но все же требуют регулярной профилактики.</p>
+<p>Процесс нагрева может занимать от 5 до 20 минут в зависимости от мощности элемента (обычно 1700–1900 Вт) и объема воды. Во время этого этапа барабан может периодически проворачиваться в разные стороны, чтобы обеспечить равномерное распределение температуры и предотвратить оседание порошка на дне бака. Если вода не нагревается, модуль управления может увеличить общее время стирки или прервать цикл, выдав соответствующее предупреждение.</p>
+
+<details class="faq-item"><summary>Технические детали работы ТЭНа</summary><div class="faq-answer"><p> Сопротивление исправного ТЭНа мощностью 1900 Вт составляет примерно 27-29 Ом. Проверка мультиметром проводится только после полного отключения машины от сети и слива воды.</p></div></details>
+
+<p>Критически важным элементом здесь является термостат или NTC-датчик, встроенный непосредственно в корпус нагревателя или установленный отдельно. Он continuously передает данные о температуре на плату. <mark>Отсутствие сигнала с датчика температуры воспринимается системой как аварийная ситуация, и нагрев блокируется во избежание закипания воды и повреждения пластиковых деталей бака.</mark></p>
+
+<h2 id="вращение-барабана-и-работа-двигателя">Вращение барабана и работа двигателя</h2>
+<p>Основной этап стирки подразумевает активное вращение барабана, которое обеспечивается электродвигателем. В зависимости от модели <em>Indesit</em>, это может быть классический мотор с щетками или более современный инверторный двигатель. Щеточные двигатели передают крутящий момент через ременную передачу, тогда как инверторные часто имеют прямой привод, что снижает уровень шума и вибрации.</p>
+<p>Алгоритм вращения не является постоянным: барабан совершает короткие обороты в одну сторону, затем пауза, followed by обороты в другую сторону. Такая «реверсивная» стирка необходима для качественного вымывания загрязнений из ткани без повреждения волокон. Интенсивность и скорость вращения регулируются модулем управления в зависимости от типа ткани, выбранного пользоватателем.</p>
+
+<div class="poll-widget" id="poll-71738d28"><div class="poll-widget-question">📊 Какой тип двигателя у вашей машины Indesit?</div><div class="poll-widget-option" data-poll="71738d28" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Классический со щетками (шумит при отжиме)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="71738d28" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Инверторный (тихий, прямой привод)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="71738d28" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Не знаю / Не обращал внимания</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="71738d28" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Машина с коллекторным мотором и ремнем</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<p>В случае перегрузки барабана или дисбаланса белья, датчик вибрации (или анализ тока двигателя электроникой) сигнализирует о проблеме. Машина может попытаться распушить белье путем вращения в разные стороны или сбросить часть воды. Если баланс не восстанавливается, цикл отжима будет пропущен, чтобы избежать повреждения подшипникового узла.</p>
+
+<h2 id="слив-воды-и-работа-насоса">Слив воды и работа насоса</h2>
+<p>За удаление использованной воды отвечает дренажный насос (помпа). Это электромеханическое устройство с крыльчаткой, которая начинает вращаться сразу после окончания цикла стирки или полоскания. Сигнал на включение насоса подается с платы управления, и в этот момент пользователь слышит характерное гудение.</p>
+<p>Вода откачивается через сливной шланг в канализацию. Конструкция насосов в <em>Indesit</em> часто предусматривает возможность очистки крыльчатки от посторонних предметов (монет, пуговиц, косточек от бюстгальтера) без полной замены узла. Однако частые засоры могут привести к перегоранию обмотки двигателя помпы или сгоранию управляющего симистора на плате.</p>
+
+<div class="checklist-block"><h4>☑️ Диагностика проблем со сливом</h4><label class="check-item"><input type="checkbox"><span>Проверка сливного шланга на перегибы</span></label><label class="check-item"><input type="checkbox"><span>Очистка фильтра сливного насоса</span></label><label class="check-item"><input type="checkbox"><span>Проверка крыльчатки на свободный ход</span></label><label class="check-item"><input type="checkbox"><span>Замер сопротивления обмотки насоса</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Если вода не уходит, машина обычно выдает ошибку, связанную со сливом. Важно понимать, что насос работает импульсно или постоянно в зависимости от этапа цикла. На этапе отжима помпа может включаться повторно, если датчик уровня воды зафиксирует остаток жидкости в баке после интенсивного вращения.</p>
+
+<h2 id="режим-отжима-и-распределение-белья">Режим отжима и распределение белья</h2>
+<p>Отжим — это финальная механическая стадия, где барабан разгоняется до высоких скоростей (от 800 до 1200 об/мин и выше). Перед набором максимальной скорости машина выполняет несколько подготовительных вращений для равномерного распределения белья по внутренней поверхности барабана. Это необходимо для минимизации биения и вибрации.</p>
+<p>Если распределение прошло успешно, двигатель плавно набирает обороты. В моделях с <strong>Direct Motion</strong> или аналогичными технологиями разгон происходит более мягко. В этот момент центробежная сила выдавливает воду из ткани, и она через отверстия в барабане попадает в бак, откуда сразу же откачивается насосом.</p>
+
+<table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Описание процесса</th>
+<th>Риск при неисправности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Скорость вращения</td>
+<td>Регулируется модулем, зависит от программы</td>
+<td>Недоотжатое белье или вибрация</td>
+</tr>
+<tr>
+<td>Балансировка</td>
+<td>Автоматическое покачивание барабана</td>
+<td>Скачки машины, удары о стенки</td>
+</tr>
+<tr>
+<td>Длительность</td>
+<td>Обычно 2-5 минут на высоких оборотах</td>
+<td>Износ подшипников при дисбалансе</td>
+</tr>
+<tr>
+<td>Защита</td>
+<td>Снижение оборотов при сильной вибрации</td>
+<td>Прерывание цикла отжима</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Попытка вручную остановить быстро вращающийся барабан или открыть люк во время отжима (если блокировка еще не снята) может привести к серьезной травме или поломке механизма замка.</p>
+</blockquote>
+
+<h2 id="диагностика-типовых-сбоев-цикла">Диагностика типовых сбоев цикла</h2>
+<p>Понимание того, как работает стиральная машинка <em>Indesit</em>, позволяет быстро локализовать проблему. Например, если машина набирает воду, но не греет её, и при этом таймер стоит на месте, скорее всего, неисправен ТЭН или датчик температуры. Если же вода набирается и сразу сливается без остановки, проблема может быть в неправильном подключении сливного шланга (эффект сифона) или залипании клапана.</p>
+<p>Ошибки электроники часто связаны с скачками напряжения или попаданием влаги на плату управления. В таких случаях машина может вести себя хаотично: самопроизвольно включать насос, не реагировать на кнопки или выдавать неверные коды ошибок. Для точной диагностики в таких случаях требуется подключение тестового оборудования.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Знание последовательности циклов (Набор -> Нагрев -> Стирка -> Слив -> Отжим -> Слив) позволяет методом исключения найти узел, который не выполнил свою функцию.</p></div>
+
+<p>Регулярное обслуживание, такое как чистка фильтра и профилактика от накипи, сохраняет алгоритмы работы машины предсказуемыми. Игнорирование мелких неисправностей на ранних этапах может привести к выходу из строя дорогостоящих узлов, таких как двигатель или электронный модуль.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Почему стиральная машина Indesit долго набирает воду?</summary>
+<p>Это может быть вызвано низким давлением в водопроводе, засорением входного фильтра-сеточки или неисправностью впускного клапана. Также время набора зависит от выбранной программы и объема загрузки.</p>
+</details>
+
+<details>
+<summary>Что означает, если барабан не вращается при работающем насосе?</summary>
+<p>Скорее всего, произошел обрыв ремня привода (в моделях с ремнем) или износились щетки двигателя. В редких случаях проблема кроется в модуле управления, который не подает напряжение на мотор.</p>
+</details>
+
+<details>
+<summary>Машина греет воду, но таймер стоит на месте. Это нормально?</summary>
+<p>В некоторых режимах (например, «Хлопок 90°C») нагрев может занимать значительное время, и визуального прогресса таймера может не быть. Однако если вода уже горячая, а программа не движется дальше, возможно, неисправен датчик температуры или ТЭН.</p>
+</details>
+
+<details>
+<summary>Как понять, что сработала защита от протечек AquaStop (если есть)?</summary>
+<p>Обычно это сопровождается характерным щелчком и прекращением подачи воды. На шланге может появиться индикация или потребоваться замена всего шланга с клапаном, так как они часто являются одноразовыми элементами безопасности.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#этап-забора-и-дозирования-воды">Этап забора и дозирования воды</a></li><li><a href="#нагрев-воды-и-активация-тэна">Нагрев воды и активация ТЭНа</a></li><li><a href="#вращение-барабана-и-работа-двигателя">Вращение барабана и работа двигателя</a></li><li><a href="#слив-воды-и-работа-насоса">Слив воды и работа насоса</a></li><li><a href="#режим-отжима-и-распределение-белья">Режим отжима и распределение белья</a></li><li><a href="#диагностика-типовых-сбоев-цикла">Диагностика типовых сбоев цикла</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-snyat-ten-indesit-wiue-10.html" class="related-card">Как снять ТЭН Indesit WIUE 10: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-polzovatsya-mashinkoj-indesit-wisl-102.html" class="related-card">Как пользоваться стиральной машинкой Indesit WISL 102: инструкция</a></li><li><a href="/articles/s/st/stiralnaya-mashina-indezit-wisl-102-kak-vklyuchit.html" class="related-card">Стиральная машина Indesit Wisl 102: как включить, режимы и ошибки</a></li><li><a href="/articles/p/po/pochemu-ne-greet-stiralnaya-mashina-vodu-pri-stirke-indezit.html" class="related-card">Почему не греет воду стиральная машина Indesit: причины и ремонт</a></li><li><a href="/articles/s/sk/skolko-vesit-stiralnaya-mashinka-indezit-na-5-kg.html" class="related-card">Вес стиральной машинки Индезит 5 кг: точные данные</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-snyat-ten-indesit-wiue-10.html" class="related-bottom-card"><span class="related-bottom-title">Как снять ТЭН Indesit WIUE 10: пошаговая инструкция</span><span class="related-bottom-desc">Подробная инструкция, как снять ТЭН Indesit WIUE 10. Диагностика, причины накипи, замена нагревателя</span></a><a href="/articles/k/ka/kak-polzovatsya-mashinkoj-indesit-wisl-102.html" class="related-bottom-card"><span class="related-bottom-title">Как пользоваться стиральной машинкой Indesit WISL 102: инструкция</span><span class="related-bottom-desc">Подробная инструкция, как пользоваться машинкой Indesit WISL 102. Программы, расшифровка ошибок, зап</span></a><a href="/articles/s/st/stiralnaya-mashina-indezit-wisl-102-kak-vklyuchit.html" class="related-bottom-card"><span class="related-bottom-title">Стиральная машина Indesit Wisl 102: как включить, режимы и ошибки</span><span class="related-bottom-desc">Подробная инструкция, как включить стиральную машину Indesit Wisl 102. Разбор кнопок, выбор программ</span></a><a href="/articles/p/po/pochemu-ne-greet-stiralnaya-mashina-vodu-pri-stirke-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Почему не греет воду стиральная машина Indesit: причины и ремонт</span><span class="related-bottom-desc">Стиральная машина Indesit не греет воду? Разбираем причины: ТЭН, термостат, проводка. Диагностика, к</span></a><a href="/articles/s/sk/skolko-vesit-stiralnaya-mashinka-indezit-na-5-kg.html" class="related-bottom-card"><span class="related-bottom-title">Вес стиральной машинки Индезит 5 кг: точные данные</span><span class="related-bottom-desc">Узнайте, сколько весит стиральная машинка Индезит на 5 кг. Точные цифры для разных моделей, влияние </span></a><a href="/articles/k/ka/kak-nadet-remen-na-stiralnuyu-mashinu-indezit-video.html" class="related-bottom-card"><span class="related-bottom-title">Как надеть ремень на стиральную машину Индезит: видео-инструкция</span><span class="related-bottom-desc">Пошаговое руководство, как надеть ремень на стиральную машину Индезит. Разбор причин обрыва, выбор з</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

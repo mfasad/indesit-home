@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Ремонт двухкамерного холодильника Indesit своими руками: пошагово — Индезит Хоум</title>
+    <meta name="description" content="Подробный гид по ремонту холодильника Индезит. Диагностика компрессора, замена термостата, разморозка испарителя и устранение типичных неисправностей.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/k/ka/kak-remontirovat-kholodilnik-svoimi-rukami-dvukhkamernaya-indezit.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ремонт двухкамерного холодильника Indesit своими руками: пошагово">
+    <meta property="og:description" content="Подробный гид по ремонту холодильника Индезит. Диагностика компрессора, замена термостата, разморозка испарителя и устранение типичных неисправностей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/kholodilniki/">Холодильники</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Ремонт двухкамерного холодильника Indesit своими руками: пошагово</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Ремонт двухкамерного холодильника Indesit своими руками: пошагово</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#диагностика-основных-неисправностей">Диагностика основных неисправностей</a></li><li><a href="#проверка-и-замена-термостата">Проверка и замена термостата</a></li><li><a href="#разморозка-системы-no-frost-и-проверка-тэна">Разморозка системы No Frost и проверка ТЭНа</a></li><li><a href="#ревизия-пускового-реле-и-компрессора">Ревизия пускового реле и компрессора</a></li><li><a href="#устранение-проблем-с-вентиляцией-и-дверьми">Устранение проблем с вентиляцией и дверьми</a></li><li><a href="#сборка-и-тестирование-после-ремонта">Сборка и тестирование после ремонта</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Неожиданное прекращение охлаждения в двухкамерном холодильнике <em>Indesit</em> часто свидетельствует о выходе из строя терморегулятора или образовании ледяной шубы на испарителе, что блокирует циркуляцию воздуха. Владелец может самостоятельно диагностировать большинство проблем, если последовательно проверит электрическую цепь и состояние испарителя, скрытого за задней стенкой морозильной камеры. Игнорирование первичных признаков, таких как длительный цикл работы мотора или редкие щелчки при запуске, может привести к серьезной поломке компрессора, требующей дорогостоящего вмешательства.</p>
+<p>Двухкамерные модели <strong>Indesit</strong> имеют конструктивные особенности, отличающие их от других брендов, например, специфическую систему оттайки или расположение датчиков. Перед началом работ необходимо полностью разморозить агрегат в течение 24 часов, так как наличие льда искажает результаты диагностики и может стать ложной причиной неисправности. Только после полного оттаивания и просушки можно приступать к проверке электрических компонентов и механических узлов.</p>
+
+<h2 id="диагностика-основных-неисправностей">Диагностика основных неисправностей</h2>
+<p>Первым шагом в процессе восстановления работоспособности является точное определение симптомов. Если холодильник <em>Indesit</em> гудит, но не холодит, или, наоборот, работает беспрерывно, замораживая продукты в холодильном отделении, проблема кроется в системе управления температурой. Часто пользователи сталкиваются с ситуацией, когда морозильная камера работает нормально, а в верхнем отделении температура выше нормы.</p>
+<p>Для выявления причины необходимо провести визуальный иный анализ работы агрегата. Обратите внимание на характер звука работающего мотора-компрессора: ровное гудение свидетельствует о нормальной работе, тогда как прерывистые щелчки или попытки запуска с последующим отключением указывают на проблемы с пусковым реле или самим компрессором. Важно проверить, горит ли лампочка внутри камеры при открытии двери, что исключит проблемы с питанием.</p>
+<ul>
+<li>🔍 <strong>Отсутствие охлаждения:</strong> Компрессор молчит, света нет — проверяем розетку и шнур питания.</li>
+<li>❄️ <strong>Слабое охлаждение:</strong> Мотор работает постоянно, но температура не опускается — вероятна утечка фреона или засор капилляра.</li>
+<li>💡 <strong>Перемораживание:</strong> Продукты в холодильной камере покрыты инеем — неисправен термостат или датчик оттайки.</li>
+<li>🔊 <strong>Посторонний шум:</strong> Вибрация или стук — проверьте установку по уровню и состояние вентилятора (если есть No Frost).</li>
+</ul>
+<blockquote>⚠️ Внимание: Если вы слышите громкий хлопок или чувствуете запах горелой проводки, немедленно отключите холодильник от сети и не пытайтесь включать его повторно до полной проверки электрической цепи.</blockquote>
+
+<h2 id="проверка-и-замена-термостата">Проверка и замена термостата</h2>
+<p>Терморегулятор (термостат) является главным управляющим элементом, который подает сигнал на включение и выключение компрессора в зависимости от температуры внутри камер. В двухкамерных моделях <em>Indesit</em> он часто выходит из строя из-за скачков напряжения или естественного износа контактов. Если холодильник не включается вообще или, наоборот, не выключается, в первую очередь подозревают именно этот узел.</p>
+<p>Для проверки термостата необходимо добраться до его месторасположения, которое обычно находится внутри холодильной камеры или под пластиковой панелью в верхней части. Сняв рукоятку регулятора и декоративную накладку, вы получите доступ к корпусу датчика. Аккуратно извлеките термостат, отсоединив провода, и проверьте целостность цепи с помощью мультиметра в режиме прозвонки.</p>
+<details class="faq-item"><summary>Технические детали проверки термостата</summary><div class="faq-answer"><p>Для accurate проверки опустите чувствительную трубку термостата в холодную воду со льдом на 2-3 минуты. После этого прозвоните контакты: цепь должна замкнуться. Если при охлаждении звонка нет, термостат неисправен и требует замены.</p></div></details>
+<p>Замена элемента не требует специальных навыков, кроме осторожности при работе с проводами. Новый термостат должен иметь аналогичную маркировку, особенно важно совпадение температурных диапазонов и длины капиллярной трубки. После установки нового компонента соберите панель в обратном порядке и проверьте работу системы.</p>
+
+<h2 id="разморозка-системы-no-frost-и-проверка-тэна">Разморозка системы No Frost и проверка ТЭНа</h2>
+<p>Многие двухкамерные холодильники <em>Indesit</em> оснащены системой <strong>No Frost</strong>, которая предотвращает образование наледи, но требует исправной работы системы оттайки. Если вы заметили, что задняя стенка морозильной камеры покрыта толстым слоем льда или снега, а вентилятор гудит, но не прогоняет воздух, значит, цикл оттайки нарушен. Чаще всего сгорает ТЭН испарителя или выходит из строя таймер оттайки.</p>
+<p>Для доступа к нагревательному элементу необходимо полностью разморозить холодильник, снять все полки и ящики морозильной камеры, а затем демонтировать заднюю пластиковую панель. Под ней скрывается испаритель с намотанными трубками и нагревательным элементом. Визуально осмотрите ТЭН на предмет разрывов спирали или механических повреждений.</p>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Симптом неисправности</th>
+<th>Метод проверки</th>
+<th>Нормальное сопротивление</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ТЭН оттайки</td>
+<td>Лед на испарителе</td>
+<td>Прозвонка мультиметром</td>
+<td>200-400 Ом</td>
+</tr>
+<tr>
+<td>Датчик оттайки</td>
+<td>Нет оттайки или греет постоянно</td>
+<td>Замер сопротивления при t°</td>
+<td>Зависит от температуры</td>
+</tr>
+<tr>
+<td>Таймер оттайки</td>
+<td>Холодильник не переходит в режим охлаждения</td>
+<td>Проверка вращения вала</td>
+<td>Механическая исправность</td>
+</tr>
+<tr>
+<td>Вентилятор</td>
+<td>Шум, отсутствие холода</td>
+<td>Визуальный осмотр и прозвонка</td>
+<td>Целостность обмотки</td>
+</tr>
+</tbody>
+</table>
+<p>Если ТЭН перегорел, его необходимо заменить на аналогичный по мощности и геометрическим размерам. При сборке важно правильно установить датчик оттайки, который контролирует температуру нагрева испарителя и отключает ТЭН при достижении нужного значения. Ошибка в установке может привести к повторному обрастанию льдом или перегреву пластиковых элементов.</p>
+
+<h2 id="ревизия-пускового-реле-и-компрессора">Ревизия пускового реле и компрессора</h2>
+<p>Когда холодильник <em>Indesit</em> издает короткий щелчок, гудит несколько секунд и выключается, проблема чаще всего кроется в пусковом реле компрессора или в самом моторе. Пусковое реле — это небольшой пластиковый блок, надеваемый на контакты компрессора, внутри которого находится позистор или катушка, отвечающая за запуск двигателя.</p>
+<p>Снимите реле, аккуратно покачав его из стороны в сторону, и осмотрите внутренности. Если внутри видны следы гари, оплавления или чувствуется неприятный запах, деталь подлежит замене. Также проверьте целостность обмоток компрессора через контакты на корпусе мотора, исключив короткое замыкание между обмотками и корпусом.</p>
+<div class="poll-widget" id="poll-59355685"><div class="poll-widget-question">📊 Какой симптом у вашего холодильника Indesit?</div><div class="poll-widget-option" data-poll="59355685" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Гудит, но не запускается:Не морозит, но работает постоянно:Слышны щелчки при попытке запуска:Включается и сразу выключается</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+<p>Замена пускового реле — одна из самых простых операций, которую можно выполнить своими руками. Главное — подобрать реле с точно такой же маркировкой, как у оригинала, так как параметры пускового тока у разных моделей компрессоров могут отличаться. Если после замены реле ситуация не изменилась, возможно, неисправен сам компрессор или межвитковое замыкание обмоток.</p>
+
+<h2 id="устранение-проблем-с-вентиляцией-и-дверьми">Устранение проблем с вентиляцией и дверьми</h2>
+<p>Качественная работа двухкамерного холодильника зависит не только от исправности электрики, но и от герметичности камер и свободной циркуляции воздуха. Если уплотнительная резинка на двери прилегает неплотно, в камеру попадает теплый влажный воздух, что приводит к усиленному образованию конденсата и льда, а также к повышенной нагрузке на компрессор.</p>
+<p>Проверьте состояние уплотнителя по всему периметру двери. Он должен быть эластичным, без трещин и разрывов. Для проверки герметичности можно использовать лист бумаги: зажмите его между дверью и корпусом в разных местах. Если лист вытаскивается без усилия, значит, в этом месте нарушено прилегание.</p>
+<ul>
+<li>🧼 <strong>Очистка:</strong> Регулярно протирайте уплотнитель мягкой тканью с мыльным раствором, удаляя жир и грязь.</li>
+<li>🌡️ <strong>Восстановление:</strong> При небольших деформациях можно попробовать выпрямить резинку, прогрев ее феном (осторожно, не перегревая).</li>
+<li>🔧 <strong>Замена:</strong> При серьезных повреждениях приобретите оригинальный уплотнитель для вашей модели <em>Indesit</em> и установите его в паз двери.</li>
+</ul>
+<p>Также убедитесь, что вентиляционные отверстия внутри камер не закрыты продуктами. В системах <strong>No Frost</strong> воздух должен свободно циркулировать между морозильной и холодильной камерами. Перекрытие каналов ведет к локальному перегреву или переохлаждению зон.</p>
+
+<div class="checklist-block"><h4>☑️ Диагностика перед вызовом мастера</h4><label class="check-item"><input type="checkbox"><span>Холодильник полностью разморожен (24 часа):Проверена целостность шнура питания и розетки:Очищены вентиляционные отверстия внутри:Уплотнитель двери чистый и плотно прилегает:Термостат установлен в среднее положение</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<h2 id="сборка-и-тестирование-после-ремонта">Сборка и тестирование после ремонта</h2>
+<p>После замены неисправных компонентов и проведения профилактических работ необходимо правильно собрать холодильник. Убедитесь, что все провода надежно закреплены и не попадают в движущиеся части или на горячие поверхности. Пластиковые панели должны встать на свои места без зазоров и скрипа.</p>
+<p>Первое включение после ремонта лучше производить без нагрузки (без продуктов). Установите терморегулятор в среднее положение и запустите агрегат. В течение первых 30-60 минут прослушайте работу мотора: он должен включиться, поработать и отключиться по достижении заданной температуры.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Не загружайте холодильник продуктами сразу после ремонта. Дайте ему поработать 2-3 часа вхолостую, чтобы стабилизировать температурный режим и убедиться в отсутствии утечек или посторонних шумов.</p></div>
+<p>Контролируйте температуру в камерах с помощью внешнего термометра в течение суток. Если температурный режим stabilizировался, а на стенках нет излишней влаги или наледи, ремонт можно считать успешным. Регулярное обслуживание продлит срок службы вашего <em>Indesit</em>.</p>
+<blockquote>⚠️ Внимание: Если после замены термостата или ТЭНа холодильник продолжает работать некорректно, возможно, проблема кроется в модуле управления или утечке хладагента, что требует профессионального оборудования для диагностики.</blockquote>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Почему холодильник Indesit сильно гудит после разморозки?</summary>
+<p>Гудение может быть вызвано неправильной установкой (не отрегулированы ножки), касанием трубками конденсатора о стену или корпус, а также работой вентилятора в системе No Frost, на лопастях которого мог остаться лед. Проверьте зазоры между холодильником и стеной.</p>
+</details>
+<details>
+<summary>Как часто нужно размораивать двухкамерный Indesit?</summary>
+<p>Модели с ручной разморозкой холодильной камеры требуют размораживания при образовании слоя льда толщиной 3-5 мм, обычно раз в 4-6 месяцев. Системы <strong>No Frost</strong> в разморозке не нуждаются, но профилактическую мойку рекомендуется проводить раз в год.</p>
+</details>
+<details>
+<summary>Можно ли заменить термостат на аналог другого производителя?</summary>
+<p>Да, можно, если совпадают посадочные размеры, длина капиллярной трубки и температурный диапазон срабатывания. Однако оригинальные запчасти <em>Indesit</em> гарантируют более точную работу и долговечность.</p>
+</details>
+<details>
+<summary>Что делать, если в холодильной камере вода на полу?</summary>
+<p>Скорее всего, засорилось дренажное отверстие для отвода конденсата. Найдите его на задней стенке холодильной камеры и прочистите мягкой проволокой или ершиком, затем промойте теплой водой.</p>
+</details>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Самостоятельный ремонт возможен только при наличии базовых навыков работы с электрикой и инструментом. В сложных случаях, связанных с холодильным контуром, лучше обратиться к профессионалам.</p></div></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#диагностика-основных-неисправностей">Диагностика основных неисправностей</a></li><li><a href="#проверка-и-замена-термостата">Проверка и замена термостата</a></li><li><a href="#разморозка-системы-no-frost-и-проверка-тэна">Разморозка системы No Frost и проверка ТЭНа</a></li><li><a href="#ревизия-пускового-реле-и-компрессора">Ревизия пускового реле и компрессора</a></li><li><a href="#устранение-проблем-с-вентиляцией-и-дверьми">Устранение проблем с вентиляцией и дверьми</a></li><li><a href="#сборка-и-тестирование-после-ремонта">Сборка и тестирование после ремонта</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-pribavit-kholod-v-kholodilnike-indezit.html" class="related-card">Как прибавить холод в холодильнике Индезит: настройка и ремонт</a></li><li><a href="/articles/g/gu/gudit-kholodilnik-indezit-chto-delat-prichiny.html" class="related-card">Гудит холодильник Индезит: причины шума и способы устранения</a></li><li><a href="/articles/k/kh/kholodilniki-indezit-kto-proizvoditel-strana.html" class="related-card">Холодильники Indesit: производитель, страна и заводы сборки</a></li><li><a href="/articles/g/gd/gde-kupit-kholodilniki-indezit.html" class="related-card">Где купить холодильники Indesit: официальные магазины и цены</a></li><li><a href="/articles/t/tr/trubka-drenazhnogo-sliva-v-kholodilnike-indezit-gde-nakhoditsya.html" class="related-card">Трубка дренажного слива в холодильнике Индезит: где находится и как чистить</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-pribavit-kholod-v-kholodilnike-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как прибавить холод в холодильнике Индезит: настройка и ремонт</span><span class="related-bottom-desc">Подробная инструкция, как увеличить мощность охлаждения в холодильнике Indesit. Настройка термостата</span></a><a href="/articles/g/gu/gudit-kholodilnik-indezit-chto-delat-prichiny.html" class="related-bottom-card"><span class="related-bottom-title">Гудит холодильник Индезит: причины шума и способы устранения</span><span class="related-bottom-desc">Почему гудит холодильник Indesit? Разбор причин: компрессор, вентилятор, хладагент. Диагностика неис</span></a><a href="/articles/k/kh/kholodilniki-indezit-kto-proizvoditel-strana.html" class="related-bottom-card"><span class="related-bottom-title">Холодильники Indesit: производитель, страна и заводы сборки</span><span class="related-bottom-desc">Узнайте, кто производитель холодильников Indesit, в каких странах собирают технику и как определить </span></a><a href="/articles/g/gd/gde-kupit-kholodilniki-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Где купить холодильники Indesit: официальные магазины и цены</span><span class="related-bottom-desc">Где купить холодильники Индезит: официальные сайты, проверенные интернет-магазины, цены на модели No</span></a><a href="/articles/t/tr/trubka-drenazhnogo-sliva-v-kholodilnike-indezit-gde-nakhoditsya.html" class="related-bottom-card"><span class="related-bottom-title">Трубка дренажного слива в холодильнике Индезит: где находится и как чистить</span><span class="related-bottom-desc">Где находится трубка дренажного слива в холодильнике Индезит. Инструкция по прочистке, устранению за</span></a><a href="/articles/k/ka/kak-pomenyat-uplotnitel-na-kholodilniki-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как поменять уплотнитель на холодильнике Индезит: инструкция</span><span class="related-bottom-desc">Пошаговое руководство по замене уплотнителя на холодильниках Indesit. Узнайте, как выбрать резину, п</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

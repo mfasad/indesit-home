@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Как прозвонить мотор холодильника Indesit: пошаговая инструкция — Индезит Хоум</title>
+    <meta name="description" content="Подробный гид по диагностике компрессора Indesit мультиметром. Нормы сопротивления, поиск замыканий и проверка пускового реле своими руками.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/k/ka/kak-prozvonit-motor-kholodilnika-indezit.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как прозвонить мотор холодильника Indesit: пошаговая инструкция">
+    <meta property="og:description" content="Подробный гид по диагностике компрессора Indesit мультиметром. Нормы сопротивления, поиск замыканий и проверка пускового реле своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/kholodilniki/">Холодильники</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как прозвонить мотор холодильника Indesit: пошаговая инструкция</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как прозвонить мотор холодильника Indesit: диагностика и нормы</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-к-диагностике-и-меры-безопасности">Подготовка к диагностике и меры безопасности</a></li><li><a href="#демонтаж-пускового-реле-и-доступ-к-контактам">Демонтаж пускового реле и доступ к контактам</a></li><li><a href="#определение-выводов-обмоток-компрессора">Определение выводов обмоток компрессора</a></li><li><a href="#технология-прозвонки-обмоток-мультиметром">Технология прозвонки обмоток мультиметром</a></li><li><a href="#проверка-на-пробой-на-корпус-замыкание">Проверка на пробой на корпус (замыкание)</a></li><li><a href="#диагностика-пускового-реле-и-термореле">Диагностика пускового реле и термореле</a></li><li><a href="#таблица-нормальных-значений-сопротивления">Таблица нормальных значений сопротивления</a></li><li><a href="#интерпретация-результатов-и-дальнейшие-действия">Интерпретация результатов и дальнейшие действия</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+
+<p>Отказ холодильника <em>Indesit</em> в работе — ситуация, требующая немедленного реагирования, особенно если внутри остаются скоропортящиеся продукты. Часто причиной поломки становится <strong>компрессор</strong>, который перестает запускаться или гудит, но не создает давления в системе. Прежде чем вызывать мастера или покупать дорогостоящую новую деталь, необходимо провести первичную диагностику электрической цепи двигателя.</p>
+<p>Процесс проверки технически несложен, но требует строгого соблюдения правил безопасности и наличия базового инструмента. Неправильная диагностика может привести к ложному выводу о неисправности агрегата или, наоборот, пропуску критического дефекта. В этой статье мы детально разберем, как прозвонить мотор холодильника <em>Indesit</em>, на что обратить внимание при работе с мультиметром и какие значения сопротивления считаются нормой.</p>
+<p>Для начала работ вам потребуется доступ к задней части агрегата и набор инструментов. Важно понимать, что любые манипуляции с электрической частью проводятся исключительно при отключенном от сети приборе. Игнорирование этого правила может привести к поражению электрическим током или выходу из строя измерительного оборудования.</p>
+
+<h2 id="подготовка-к-диагностике-и-меры-безопасности">Подготовка к диагностике и меры безопасности</h2>
+<p>Первым шагом перед началом любых работ является полное обесточивание устройства. Выдерните шнур питания из розетки и убедитесь, что на клеммах компрессора нет остаточного напряжения. Только после этого можно приступать к демонтажу защитного кожуха, закрывающего мотор-компрессор и пускозащитное реле.</p>
+<p>Вам понадобится <strong>мультиметр</strong> (тестер), способный измерять сопротивление в диапазоне от 0 до 2000 Ом. Также будут полезны плоскогубцы, отвертка и, возможно, изолента для маркировки проводов. Если корпус компрессора имеет видимые повреждения, следы масла или оплавления изоляции, дальнейшая диагностика может быть опасной.</p>
+<blockquote>
+<p>⚠️ Внимание: Категорически запрещается включать холодильник в сеть с снятым защитным кожухом или при открытых электрических контактах. Это может вызвать короткое замыкание или травму.</p>
+</blockquote>
+<p>Осмотрите визуально состояние проводов, идущих к реле. Если изоляция потрескалась или оплавилась, сначала восстановите её, прежде чем проводить замеры. Чистота контактов также играет важную роль: окислы могут искажать показания прибора, создавая иллюзию обрыва цепи.</p>
+
+<h2 id="демонтаж-пускового-реле-и-доступ-к-контактам">Демонтаж пускового реле и доступ к контактам</h2>
+<p>Чтобы добраться до контактной группы, необходимо снять пусковое реле. На холодильниках <em>Indesit</em> оно обычно крепится на боковой стороне компрессора и защелкивается пластиковыми фиксаторами или металлической скобой. Аккуратно отогните скобу или нажмите на фиксаторы, чтобы снять коробку реле.</p>
+<p>Снимите реле с трех штырьков контактной планки компрессора. Действуйте осторожно, не прикладывая чрезмерных усилий, чтобы не сломать пластиковые элементы или не повредить сами контакты. После снятия реле вы увидите три вывода, образующие треугольник.</p>
+<div class="checklist-block"><h4>☑️ Проверка перед прозвонкой</h4><label class="check-item"><input type="checkbox"><span>Отключить холодильник от сети</span></label><label class="check-item"><input type="checkbox"><span>Снять защитный кожух</span></label><label class="check-item"><input type="checkbox"><span>Демонтировать пусковое реле</span></label><label class="check-item"><input type="checkbox"><span>Очистить контакты от окислов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+<p>Контакты могут иметь маркировку, но часто она стерта или отсутствует. Важно запомнить их расположение или сфотографировать перед началом работ. Три штырька соответствуют обмоткам: пусковой, рабочей и общему выводу. Именно между ними мы будем проводить замеры.</p>
+
+<h2 id="определение-выводов-обмоток-компрессора">Определение выводов обмоток компрессора</h2>
+<p>На контактной планке холодильника <em>Indesit</em> выводы расположены треугольником. Чтобы правильно прозвонить мотор, нужно идентифицировать, какой штырек соответствует какой обмотке. Обычно используется следующая схема: верхний вывод — общий, левый нижний — рабочий, правый нижний — пусковой.</p>
+<p>Однако полагаться только на расположение нельзя, так как в разных моделях <em>Indesit</em> конфигурация может отличаться. Самый надежный способ — прозвонить все пары контактов между собой и найти пары с наименьшим и наибольшим сопротивлением. Это позволит математически вычислить назначение каждого вывода.</p>
+<p>Используйте мультиметр в режиме измерения сопротивления (предел 2 кОм). Прикоснитесь щупами к разным парам контактов. Записывайте показания. Наибольшее сопротивление будет между пусковой и рабочей обмоткой, наименьшее — между рабочей и общей, среднее — между пусковой и общей.</p>
+<details class="faq-item"><summary>Схема расположения контактов</summary><div class="faq-answer"><p>Верхний контакт (C) — общий. Левый нижний (R) — рабочая обмотка. Правый нижний (S) — пусковая обмотка. Однако всегда перепроверяйте сопротивления, так как производитель может менять конфигурацию.</p></div></details>
+
+<h2 id="технология-прозвонки-обмоток-мультиметром">Технология прозвонки обмоток мультиметром</h2>
+<p>После идентификации выводов переходим к непосредственному измерению. Переключите мультиметр в режим омметра. Приложите щупы к выводам рабочей и общей обмоток. Запишите показание. Затем измерьте сопротивление между пусковой и общей обмотками. В последнюю очередь прозвоните цепь между пусковой и рабочей обмотками.</p>
+<p>Нормальные значения сопротивления для компрессоров <em>Indesit</em> варьируются, но обычно находятся в следующих пределах: рабочая обмотка — 10–30 Ом, пусковая — 30–60 Ом. Сумма сопротивлений двух отдельных обмоток должна приблизительно равняться сопротивлению, измеренному между пусковым и рабочим выводами.</p>
+<p>Если прибор показывает единицу (бесконечность), это означает <strong>обрыв</strong> обмотки. Если показывает ноль или близкое к нулю значение — налицо <strong>межвитковое замыкание</strong>. В обоих случаях компрессор считается неисправным и требует замены, так как перемотка в бытовых условиях экономически нецелесообразна.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Сумма сопротивлений пусковой и рабочей обмоток должна быть равна сопротивлению между их внешними выводами. Любое значительное отклонение указывает на дефект.</p></div>
+
+<h2 id="проверка-на-пробой-на-корпус-замыкание">Проверка на пробой на корпус (замыкание)</h2>
+<p>Один из самых опасных дефектов — пробой изоляции обмоток на металлический корпус компрессора. Это может привести к удару током при касании холодильника или срабатыванию УЗО в щитке. Для проверки переключите мультиметр в режим измерения сопротивления на максимальный предел (200 кОм или 2 МОм) или в режим "прозвонки".</p>
+<p>Один щуп прижмите к любому медному штуцеру (трубке) компрессора или зачищенному месту на металлическом корпусе. Вторым щупом поочередно касайтесь всех трех контактов на планке компрессора. Прибор должен показывать бесконечность (единицу на экране).</p>
+<blockquote>
+<p>⚠️ Внимание: Если мультиметр издает звуковой сигнал или показывает какое-либо сопротивление при проверке на корпус, эксплуатировать такой холодильник смертельно опасно. Требуется немедленная замена агрегата.</p>
+</blockquote>
+<p>Иногда пробой проявляется только при нагреве или вибрации. Если есть сомнения, можно прогреть компрессор строительным феном до 50–60 градусов и повторить проверку. Однако даже статический пробой при холодном моторе является однозначным показанием к утилизации детали.</p>
+
+<h2 id="диагностика-пускового-реле-и-термореле">Диагностика пускового реле и термореле</h2>
+<p>Часто сам мотор исправен, но не запускается из-за неисправности навесного оборудования. Пусковое реле отвечает за кратковременную подачу напряжения на пусковую обмотку. Внутри него находится катушка и контакты, которые могут подгореть или залипнуть.</p>
+<p>Встряхните реле возле уха: если слышен звон, значит, разбился керамический или позисторный элемент. Также проверьте термореле (защиту от перегрева), которое часто встроено в конструкцию или висит рядом. Оно должно "звониться" накоротко в холодном состоянии.</p>
+<div class="poll-widget" id="poll-12c45e59"><div class="poll-widget-question">📊 Слышен ли щелчок реле при попытке запуска?</div><div class="poll-widget-option" data-poll="12c45e59" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Да, щелкает, но не запускается</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="12c45e59" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Нет, тишина</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="12c45e59" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Слышен гул, но щелчка нет</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="12c45e59" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Запускается и сразу глохнет</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+<p>Если реле неисправно, мотор может гудеть, но не крутиться, что быстро приводит к его перегреву и срабатыванию тепловой защиты. Замена реле — недорогая процедура, которая часто реанимирует холодильник без замены дорогостоящего компрессора.</p>
+
+<h2 id="таблица-нормальных-значений-сопротивления">Таблица нормальных значений сопротивления</h2>
+<p>Для удобства диагностики сведем основные параметры в таблицу. Обратите внимание, что значения могут незначительно отличаться в зависимости от конкретной модели <em>Indesit</em> и года выпуска.</p>
+<table>
+<thead>
+<tr>
+<th>Параметр измерения</th>
+<th>Нормальное значение</th>
+<th>Неисправность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Рабочая обмотка</td>
+<td>10 – 35 Ом</td>
+<td>Обрыв (>1000 Ом) или КЗ (<5 Ом)</td>
+</tr>
+<tr>
+<td>Пусковая обмотка</td>
+<td>30 – 60 Ом</td>
+<td>Обрыв или КЗ</td>
+</tr>
+<tr>
+<td>Пробой на корпус</td>
+<td>Бесконечность</td>
+<td>Любое значение сопротивления</td>
+</tr>
+<tr>
+<td>Термореле (холодное)</td>
+<td>0 Ом (замкнуто)</td>
+<td>Бесконечность (разрыв цепи)</td>
+</tr>
+</tbody>
+</table>
+<p>Если ваши замеры кардинально отличаются от приведенных данных, велика вероятность выхода из строя электрической части мотора. Однако стоит учитывать погрешность самого измерительного прибора и температуру окружающей среды.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>При измерении сопротивления не касайтесь металлических частей щупов пальцами. Сопротивление кожи человека может внести погрешность в замеры на малых значениях.</p></div>
+
+<h2 id="интерпретация-результатов-и-дальнейшие-действия">Интерпретация результатов и дальнейшие действия</h2>
+<p>Если все замеры в норме, но холодильник не работает, проблема может крыться в механической части компрессора (заклинивание поршневой группы) или в системе управления (электронный модуль, датчики). Заклинивший мотор обычно гудит, потребляет большой ток и быстро нагревается, но вал не проворачивается.</p>
+<p>В случае обнаружения обрыва или замыкания обмоток ремонт невозможен. Компрессоры герметичны, и их вскрытие нарушит заводскую сборку. Единственный выход — покупка нового агрегата, аналогичного по мощности и хладагенту.</p>
+<p>При замене важно не только подобрать модель, но и правильно провести пайку трубок, вакуумирование системы и заправку фреоном. Эти операции требуют специального оборудования и лицензии, поэтому финальный этап ремонта лучше доверить профессионалам.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Можно ли запустить компрессор Indesit напрямую без реле?</summary>
+<p>Кратковременно запустить можно, подав напряжение на рабочую обмотку и кратковременно на пусковую, но это опасно и требует навыков. Длительная работа без реле приведет к сгоранию мотора, так как пусковая обмотка не рассчитана на постоянный ток.</p>
+</details>
+<details>
+<summary>Почему мультиметр показывает разные значения сопротивления?</summary>
+<p>Это может быть связано с плохим контактом щупов, окислением выводов или нагревом обмоток. Сопротивление меди зависит от температуры. Дайте компрессору полностью остыть и зачистите контакты перед повторным замером.</p>
+</details>
+<details>
+<summary>Гудит, но не запускается — это точно мотор?</summary>
+<p>Не обязательно. Чаще всего в такой ситуации виновато пусковое реле или заклинивший поршень. Если при этом ток потребления резко возрастает, а через несколько секунд срабатывает защита — вероятен механический клин или витковое замыкание.</p>
+</details>
+<details>
+<summary>Какой мультиметр лучше использовать для диагностики?</summary>
+<p>Подойдет любой цифровой мультиметр с режимом прозвонки и измерения сопротивления до 2 кОм. Для точной диагностики токов потребления потребуется токоизмерительные клещи, но для первичной прозвонки обмоток достаточно бюджетного тестера.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#подготовка-к-диагностике-и-меры-безопасности">Подготовка к диагностике и меры безопасности</a></li><li><a href="#демонтаж-пускового-реле-и-доступ-к-контактам">Демонтаж пускового реле и доступ к контактам</a></li><li><a href="#определение-выводов-обмоток-компрессора">Определение выводов обмоток компрессора</a></li><li><a href="#технология-прозвонки-обмоток-мультиметром">Технология прозвонки обмоток мультиметром</a></li><li><a href="#проверка-на-пробой-на-корпус-замыкание">Проверка на пробой на корпус (замыкание)</a></li><li><a href="#диагностика-пускового-реле-и-термореле">Диагностика пускового реле и термореле</a></li><li><a href="#таблица-нормальных-значений-сопротивления">Таблица нормальных значений сопротивления</a></li><li><a href="#интерпретация-результатов-и-дальнейшие-действия">Интерпретация результатов и дальнейшие действия</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/p/po/pochemu-shumno-rabotaet-kholodilnik-indezit-nou-frost.html" class="related-card">Почему шумит холодильник Indesit No Frost: причины и ремонт</a></li><li><a href="/articles/r/re/rele-kholodilnika-indezit-nou-frost-kak-proverit.html" class="related-card">Реле холодильника Indesit No Frost: проверка и замена</a></li><li><a href="/articles/k/ka/kakaya-temperatura-dolzhna-byt-u-kholodilnika-indezit.html" class="related-card">Температура в холодильнике Индезит: норма и настройка</a></li><li><a href="/articles/k/ka/kak-vykrutit-lampochku-iz-kholodilnika-indezit.html" class="related-card">Как выкрутить лампочку из холодильника Indesit: пошаговая инструкция</a></li><li><a href="/articles/p/po/pochemu-poyavlyaetsya-voda-pod-kholodilnikom-indezit.html" class="related-card">Почему появляется вода под холодильником Indesit: 7 причин</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/p/po/pochemu-shumno-rabotaet-kholodilnik-indezit-nou-frost.html" class="related-bottom-card"><span class="related-bottom-title">Почему шумит холодильник Indesit No Frost: причины и ремонт</span><span class="related-bottom-desc">Холодильник Indesit No Frost громко гудит? Разбираем причины: компрессор, вентилятор, разморозка. Эк</span></a><a href="/articles/r/re/rele-kholodilnika-indezit-nou-frost-kak-proverit.html" class="related-bottom-card"><span class="related-bottom-title">Реле холодильника Indesit No Frost: проверка и замена</span><span class="related-bottom-desc">Подробная инструкция, как проверить пускозащитное реле холодильника Индезит Ноу Фрост мультиметром. </span></a><a href="/articles/k/ka/kakaya-temperatura-dolzhna-byt-u-kholodilnika-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Температура в холодильнике Индезит: норма и настройка</span><span class="related-bottom-desc">Какая температура должна быть в холодильнике Индезит? Таблицы режимов, причины отклонений, инструкци</span></a><a href="/articles/k/ka/kak-vykrutit-lampochku-iz-kholodilnika-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как выкрутить лампочку из холодильника Indesit: пошаговая инструкция</span><span class="related-bottom-desc">Подробная инструкция, как заменить лампочку в холодильнике Indesit. Разбор плафона, выбор цоколя, ме</span></a><a href="/articles/p/po/pochemu-poyavlyaetsya-voda-pod-kholodilnikom-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Почему появляется вода под холодильником Indesit: 7 причин</span><span class="related-bottom-desc">Вода под холодильником Индезит? Узнайте все причины протечки, способы самостоятельной диагностики и </span></a><a href="/articles/k/kh/kholodilnik-indesit-kak-snyat-nizhnyuyu-panel.html" class="related-bottom-card"><span class="related-bottom-title">Как снять нижнюю панель холодильника Indesit: пошаговая инструкция</span><span class="related-bottom-desc">Подробный гайд, как снять нижнюю панель холодильника Indesit. Инструкция по демонтажу цоколя, чистке</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

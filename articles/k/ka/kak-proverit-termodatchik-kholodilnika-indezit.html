@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Как проверить термодатчик холодильника Индезит: диагностика и коды — Индезит Хоум</title>
+    <meta name="description" content="Подробная инструкция, как проверить термодатчик холодильника Индезит мультиметром. Симптомы неисправности, таблица сопротивлений, коды ошибок F14.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/k/ka/kak-proverit-termodatchik-kholodilnika-indezit.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить термодатчик холодильника Индезит: диагностика и коды">
+    <meta property="og:description" content="Подробная инструкция, как проверить термодатчик холодильника Индезит мультиметром. Симптомы неисправности, таблица сопротивлений, коды ошибок F14.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/kholodilniki/">Холодильники</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как проверить термодатчик холодильника Индезит: диагностика и коды</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Проверка термодатчика холодильника Индезит: диагностика и коды ошибок</h1>
+                    
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Резкое прекращение охлаждения верхней камеры при работающем компрессоре часто указывает на то, что термодатчик холодильника Индезит перестал передавать корректные данные на электронный модуль управления. В современных моделях бренда, таких как серия <em>Indesit Smart</em> или <em>BIA</em> с системой <em>No Frost</em>, этот элемент отвечает за считывание температуры воздуха и подачу сигнала на включение или выключение двигателя. Если цепь разрывается или сопротивление сенсора выходит за допустимые пределы, плата управления переходит в аварийный режим, блокируя запуск компрессора или, наоборот, не давая ему остановиться, что приводит к глубокой заморозке продуктов.</p>
+
+<p>Диагностика начинается с визуального осмотра и проверки электрических параметров элемента, так как программные сбои в этой системе случаются редко. <strong>Терморезистор</strong> (NTC-датчик) меняет свое сопротивление в зависимости от температуры окружающей среды, и любое отклонение от заводской таблицы значений воспринимается контроллером как критическая ошибка. Владельцы часто замечают проблему, когда на дисплее загорается код <code>F14</code> или мигает индикатор тревоги, хотя внешне прибор может выглядеть исправным.</p>
+
+<p>Необходимо понимать, что игнорирование первичных признаков выхода из строя сенсора может привести к более серьезным последствиям, включая перегрев компрессора или разморозку продуктов. <em>Электронный блок управления</em> холодильников Индезит чувствителен к скачкам напряжения и влажности, поэтому проверка цепи датчика является первым шагом в алгоритме поиска неисправности. Ниже мы подробно разберем методику тестирования, необходимые инструменты и интерпретацию полученных результатов.</p>
+
+<h2>Симптомы неисправности температурного сенсора</
+<p>Первым признаком, указывающим на необходимость проверить термодатчик холодильника Индезит, является несоответствие фактической температуры внутри камер показаниям на дисплее или ожидаемым значениям. Продукты в основной камере могут начать портиться, в то время как индикатор будет показывать нормальный режим работы, или же наоборот — произойдет обрастание льдом испарителя из-за того, что система «не видит»ную низкую температуру.</p>
+
+<p>Вторым важным симптомом служит появление специфических кодов ошибок на панели управления. Для большинства моделей с электронным управлением характерно отображение комбинации <code>F14</code>, что прямо указывает на обрыв или короткое замыкание в цепи датчика температуры. В моделях без дисплея о проблеме может сигнализировать постоянно горящий или мигающий индикатор «Alarm», сопровождаемый звуковым сигналом, который не отключается даже после закрытия дверей.</p>
+
+<blockquote>⚠️ Внимание: Если холодильник работает в режиме нон-стоп (компрессор не выключается сутками), это может свидетельствовать о том, что датчик «залип» в значении высокой температуры и постоянно требует от модуля охлаждения.</blockquote>
+
+<p>Также стоит обратить внимание на цикличность работы агрегата. Исправный холодильник Индезит работает циклами: включился, охладил до заданной температуры, выключился. Если же паузы между включениями стали слишком короткими или исчезли вовсе, а внутри камеры явно холодно, <strong>термостатический элемент</strong> вероятно передает неверные данные. Иногда неисправность проявляется только при определенных условиях, например, сразу после разморозки или при резком скачке напряжения в сети.</p>
+
+<h2>Необходимые инструменты и подготовка к диагностике</
+<p>Для проведения качественной диагностики вам потребуется минимальный набор инструментов, главным из которых является цифровой мультиметр. Аналоговые стрелочные приборы («цешки») использовать не рекомендуется, так как они имеют высокую погрешность при измерении малых сопротивлений, характерных для <em>NTC-сенсоров</em>. Мультиметр должен быть переключен в режим измерения сопротивления (Ом) с пределом до 20 кОм.</p>
+
+<blockquote>⚠️ Внимание: Перед началом любых работ по разборке и прозвонке электрических цепей обязательно отключите холодильник от сети электропитания во избежание поражения током или повреждения платы управления.</blockquote>
+
+<p>Дополнительно вам могут понадобиться:</p>
+<ul>
+<li>🔧 Отвертка с крестовым шлицем для снятия защитных панелей и пластиковых кожухов.</li>
+<li>🧊 Емкость со льдом или фен для изменения температуры датчика во время проверки (опционально).</li>
+<li>📱 Смартфон с таблицей сопротивлений для вашей конкретной модели холодильника.</li>
+<li>✂️ Пассатижи или бокорезы для аккуратного отсоединения клеммных колодок.</li>
+</ul>
+
+<p>Подготовка к проверке термодатчика холодильника Индезит также включает в себя доступ к самому элементу. В зависимости от модели, сенсор может располагаться в пластиковом кожухе на задней стенке холодильной камеры, быть встроенным в испаритель или находиться в зоне воздушной заслонки. В некоторых случаях требуется частичная разморозка агрегата, если доступ перекрыт ледяной коркой, что часто бывает при неисправности системы оттайки.</p>
+
+<h2>Расположение термодатчика в различных моделях Indesit</
+<p>Поиск <strong>температурного сенсора</strong> зависит от конструкции вашего холодильника. В однокомпрессорных моделях с системой <em>No Frost</em> датчик чаще всего расположен в воздушном канале между морозильной и холодильной камерами. Он закрыт пластиковым колпачком, который нужно аккуратно поддеть ножом или отверткой. В моделях с капельной системой разморозки («плачущий» испаритель) элемент может быть утоплен в пену или закреплен на ребрах испарителя за задней панелью.</p>
+
+<details class="faq-item"><summary>Скрытая установка в двухкамерных моделях</summary><div class="faq-answer"><p>В двухкамерных холодильниках Индезит часто используется два датчика: один контролирует температуру в холодильной камере, второй — в морозильной. Основной датчик, вызывающий ошибку F14, обычно находится в верхней части холодильного отделения, рядом с плафоном лампы или за декоративной накладкой.</p></div></details>
+
+<p>Если вы владелец модели серии <em>Indesit C</em> или <em>ER</em>, ищите черный пластиковый наконечник с двумя проводами, выходящий из-под верхней крышки внутреннего объема. Провода обычно идут в жгуте к управляющей плате, которая может располагаться в верхней части (за панелью управления) или в нижней части агрегата (в нише компрессора).</p>
+
+<table>
+<thead>
+<tr>
+<th>Серия холодильника</th>
+<th>Тип системы</th>
+<th>Расположение датчика</th>
+<th>Доступ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Indesit BIA</td>
+<td>No Frost</td>
+<td>Воздушный канал, верхняя часть</td>
+<td>Снятие верхней крышки</td>
+</tr>
+<tr>
+<td>Indesit C...</td>
+<td>Капельная</td>
+<td>На задней стенке, внутри камеры</td>
+<td>Снятие декоративной панели</td>
+</tr>
+<tr>
+<td>Indesit DS</td>
+<td>Статическая</td>
+<td>Встроен в испаритель</td>
+<td>Требует разморозки и снятия панели</td>
+</tr>
+<tr>
+<td>Indesit Smart</td>
+<td>No Frost</td>
+<td>В блоке управления воздухом</td>
+<td>Разборка верхней части</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Пошаговая инструкция: как прозвонить датчик мультиметром</
+<p>Процесс проверки термодатчика холодильника Индезит мультиметром требует последовательного выполнения действий для получения достоверного результата. Сначала необходимо обеспечить доступ к контактам сенсора. Если датчик подключен через разъем, отсоедините его. Если провода идут напрямую к плате, их придется отпаять или аккуратно отсоединить клеммы, предварительно сфотографировав схему подключения.</p>
+
+<div class="checklist-block"><h4>☑️ Чек-лист подготовки к замерам</h4><label class="check-item"><input type="checkbox"><span>Отключить холодильник от сети 220В</span></label><label class="check-item"><input type="checkbox"><span>Обеспечить доступ к контактам датчика</span></label><label class="check-item"><input type="checkbox"><span>Переключить мультиметр в режим Ом (20кОм)</span></label><label class="check-item"><input type="checkbox"><span>Очистить контакты от окислов</span></label><label class="check-item"><input type="checkbox"><span>Подготовить таблицу сопротивлений</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Установите щупы мультиметра на контакты разъема датчика. Полярность в данном случае не важна, так как <strong>терморезистор</strong> не имеет направления тока. На экране прибора должно отобразиться значение сопротивления. При комнатной температуре (+20...+25°C) исправный датчик обычно показывает сопротивление в диапазоне от 4.5 до 6.5 кОм (точное значение зависит от модели). Если прибор показывает «1» (бесконечность) или «0», значит, в цепи обрыв или короткое замыкание соответственно.</p>
+
+<p>Для более точной диагностики можно провести тест с изменением температуры. Возьмите датчик в руку, чтобы нагреть его теплом тела, или положите в пакет со льдом. Сопротивление должно плавно меняться: при нагревании оно падает, при охлаждении — растет. Если показания «застыли» на одном месте или меняются скачкообразно, элемент неисправен.</p>
+
+<div class="poll-widget" id="poll-4a04f76c"><div class="poll-widget-question">📊 Какой результат показал мультиметр при +20°C?</div><div class="poll-widget-option" data-poll="4a04f76c" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">0 Ом (КЗ)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="4a04f76c" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Бесконечность (Обрыв)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="4a04f76c" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">4-7 кОм (Норма)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="4a04f76c" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Показания скачут</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2>Таблица соответствия сопротивлений и температур</
+<p>Критически важно сверять полученные показания с заводскими параметрами, так как разные партии холодильников Индезит могут комплектоваться сенсорами с slightly отличающимися характеристиками. Ниже приведена усредненная таблица для наиболее распространенных <em>NTC-датчиков</em>, используемых в технике этого бренда.</p>
+
+<table>
+<thead>
+<tr>
+<th>Температура (°C)</th>
+<th>Сопротивление (кОм) - Мин</th>
+<th>Сопротивление (кОм) - Среднее</th>
+<th>Сопротивление (кОм) - Макс</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+25 (Комнатная)</td>
+<td>4.60</td>
+<td>5.00</td>
+<td>5.40</td>
+</tr>
+<tr>
+<td>+15</td>
+<td>6.80</td>
+<td>7.20</td>
+<td>7.60</td>
+</tr>
+<tr>
+<td>+5</td>
+<td>10.50</td>
+<td>11.00</td>
+<td>11.50</td>
+</tr>
+<tr>
+<td>-5</td>
+<td>16.00</td>
+<td>16.80</td>
+<td>17.50</td>
+</tr>
+<tr>
+<td>-18 (Морозилка)</td>
+<td>38.00</td>
+<td>40.00</td>
+<td>42.00</td>
+</tr>
+</tbody>
+</table>
+
+<p>Если ваши замеры при определенной температуре значительно отклоняются от табличных значений (более чем на 10-15%), <mark>замена термодатчика обязательна</mark>, так как модуль управления будет некорректно рассчитывать время работы компрессора. Также важно проверить изоляцию проводов, идущих к датчику. Часто проблема кроется не в самом сенсоре, а в перетертом проводе, который замыкает на корпус или другую цепь.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Полезный совет: Если под рукой нет точной таблицы для вашей модели, сравните показания с исправным датчиком аналогичного холодильника или используйте усредненные значения, но с учетом возможной погрешности в 1-2 градуса.</p></div>
+
+<h2>Замена элемента и сброс ошибки</
+<p>Процедура замены термодатчика холодильника Индезит технически проста, но требует аккуратности. Новый элемент должен иметь аналогичные характеристики сопротивления и геометрические размеры, чтобы правильно встать в посадочное место. Старый датчик отсоединяется, а на его место устанавливается новый. Если соединение производится не через разъем, а пайкой, используйте низкотемпературный припой и быстро выполняйте работу, чтобы не перегреть чувствительный элемент.</p>
+
+<p>После физической замены необходимо сбросить ошибку в памяти контроллера. В большинстве моделей Индезит это происходит автоматически после нескольких циклов включения-выключения или после полного отключения от сети на 15-20 минут. Если код ошибки <code>F14</code> продолжает гореть, проверьте качество контактов и целостность проводов до платы управления.</p>
+
+<blockquote>⚠️ Внимание: Не используйте датчики от других брендов (например, LG или Samsung) без перепроверки их параметров, так как их кривая сопротивления может отличаться, что приведет к некорректной работе холодильника.</blockquote>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Главный вывод: Успешная замена и правильные показания мультиметра гарантируют восстановление штатного режима работы холодильника, но только если исправна сама плата управления.</p></div>
+
+<h2>Часто задаваемые вопросы (FAQ)</
+<details>
+<summary>Можно ли временно закоротить датчик, чтобы холодильник заработал?</summary>
+<p>Закорачивание датчика (имитация высокой температуры) заставит компрессор работать постоянно, что приведет к глубокой заморозке и возможному выходу из строя мотора. Это допустимо только для кратковременной проверки работы компрессора, но не для постоянной эксплуатации.</p>
+</details>
+
+<details>
+<summary>Почему после замены датчика ошибка F14 не пропадает?</summary>
+<p>Возможно, неисправна сама плата управления, окислены контакты в разъеме, или поврежден провод, соединяющий датчик с модулем. Также может потребоваться больше времени для автоматического сброса ошибки.</p>
+</details>
+
+<details>
+<summary>Где купить оригинальный термодатчик для Indesit?</summary>
+<p>Оригинальные запчасти лучше приобретать в специализированных магазинах бытовой техники или у официальных дилеров. Артикул детали часто указан в сервисной документации или на самом элементе.</p>
+</details>
+
+<details>
+<summary>Влияет ли влажность в камере на показания датчика?</summary>
+<p>Сам по себе датчик герметичен, но окисление контактов разъема из-за влаги может искажать показания сопротивления, вызывая ложные ошибки.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/g/gd/gde-nakhoditsya-predokhranitel-v-kholodilnike-indezit-nou-frost.html" class="related-card">Предохранитель в холодильнике Indesit No Frost: где находится и как заменить</a></li><li><a href="/articles/k/ka/kak-pochistit-ventilyatsiyu-v-kholodilnike-indezit.html" class="related-card">Как почистить вентиляцию в холодильнике Индезит: инструкция</a></li><li><a href="/articles/p/po/pochemu-bezhit-voda-iz-kholodilnika-snizu-indezit.html" class="related-card">Почему течет холодильник Indesit: устранение протечек снизу</a></li><li><a href="/articles/k/kh/kholodilnik-indezit-perestal-okhlazhdat-v-chem-problema.html" class="related-card">Холодильник Indesit перестал охлаждать: причины и ремонт</a></li><li><a href="/articles/k/ka/kak-pribavit-kholod-v-kholodilnike-indesit.html" class="related-card">Как прибавить холод в холодильнике Indesit: настройки и ремонт</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/g/gd/gde-nakhoditsya-predokhranitel-v-kholodilnike-indezit-nou-frost.html" class="related-bottom-card"><span class="related-bottom-title">Предохранитель в холодильнике Indesit No Frost: где находится и как заменить</span><span class="related-bottom-desc">Ищете, где находится предохранитель в холодильнике Индезит Ноу Фрост? Подробная инструкция по поиску</span></a><a href="/articles/k/ka/kak-pochistit-ventilyatsiyu-v-kholodilnike-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как почистить вентиляцию в холодильнике Индезит: инструкция</span><span class="related-bottom-desc">Подробная инструкция, как почистить вентиляцию в холодильнике Индезит. Устранение наледи, шума и про</span></a><a href="/articles/p/po/pochemu-bezhit-voda-iz-kholodilnika-snizu-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Почему течет холодильник Indesit: устранение протечек снизу</span><span class="related-bottom-desc">Разбираемся, почему бежит вода из холодильника Индезит снизу. Пошаговая инструкция по прочистке дрен</span></a><a href="/articles/k/kh/kholodilnik-indezit-perestal-okhlazhdat-v-chem-problema.html" class="related-bottom-card"><span class="related-bottom-title">Холодильник Indesit перестал охлаждать: причины и ремонт</span><span class="related-bottom-desc">Почему холодильник Индезит не морозит, но работает? Разбор поломок компрессора, утечки фреона, неисп</span></a><a href="/articles/k/ka/kak-pribavit-kholod-v-kholodilnike-indesit.html" class="related-bottom-card"><span class="related-bottom-title">Как прибавить холод в холодильнике Indesit: настройки и ремонт</span><span class="related-bottom-desc">Инструкция: как прибавить холод в холодильнике Indesit. Настройка термостата, проверка фреона, устра</span></a><a href="/articles/s/sk/skolko-potreblyaet-kholodilnik-indesit.html" class="related-bottom-card"><span class="related-bottom-title">Сколько потребляет холодильник Indesit: расход кВт в месяц</span><span class="related-bottom-desc">Узнайте, сколько потребляет холодильник Indesit в месяц и год. Таблица расхода по моделям, классам э</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

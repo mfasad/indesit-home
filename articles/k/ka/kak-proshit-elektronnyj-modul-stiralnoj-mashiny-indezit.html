@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Прошивка электронного модуля стиральной машины Indesit: инструкция — Индезит Хоум</title>
+    <meta name="description" content="Как прошить модуль Indesit. Считывание дампа, работа с программатором и восстановление заводских настроек. Подробное руководство по ремонту.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/k/ka/kak-proshit-elektronnyj-modul-stiralnoj-mashiny-indezit.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Прошивка электронного модуля стиральной машины Indesit: инструкция">
+    <meta property="og:description" content="Как прошить модуль Indesit. Считывание дампа, работа с программатором и восстановление заводских настроек. Подробное руководство по ремонту.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/elektrika-i-datchiki/">Электрика и датчики</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Прошивка электронного модуля стиральной машины Indesit: инструкция</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Прошивка электронного модуля стиральной машины Indesit</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#диагностика-и-подготовка-оборудования">Диагностика и подготовка оборудования</a></li><li><a href="#извлечение-модуля-и-доступ-к-памяти">Извлечение модуля и доступ к памяти</a></li><li><a href="#процесс-считывания-и-записи-дампа">Процесс считывания и записи дампа</a></li><li><a href="#настройка-параметров-после-прошивки">Настройка параметров после прошивки</a></li><li><a href="#типичные-ошибки-и-методы-их-устранения">Типичные ошибки и методы их устранения</a></li><li><a href="#профилактика-программных-сбоев">Профилактика программных сбоев</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+
+<p>Восстановление работоспособности современной стиральной машины <em>Indesit</em> часто упирается в программное обеспечение управляющего контроллера. Сбои в памяти микросхемы EEPROM могут приводить к появлению ошибок, блокировке запуска или хаотичному поведению агрегата. Перепрошивка является крайней мерой, когда аппаратные методы диагностики не дали результата, а замена платы экономически нецелесообразна.</p>
+
+<p>Процесс записи нового кода требует наличия специализированного оборудования, определенного набора инструментов и, что критически важно, точного дампа прошивки именно для вашей модели. Ошибки на этапе подготовки или выполнения процедуры могут окончательно вывести контроллер из строя. В данном руководстве мы разберем технические нюансы работы с платами различных серий.</p>
+
+<p>Прежде чем приступать к пайке и подключению программатора, необходимо убедиться в исправности силовых цепей модуля. Программный сбой часто является следствием скачка напряжения или пробоя датчиков. Если не устранить первопричину, новая прошивка может быть повреждена в первые же секунды работы устройства. <strong>Резервное копирование</strong> текущего состояния памяти — обязательный этап перед любыми манипуляциями.</p>
+
+<h2 id="диагностика-и-подготовка-оборудования">Диагностика и подготовка оборудования</h2>
+
+<p>Начальный этап заключается в точном определении типа установленной платы и микросхемы памяти. В стиральных машинах <em>Indesit</em> наиболее распространены модули серий <code>064322</code>, <code>W105</code> или более новые версии с интерфейсом <code>CAN-bus</code>. Для работы вам потребуется программатор, поддерживающий последовательный интерфейс <code>I2C</code> или <code>SPI</code>, в зависимости от архитектуры процессора.</p>
+
+<p>Качество соединения контактов играет решающую роль. Окисленные дорожки или плохой прижим щупов приводят к ошибкам чтения CRC, что делает процесс прошивки невозможным. Рекомендуется использовать паяльник с тонким жалом для подпаивания проводов непосредственно к выводам микросхемы, если клипса не обеспечивает надежного контакта.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Перед подключением программатора обязательно отключите модуль от сети 220В и дайте конденсаторам разрядиться в течение 5-10 минут. Остаточное напряжение может вывести порт программатора из строя.</p>
+</blockquote>
+
+<p>Для подключения потребуется следующий набор инструментов:</p>
+<ul>
+<li>🔌 Программатор (например, на базе CH341A или специализированный для бытовой техники)</li>
+<li>🔧 Паяльная станция и тонкий припой</li>
+<li>💻 Ноутбук с установленным ПО для работы с EEPROM</li>
+<li>🧵 Тонкие медные провода или пинцет для временного контакта</li>
+</ul>
+
+<details>
+<summary>Как определить тип микросхемы памяти?</summary>
+<p>Тип микросхемы указан на ее корпусе. Ищите маркировку, начинающуюся с <code>24C</code> (например, <code>24C64</code>, <code>24C128</code>). Первые две цифры после префикса указывают на емкость в килобитах. Это критически важно для выбора правильного файла прошивки.</p>
+</details>
+
+<h2 id="извлечение-модуля-и-доступ-к-памяти">Извлечение модуля и доступ к памяти</h2>
+
+<p>Демонтаж электронного блока управления требует аккуратности, так как пластиковые защелки корпуса <em>Indesit</em> часто бывают хрупкими. После снятия верхней крышки машины и откручивания винтов, удерживающих модуль, необходимо отсоединить все разъемы. Рекомендуется фотографировать расположение проводов перед отключением.</p>
+
+<p>Внутри корпуса модуля плата зафиксирована на направляющих. Для доступа к микросхеме EEPROM может потребоваться снятие пластикового кожуха самого блока. В некоторых моделях доступ к контактам памяти перекрыт металлическим экраном или другими компонентами, что требует их временного демонтажа.</p>
+
+<div class="checklist-block"><h4>☑️ Подготовка к пайке</h4><label class="check-item"><input type="checkbox"><span>Снять статическое электричество:Обезжирить контакты:Подготовить флюс:Проверить лупой целостность дорожек</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<p>Осмотрите плату на наличие вздувшихся конденсаторов или следов гари. <strong>Восстановление прошивки</strong> на поврежденной физически плате бессмысленно. Если визуально дефектов нет, можно переходить к организации точки подключения. Часто удобнее подпаять провода к выводам микросхемы, чем использовать прижимную клипсу, которая может соскользнуть в критический момент.</p>
+
+<h2 id="процесс-считывания-и-записи-дампа">Процесс считывания и записи дампа</h2>
+
+<p>Процедура записи данных в энергонезависимую память происходит через последовательный интерфейс. Программное обеспечение на компьютере должно быть настроено на правильный тип микросхемы. Скорость соединения обычно выбирается автоматически, но при ошибках чтения ее можно снизить.</p>
+
+<p>Первым шагом всегда является чтение существующего дампа. Это файл, содержащий все настройки, калибровки и алгоритмы работы вашего конкретного устройства. Сохраните его в надежном месте с уникальным именем, включающим серийный номер машины.</p>
+
+<pre><code>Read -> Save as"Indesit_WISL_Original.bin" -> Verify Checksum</code></pre>
+
+<p>После сохранения оригинала производится очистка памяти (если требуется) или прямая запись нового файла. Файл прошивки должен быть получен из проверенного источника и соответствовать модели двигателя и типу бака вашей стиральной машины. Несоответствие версии ПО может привести к некорректному отжиму или нагреву воды.</p>
+
+<table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Описание</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Интерфейс</td>
+<td>Протокол связи</td>
+<td>I2C / SPI</td>
+</tr>
+<tr>
+<td>Напряжение</td>
+<td>Рабочее напряжение чипа</td>
+<td>3.3V / 5.0V</td>
+</tr>
+<tr>
+<td>Размер файла</td>
+<td>Объем дампа</td>
+<td>8 KB / 16 KB</td>
+</tr>
+<tr>
+<td>Контрольная сумма</td>
+<td>Проверка целостности</td>
+<td>CRC16 / CRC32</td>
+</tr>
+</tbody>
+</table>
+
+<div class="poll-widget" id="poll-4ea3a786"><div class="poll-widget-question">📊 Сталкивались ли вы с программными сбоями в технике?</div><div class="poll-widget-option" data-poll="4ea3a786" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Да, менял прошивку:Были ошибки, но обошелся сбросом:Нет, тольконые поломки:Затрудняюсь ответить</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2 id="настройка-параметров-после-прошивки">Настройка параметров после прошивки</h2>
+
+<p>После успешной записи данных и установки модуля обратно в стиральную машину, необходимо провести процедуру калибровки. Новые заводские настройки не содержат информации о конкретном износе подшипников или жесткости воды в вашем регионе. <strong>Тестовый запуск</strong> позволяет системе адаптироваться.</p>
+
+<p>В некоторых случаях требуется активация скрытого сервисного меню для сброса счетчика циклов или выбора типа нагревательного элемента. Комбинации кнопок зависят от конкретной панели управления <em>Indesit</em>. Часто это одновременное зажатие кнопок"Дополнительные функции" и"Скорость отжима" при включении.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не прерывайте процесс тестирования, даже если машина издает странные звуки. В это время происходит запись параметров в оперативную память контроллера.</p>
+</blockquote>
+
+<p>Если после прошивки машина ведет себя неадекватно (не греет воду, не набирает обороты), проверьте целостность шлейфов. Иногда в процессе монтажа повреждаются тонкие проводники, идущие к таходатчику или ТЭНу. Программное обеспечение не сможет компенсировать физический обрыв цепи.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Сохраняйте оригинальный дамп прошивки навсегда. В случае неудачной записи нового ПО или выхода из строя микросхемы, вы сможете восстановить работоспособность машины, вернув старые данные.</p></div>
+
+<h2 id="типичные-ошибки-и-методы-их-устранения">Типичные ошибки и методы их устранения</h2>
+
+<p>Одной из самых частых проблем является ошибка верификации при записи. Это означает, что данные, записанные в микросхему, не совпадают с исходным файлом. Причины кроются в плохом контакте, нестабильном питании или неисправности самой микросхемы памяти.</p>
+
+<p>Если модуль перестал определяться программатором после неудачной попытки прошивки, возможно, поврежден загрузчик или сгорел порт. В таких случаях требуется замена микросхемы EEPROM на новую, предварительно записанную. Пайка микросхем требует навыка работы с феном.</p>
+
+<ul>
+<li>❌ Ошибка CRC: Проверьте контакт щупов и наличие флюса.</li>
+<li>❌ Устройство не найдено: Проверьте питание на контактах микросхемы.</li>
+<li>❌ Машина не видит модуль: Возможно, перепутаны линии данных и тактирования.</li>
+</ul>
+
+<p>Иногда проблема решается промывкой платы спиртом после пайки. Остатки флюса могут создавать токопроводящие дорожки между контактами, вызывая сбои в работе цифрового блока. Используйте изопропиловый спирт и мягкую кисть для очистки.</p>
+
+<details class="faq-item"><summary>Что делать, если нет родного дампа?</summary><div class="faq-answer"><p>Если найти точную копию прошивки для вашей модели невозможно, можно использовать дамп с аналогичной машины (той же серии модуля и двигателя). Однако в этом случае может потребоваться ручная настройка параметров через сервисное меню, так как калибровки могут отличаться.</p></div></details>
+
+<h2 id="профилактика-программных-сбоев">Профилактика программных сбоев</h2>
+
+<p>Стабильная работа электроники <em>Indesit</em> во многом зависит от качества электропитания. Скачки напряжения в сети — главная причина повреждения данных в памяти. Установка стабилизатора напряжения или хотя бы качественного сетевого фильтра значительно продлевает жизнь модулю.</p>
+
+<p>Также стоит следить за состоянием проводки внутри машины. Перетершиеся провода могут замыкать на корпус или друг на друга, создавая помехи, которые контроллер воспринимает как сигналы управления. Регулярный осмотр внутренних коммуникаций помогает избежать внезапных отказов.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Качественная прошивка решает проблемы с логикой работы, но не устраняет физические неисправности компонентов. Всегда проводите полную диагностику перед перепрограммированием.</p></div>
+
+<p>В заключение, прошивка электронного модуля — это сложный технический процесс, требующий знаний в области микроэлектроники. При отсутствии опыта работы с паяльником и программаторами безопаснее обратиться в специализированный сервисный центр, где гарантируют результат и предоставляют гарантию на выполненные работы.</p>
+
+<details>
+<summary>Можно ли прошить модуль без снятия с машины?</summary>
+<p>Теоретически возможно, если есть доступ к сервисным контактам на разъеме. Однако на практике это рискованно из-за высокого напряжения в блоке. Снятие модуля — единственный безопасный способ гарантировать отсутствие короткого замыкания.</p>
+</details>
+
+<details>
+<summary>Где взять правильную прошивку для Indesit?</summary>
+<p>Официальные файлы доступны только авторизованным сервисам. Для ремонта часто используют дампы, снятые с исправных машин той же модели, или модифицированные версии от энтузиастов, доступные на специализированных форумах по ремонту бытовой техники.</p>
+</details>
+
+<details>
+<summary>Сколько времени занимает перепрошивка?</summary>
+<p>Сам процесс записи занимает от 1 до 5 минут в зависимости от объема памяти. Основное время уходит на подготовку: разборку машины, извлечение модуля, пайку контактов и настройку оборудования.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#диагностика-и-подготовка-оборудования">Диагностика и подготовка оборудования</a></li><li><a href="#извлечение-модуля-и-доступ-к-памяти">Извлечение модуля и доступ к памяти</a></li><li><a href="#процесс-считывания-и-записи-дампа">Процесс считывания и записи дампа</a></li><li><a href="#настройка-параметров-после-прошивки">Настройка параметров после прошивки</a></li><li><a href="#типичные-ошибки-и-методы-их-устранения">Типичные ошибки и методы их устранения</a></li><li><a href="#профилактика-программных-сбоев">Профилактика программных сбоев</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-pomenyat-vyklyuchatel-v-kholodilnike-indezit.html" class="related-card">Как поменять выключатель в холодильнике Индезит: пошагово</a></li><li><a href="/articles/g/gd/gde-nakhoditsya-elektronnyj-modul-v-stiralnoj-mashine-indezit.html" class="related-card">Где находится электронный модуль в стиральной машине Indesit: фото и схемы</a></li><li><a href="/articles/k/ka/kak-proverit-pressostat-multimetrom-v-stiralnoj-mashine-indezit.html" class="related-card">Как проверить прессостат мультиметром в стиральной машине Indesit</a></li><li><a href="/articles/k/ka/kakaya-moshchnost-u-stiralnoj-mashiny-indezit.html" class="related-card">Мощность стиральной машины Indesit: потребление, классы и экономия</a></li><li><a href="/articles/p/pa/panel-indezit-kak-vklyuchit.html" class="related-card">Панель Индезит как включить: причины блокировки и сброс</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-pomenyat-vyklyuchatel-v-kholodilnike-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как поменять выключатель в холодильнике Индезит: пошагово</span><span class="related-bottom-desc">Подробная инструкция по замене выключателя света в холодильнике Indesit. Диагностика неисправности, </span></a><a href="/articles/g/gd/gde-nakhoditsya-elektronnyj-modul-v-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Где находится электронный модуль в стиральной машине Indesit: фото и схемы</span><span class="related-bottom-desc">Подробная инструкция: где искать электронный модуль управления в стиральной машине Indesit. Схемы ра</span></a><a href="/articles/k/ka/kak-proverit-pressostat-multimetrom-v-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить прессостат мультиметром в стиральной машине Indesit</span><span class="related-bottom-desc">Подробная инструкция: как прозвонить прессостат стиральной машины Indesit мультиметром. Диагностика </span></a><a href="/articles/k/ka/kakaya-moshchnost-u-stiralnoj-mashiny-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Мощность стиральной машины Indesit: потребление, классы и экономия</span><span class="related-bottom-desc">Какая мощность у стиральной машины Индезит? Подробный разбор энергопотребления, классов эффективност</span></a><a href="/articles/p/pa/panel-indezit-kak-vklyuchit.html" class="related-bottom-card"><span class="related-bottom-title">Панель Индезит как включить: причины блокировки и сброс</span><span class="related-bottom-desc">Почему панель Indesit не включается и как разблокировать кнопки? Инструкция по сбросу ошибок, провер</span></a><a href="/articles/s/st/stiralnaya-mashina-indezit-pressostat-gde-nakhoditsya.html" class="related-bottom-card"><span class="related-bottom-title">Где находится прессостат в стиральной машине Индезит: фото и схема</span><span class="related-bottom-desc">Подробная инструкция по поиску и проверке датчика уровня воды в СМА Indesit. Узнайте, где расположен</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

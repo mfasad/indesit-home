@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Как проверить термореле Indesit: диагностика мультиметром — Индезит Хоум</title>
+    <meta name="description" content="Подробная инструкция: как проверить термореле стиральной машины Indesit. Признаки поломки, тестер, прозвонка контактов, таблица значений сопротивления.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/t/te/termorele-indezit-kak-proverit.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить термореле Indesit: диагностика мультиметром">
+    <meta property="og:description" content="Подробная инструкция: как проверить термореле стиральной машины Indesit. Признаки поломки, тестер, прозвонка контактов, таблица значений сопротивления.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/elektrika-i-datchiki/">Электрика и датчики</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как проверить термореле Indesit: диагностика мультиметром</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как проверить термореле Indesit: полная диагностика</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-и-типы-термореле-в-стиральных-машинах-indesit">Принцип работы и типы термореле в стиральных машинах Indesit</a></li><li><a href="#визуальная-диагностика-и-подготовка-к-проверке">Визуальная диагностика и подготовка к проверке</a></li><li><a href="#инструментальная-проверка-мультиметром">Инструментальная проверка мультиметром</a></li><li><a href="#таблица-типовых-значений-сопротивления-термостатов">Таблица типовых значений сопротивления термостатов</a></li><li><a href="#типичные-ошибки-при-диагностике-и-их-последствия">Типичные ошибки при диагностике и их последствия</a></li><li><a href="#алгоритм-замены-неисправного-термореле">Алгоритм замены неисправного термореле</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+
+<p>Стиральные машины <em>Indesit</em> славятся своей надежностью, но даже самая качественная техника подвержена износу. Одним из ключевых элементов системы безопасности и управления температурой является термореле, или термостат. Если ваш агрегат перестал греть воду, останавливается на середине цикла или, наоборот, кипятит белье при 40 градусах, проблема может крыться именно в этом небольшом устройстве. Понимание того, <strong>как проверить термореле Индезит</strong>, сэкономит вам время и деньги, позволяя избежать вызова мастера для простой замены детали.</p>
+
+<p>Диагностика термостата не требует глубоких знаний в электронике, но требует внимательности и соблюдения техники безопасности. <strong>Термореле</strong> — это электромеханический датчик, который размыкает или замыкает электрическую цепь в зависимости от температуры теплоносителя. В современных моделях <em>Indesit</em> (особенно серии Witl, Wisl) часто используются биметаллические или капиллярные реле, а также электронные термостаты с NTC-сенсорами. Неисправность любого из этих типов приводит к сбоям в работе нагревательного элемента (ТЭНа).</p>
+
+<p>Прежде чем приступать к разборке, необходимо четко представлять симптомы поломки. Часто пользователи путают выход из строя термостата с перегоранием ТЭНа или неисправностью модуля управления. <strong>Проверка термореле</strong> мультиметром — самый достоверный способ исключить ошибку. Если вы заметили, что машина гудит, но вода холодная, или цикл стирки длится бесконечно долго, не спешите покупать новую деталь. Сначала убедитесь, что виновник именно в термостате, так как его замена требует частичной разборки бака или снятия передней панели.</p>
+
+<h2 id="принцип-работы-и-типы-термореле-в-стиральных-машинах-indesit">Принцип работы и типы термореле в стиральных машинах Indesit</h2>
+
+<p>В стиральных машинах <em>Indesit</em> применяются различные конструкции температурных датчиков, и методика их проверки зависит от типа устройства. Основное назначение элемента — контроль нагрева воды. Когда температура достигает заданного значения, реле размыкает контакты, отключая ТЭН. При остывании процесс повторяется. В старых моделях чаще встречались капиллярные термостаты, где расширение жидкости в трубке механически размыкало контакты. В более современных версиях используются компактные биметаллические реле или электронные датчики сопротивления.</p>
+
+<p><strong>Биметаллическое реле</strong> работает за счет изгиба пластины из двух металлов с разным коэффициентом расширения при нагреве. Это надежная и дешевая конструкция, но она подвержена "усталости" металла. Со временем пластина может деформироваться необратимо, и контакты либо перестанут замыкаться (вода не греется), либо перестанут размыкаться (вода кипит). Электронные термостаты (NTC) меняют свое сопротивление в зависимости от температуры, и для их проверки мультиметром нужно знать таблицу номиналов, а не просто искать обрыв цепи.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Перед любыми манипуляциями внутри стиральной машины <strong>обязательно отключите устройство от электросети</strong>. Работа с электрическими компонентами под напряжением смертельно опасна. Также дождитесь остывания бака, если машина работала недавно.</p>
+</blockquote>
+
+<p>Понимание типа вашего термореле критически важно для правильной диагностики. Если в машине стоит электронный датчик, простая "прозвонка" на наличие контакта может ничего не сказать о его исправности — нужно измерять сопротивление. В механических реле главное — физическое замыкание контактов при определенной температуре. Ошибка в определении типа датчика приведет к ложным выводам и покупке ненужной запчасти.</p>
+
+<h2 id="визуальная-диагностика-и-подготовка-к-проверке">Визуальная диагностика и подготовка к проверке</h2>
+
+<p>Первым этапом всегда является визуальный осмотр. Добраться до термореле в машинах <em>Indesit</em> можно через заднюю стенку (в большинстве моделей) или через лючок в нижней части передней панели. Вам потребуется снять заднюю крышку, открутив несколько саморезов по периметру. Термореле обычно расположен рядом с ТЭНом, вставленным в специальный патрубок бака. Ищите элемент с проводами, идущими к нему, часто он имеет пластиковый корпус черного или белого цвета.</p>
+
+<p>При осмотре обратите внимание на состояние проводов и контактов. Окисление, почернение изоляции или оплавление пластика говорят о перегреве или плохом контакте. <strong>Окисленные контакты</strong> могут давать высокое переходное сопротивление, из-за чего модуль управления будет получать неверные данные о температуре. Если вы видите следы коррозии на клеммах, их можно аккуратно зачистить, но если оплавился сам корпус реле, его необходимо менять независимо от результатов электрических тестов.</p>
+
+<div class="checklist-block"><h4>☑️ Чек-лист подготовки к диагностике</h4><label class="check-item"><input type="checkbox"><span>Отключить машину от розетки</span></label><label class="check-item"><input type="checkbox"><span>Снять заднюю крышку корпуса</span></label><label class="check-item"><input type="checkbox"><span>Найти ТЭН и термореле рядом с ним</span></label><label class="check-item"><input type="checkbox"><span>Сфотографировать схему подключения проводов</span></label><label class="check-item"><input type="checkbox"><span>Отсоединить клеммы от термореле</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Часто причиной неисправности становится не сам датчик, а нарушение герметичности его посадки. Если термореле не плотно прилегает к баку или потеряло контакт с теплоносителем, оно будет показывать неверную температуру. Проверьте, нет ли трещин на корпусе датчика или уплотнительной резинке. Механические повреждения, полученные при предыдущих ремонтах или транспортировке, также могут быть причиной отказа.</p>
+
+<h2 id="инструментальная-проверка-мультиметром">Инструментальная проверка мультиметром</h2>
+
+<p>Для точной диагностики вам понадобится мультиметр (тестер). Переключите прибор в режим измерения сопротивления (Ом) или режим прозвонки (со значком диода/звука). Если вы проверяете механическое (контактное) реле, оно должно "звенеть" (показывать близкое к нулю сопротивление) при комнатной температуре, если оно нормально замкнуто, или наоборот, в зависимости от конструкции. Однако в стиральных машинах <em>Indesit</em> чаще встречаются нормально замкнутые контакты, которые размыкаются при нагреве.</p>
+
+<p>Процесс проверки электронного термостата (NTC) отличается. Здесь мы измеряем не наличие контакта, а величину сопротивления. Подключите щупы мультиметра к контактам датчика. При комнатной температуре (около 20°C) исправный термостат <em>Indesit</em> должен показывать сопротивление в диапазоне от 18 до 22 кОм (точный номинал зависит от модели, но диапазон обычно узкий). Если прибор показывает "1" (бесконечность) или "0" (короткое замыкание), датчик неисправен.</p>
+
+<div class="poll-widget" id="poll-0690ee77"><div class="poll-widget-question">📊 Какой результат показал ваш мультиметр?</div><div class="poll-widget-option" data-poll="0690ee77" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Сопротивление в норме (около 20 кОм)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="0690ee77" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Сопротивление равно нулю</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="0690ee77" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Сопротивление бесконечное (обрыв)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="0690ee77" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Показания скачут при касании</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<p>Важным моментом является проверка на "пробой" на корпус. Переведите мультиметр в режим проверки диодов или сопротивления. Один щуп прижмите к контакту термореле, а другой — к металлическому корпусу датчика или баку. Прибор не должен реагировать (показывать бесконечность). Если есть хоть какое-то значение сопротивления, значит, нарушена изоляция, и такой термостат эксплуатировать <strong>категорически запрещено</strong> из-за риска удара током.</p>
+
+<h2 id="таблица-типовых-значений-сопротивления-термостатов">Таблица типовых значений сопротивления термостатов</h2>
+
+<p>Для удобства диагностики приведем справочные данные. Помните, что сопротивление термисторов (NTC) зависит от температуры: чем горячее вода, тем ниже сопротивление. Приведенные значения актуальны для большинства моделей <em>Indesit</em> и <em>Ariston</em>, использующих стандартные датчики.</p>
+
+<table>
+<thead>
+<tr>
+<th>Температура воды (°C)</th>
+<th>Ожидаемое сопротивление (кОм)</th>
+<th>Допустимая погрешность</th>
+<th>Статус</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20°C (комнатная)</td>
+<td>20.0 кОм</td>
+<td>±1.5 кОм</td>
+<td>Норма</td>
+</tr>
+<tr>
+<td>40°C (теплая)</td>
+<td>10.5 кОм</td>
+<td>±1.0 кОм</td>
+<td>Норма</td>
+</tr>
+<tr>
+<td>60°C (горячая)</td>
+<td>5.2 кОм</td>
+<td>±0.8 кОм</td>
+<td>Норма</td>
+</tr>
+<tr>
+<td>90°C (кипяток)</td>
+<td>1.8 кОм</td>
+<td>±0.3 кОм</td>
+<td>Норма</td>
+</tr>
+</tbody>
+</table>
+
+<p>Если ваши замеры сильно отличаются от табличных, например, при 20 градусах прибор показывает 5 кОм или 50 кОм, термореле требует замены. Также стоит учитывать, что измерения лучше проводить на снятом, но остывшем до комнатной температуры датчике. Если вы измеряете сопротивление прямо в баке, где могла остаться теплая вода после последней стирки, показатели будут ниже.</p>
+
+<details class="faq-item"><summary>Почему показания могут врать?</summary><div class="faq-answer"><p>Если щупы мультиметра окислены или вы плохо прижали их к контактам, сопротивление будет выше реального. Всегда очищайте контакты перед замером. Также дешевые мультиметры могут иметь большую собственную погрешность, поэтому ориентируйтесь на порядок значений, а не на десятые доли.</p></div></details>
+
+<h2 id="типичные-ошибки-при-диагностике-и-их-последствия">Типичные ошибки при диагностике и их последствия</h2>
+
+<p>Одной из самых частых ошибок является игнирование состояния проводки. Вы можете заменить исправный термореле, но если провода перебиты или окислены в разъеме, машина работать не будет. <strong>Целостность цепи</strong> должна проверяться от модуля управления до самого датчика. Часто перетирается изоляция в местах вибрации корпуса, что приводит к коротким замыканиям, которые модуль воспринимает как неисправность датчика.</p>
+
+<p>Еще одна ошибка — неправильная установка нового реле. Термостат должен быть плотно вставлен в гнездо ТЭНа или патрубка. Если останется зазор, датчик будет измерять температуру воздуха внутри бака, а не воды. Это приведет к тому, что вода будет нагреваться до 95-99 градусов, так как воздух прогревается медленнее, и реле не будет вовремя размыкать цепь. Это опасно для тканей и резиновых уплотнителей.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не используйте термореле с другого типа техники (например, от посудомоечных машин или утюгов) в качестве временной замены. Их температурные характеристики и габариты могут не соответствовать требованиям стиральной машины <em>Indesit</em>, что приведет к пожару или порче белья.</p>
+</blockquote>
+
+<p>Не стоит забывать и о программных сбоях. В редких случаях модуль управления может неправильно интерпретировать показания исправного датчика из-за скачка напряжения. <mark>Сброс ошибки путем отключения машины от сети на 15-20 минут</mark> иногда помогает восстановить корректную работу без замены деталей, если физическая поломка исключена.</p>
+
+<h2 id="алгоритм-замены-неисправного-термореле">Алгоритм замены неисправного термореле</h2>
+
+<p>Если проверка подтвердила неисправность, деталь необходимо заменить. Процесс не сложный, но требует аккуратности. Сначала снимите клеммы проводов, запомнив или сфотографировав их расположение. Затем открутите крепежную гайку (если она есть) или аккуратно вытяните датчик из посадочного места. В некоторых моделях <em>Indesit</em> термореле держится на защелках или вставляется в паз ТЭНа.</p>
+
+<p>Новый датчик устанавливается в обратном порядке. Убедитесь, что резиновый уплотнитель сидит ровно и не пережат. После сборки не спешите запускать полную стирку. Включите режим быстрой стирки или слива, чтобы проверить герметичность соединений и отсутствие протечек. Только убедившись в сухости, можно запускать цикл с нагревом для финальной проверки работы нового термостата.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Главный вывод: Замена термореле занимает не более 30 минут, но требует точной диагностики мультиметром, чтобы не менять исправную деталь.</p></div>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли эксплуатировать машину, если закоротить контакты термореле?</summary>
+<p>Технически машина будет греть воду постоянно, пока не закипит, но это крайне опасно. Без контроля температуры ТЭН может перегреться и взорваться, а кипяток повредит пластиковые детали бака и одежду. Кроме того, модуль управления может уйти в ошибку перегрева и заблокировать работу.</p>
+</details>
+
+<details>
+<summary>Почему машина греет воду до 90 градусов вместо 40?</summary>
+<p>Скорее всего, термореле "залипло" в замкнутом состоянии и не размыкает цепь при достижении нужной температуры. Также возможен сбой в модуле управления, который не видит сигнал от датчика. Требуется замена термостата.</p>
+</details>
+
+<details>
+<summary>Где купить оригинальное термореле для Indesit?</summary>
+<p>Оригинальные запчасти лучше покупать в специализированных магазинах или сервисных центрах, запрашивая деталь по коду модели вашей стиральной машины (например, код начинается с C или WIS). Аналоги могут работать, но их ресурс часто ниже.</p>
+</details>
+
+<details>
+<summary>Влияет ли жесткая вода на работу термореле?</summary>
+<p>Прямого влияния на электрические контакты нет, но накипь, образующаяся на ТЭНе и вокруг датчика, ухудшает теплообмен. Датчик может нагреваться медленнее воды, что приведет к перегреву жидкости. Регулярная чистка машины от наки продлит жизнь термореле.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#принцип-работы-и-типы-термореле-в-стиральных-машинах-indesit">Принцип работы и типы термореле в стиральных машинах Indesit</a></li><li><a href="#визуальная-диагностика-и-подготовка-к-проверке">Визуальная диагностика и подготовка к проверке</a></li><li><a href="#инструментальная-проверка-мультиметром">Инструментальная проверка мультиметром</a></li><li><a href="#таблица-типовых-значений-сопротивления-термостатов">Таблица типовых значений сопротивления термостатов</a></li><li><a href="#типичные-ошибки-при-диагностике-и-их-последствия">Типичные ошибки при диагностике и их последствия</a></li><li><a href="#алгоритм-замены-неисправного-термореле">Алгоритм замены неисправного термореле</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/s/st/stiralnaya-mashina-indesit-pokazyvaet-h20-i-pishchit-chto-eto-znachit.html" class="related-card">Стиральная машина Indesit: ошибка H20 — что делать</a></li><li><a href="/articles/p/pa/panel-indezit-kak-vklyuchit.html" class="related-card">Панель Индезит как включить: причины блокировки и сброс</a></li><li><a href="/articles/s/st/stiralnaya-mashina-indezit-skolko-amper.html" class="related-card">Стиральная машина Indesit: сколько ампер потребляет и как проверить</a></li><li><a href="/articles/g/gd/gde-nakhoditsya-takhodatchik-v-stiralnoj-mashine-indezit.html" class="related-card">Где находится таходатчик в стиральной машине Indesit: фото и схема</a></li><li><a href="/articles/k/ka/kak-proverit-ispravnost-elektrodvigatelya-stiralnoj-mashiny-indezit.html" class="related-card">Как проверить электродвигатель стиральной машины Indesit</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/s/st/stiralnaya-mashina-indesit-pokazyvaet-h20-i-pishchit-chto-eto-znachit.html" class="related-bottom-card"><span class="related-bottom-title">Стиральная машина Indesit: ошибка H20 — что делать</span><span class="related-bottom-desc">Почему мигает H20 и пищит стиральная машина Indesit? Полный разбор причин, диагностика датчиков и ин</span></a><a href="/articles/p/pa/panel-indezit-kak-vklyuchit.html" class="related-bottom-card"><span class="related-bottom-title">Панель Индезит как включить: причины блокировки и сброс</span><span class="related-bottom-desc">Почему панель Indesit не включается и как разблокировать кнопки? Инструкция по сбросу ошибок, провер</span></a><a href="/articles/s/st/stiralnaya-mashina-indezit-skolko-amper.html" class="related-bottom-card"><span class="related-bottom-title">Стиральная машина Indesit: сколько ампер потребляет и как проверить</span><span class="related-bottom-desc">Узнайте, сколько ампер потребляет стиральная машина Indesit при разных режимах. Таблица мощности, пр</span></a><a href="/articles/g/gd/gde-nakhoditsya-takhodatchik-v-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Где находится таходатчик в стиральной машине Indesit: фото и схема</span><span class="related-bottom-desc">Узнайте, где расположен таходатчик в стиральной машине Индезит. Инструкция по поиску, проверке и зам</span></a><a href="/articles/k/ka/kak-proverit-ispravnost-elektrodvigatelya-stiralnoj-mashiny-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить электродвигатель стиральной машины Indesit</span><span class="related-bottom-desc">Инструкция по диагностике мотора стиралки Индезит: мультиметр, щетки, коллектор. Как прозвонить обмо</span></a><a href="/articles/k/ka/kak-snyat-termodatchik-s-tena-stiralnoj-mashiny-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как снять термодатчик с ТЭНа стиральной машины Indesit: пошаговая инструкция</span><span class="related-bottom-desc">Подробное руководство по замене датчика температуры на стиральных машинах Indesit. Диагностика, проз</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

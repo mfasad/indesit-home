@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Морозильная камера Indesit включается и выключается: причины — Индезит Хоум</title>
+    <meta name="description" content="Почему морозилка Indesit включается и сразу выключается? Полный гид по диагностике термостата, пускового реле и компрессора своими руками.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/m/mo/morozilnaya-kamera-indezit-vklyuchaetsya-i-srazu-vyklyuchaetsya-pochemu.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Морозильная камера Indesit включается и выключается: причины">
+    <meta property="og:description" content="Почему морозилка Indesit включается и сразу выключается? Полный гид по диагностике термостата, пускового реле и компрессора своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/kholodilniki/">Холодильники</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Морозильная камера Indesit включается и выключается: причины</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Морозильная камера Indesit включается и сразу выключается: причины поломки</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#неисправности-пускового-реле-и-электрической-цепи">Неисправности пускового реле и электрической цепи</a></li><li><a href="#проблемы-с-терморегулятором-и-датчиками-температуры">Проблемы с терморегулятором и датчиками температуры</a></li><li><a href="#механические-неисправности-компрессора">Механические неисправности компрессора</a></li><li><a href="#сбои-в-работе-электронного-модуля-управления">Сбои в работе электронного модуля управления</a></li><li><a href="#проблемы-с-электропроводкой-и-сетевым-напряжением">Проблемы с электропроводкой и сетевым напряжением</a></li><li><a href="#влияние-условий-эксплуатации-на-запуск">Влияние условий эксплуатации на запуск</a></li><li><a href="#алгоритм-самостоятельной-диагностики">Алгоритм самостоятельной диагностики</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Циклическое включение компрессора морозильной камеры Indesit с последующим мгновенным отключением чаще всего сигнализирует о критической неисправности пускового реле или блокировке мотора из-за перегрева. Такая реакция системы защиты предотвращает сгорание обмоток двигателя, но оставляет продукты без холода, требуя немедленной диагностики электрической цепи и механических узлов агрегата.</p>
+
+<p>Если вы наблюдаете, что <strong>морозильная камера Indesit включается и сразу выключается</strong>, это означает, что цепь питания разрывается защитным механизмом или самим управляющим модулем в доли секунды после подачи напряжения. В большинстве случаев виновником становится пусковое реле, которое физически не может запустить ротор двигателя, либо термостат, фиксирующий ложное достиение температурного порога. Игнорирование этого симптома может привести к полному выходу <em>компрессора</em> из строя, так как каждый пик тока при попытке запуска создает экстремальную нагрузку на обмотки.</p>
+
+<p>Первичная диагностика требует внимательного прослушивания звуков, издаваемых агрегатом в момент включения. Характерный щелчок, за которым следует гудение длительностью 2-5 секунд и повторный щелчок отключения, указывает на механическую проблему запуска или заклинивание поршневой группы. В редких случаях подобная цикличность вызвана коротким замыканием в проводке или неисправностью платы управления, если речь идет о современных моделях с системой <code>No Frost</code> и электронным контролем.</p>
+
+<h2 id="неисправности-пускового-реле-и-электрической-цепи">Неисправности пускового реле и электрической цепи</h2>
+
+<p>Наиболее вероятной причиной, почему <strong>морозилка Индезит</strong> дергается и глохнет, является выход из строя пускозащитного реле. Этот небольшой компонент отвечает за подачу стартового импульса на вторую обмотку двигателя и последующее переключение на рабочий режим. Если контакты внутри реле окислились или подгорели, цепь не замыкается правильно, и двигатель не получает необходимого крутящего момента для старта.</p>
+
+<p>Визуальный осмотр часто выявляет следы копоти или оплавления пластика на корпусе реле, что подтверждает его неисправность. Даже если внешних дефектов нет, внутренняя катушка могла перегореть, что делает устройство неработоспособным. Замена этого элемента — стандартная процедура ремонта, которая часто возвращает <em>агрегат</em> к жизни без необходимости замены дорогостоящего компрессора.</p>
+
+<ul>
+<li>🔌 Обгоревшие контакты внутри реле блокируют передачу тока на обмотки двигателя.</li>
+<li>⚡ Механическое заедание сердечника реле не дает ему переключиться в рабочий режим.</li>
+<li>🌡️ Тепловая защита реле срабатывает мгновенно из-за неправильных параметров или перегрева.</li>
+</ul>
+
+<details class="faq-item"><summary>Как проверить реле мультиметром</summary><div class="faq-answer"><p>Для проверки снимите реле и прозвоните контакты. Сопротивление катушки должно быть в пределах нормы (обычно 30-60 Ом), а контакты в разомкнутом состоянии не должны звониться. Если катушка в обрыве или контакты замыкают накоротко — деталь под замену.</p></div></details>
+
+<h2 id="проблемы-с-терморегулятором-и-датчиками-температуры">Проблемы с терморегулятором и датчиками температуры</h2>
+
+<p>Ситуация, когда <strong>морозильная камера</strong> ведет себя нестабильно, может быть вызвана некорректной работой термостата. Этот прибор отвечает за размыкание цепи питания компрессора при достижении заданной температуры внутри камеры. Если контакты терморегулятора залипли в разомкнутом положении или датчик передает искаженные данные на модуль управления, система будет думать, что холод уже есть, и сразу отключать мотор.</p>
+
+<p>В моделях с электронным управлением за мониторинг температуры отвечают воздушные датчики, расположенные внутри камеры или на испарителе. Выход из строя такого <strong>сенсора</strong> приводит к тому, что контроллер получает сигнал о переохлаждении и аварийно останавливает цикл охлаждения. Проверка сопротивления датчика при разных температурах позволяет точно определить его пригодность к дальнейшей эксплуатации.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не пытайтесь регулировать термостат вручную, если не уверены в его калибровке. Неправильная настройка может привести к постоянному циклению компрессора и порче продуктов.</p>
+</blockquote>
+
+<p>Диагностика терморегулятора часто требует его извлечения и проверки в условиях, имитирующих рабочий диапазон температур. Для механических моделей характерно окисление контактной группы, что создает высокое переходное сопротивление и падение напряжения, недостаточное для уверенного запуска двигателя <em>Indesit</em>.</p>
+
+<div class="poll-widget" id="poll-7818ac24"><div class="poll-widget-question">📊 Как ведет себя ваша морозилка при включении?</div><div class="poll-widget-option" data-poll="7818ac24" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Слышен щелчок и гудение 3-5 секунд:Сразу щелкает и тишина:Гудит постоянно, но не морозит:Включается на минуту и выключается</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2 id="механические-неисправности-компрессора">Механические неисправности компрессора</h2>
+
+<p>Самым неблагоприятным сценарием, объясняющим, почему <strong>морозильник</strong> включается и выключается, является механический клин компрессора. Поршневая группа могла заклинить из-за отсутствия смазки, попадания влаги в контур или естественного износа деталей. В этом случае двигатель пытается провернуть вал, потребляет огромный пусковой ток, и тепловая защита принудительно разрывает цепь.</p>
+
+<p>Определить клин можно по характерному звуку: вместо ровного гудения слышен натужный гул, переходящий в вибрацию, после чего следует щелчок отключения. Иногда компрессор остается горячим на ощупь, так как тепло не успевает рассеяться между короткими циклами работы. Попытки "расклинить" мотор путем подачи повышенного напряжения или механического воздействия в домашних условиях опасны и часто приводят к окончательной поломке узла.</p>
+
+<table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Вероятная причина</th>
+<th>Действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Гудение 3-5 сек, щелчок</td>
+<td>Заклинивание компрессора</td>
+<td>Замена компрессора</td>
+</tr>
+<tr>
+<td>Щелчок, тишина, повтор</td>
+<td>Неисправность пускового реле</td>
+<td>Замена реле</td>
+</tr>
+<tr>
+<td>Короткий цикл, нет холода</td>
+<td>Неисправность термостата</td>
+<td>Замена терморегулятора</td>
+</tr>
+<tr>
+<td>Нагрев корпуса мотора</td>
+<td>Межвитковое замыкание</td>
+<td>Диагностика обмоток</td>
+</tr>
+</tbody>
+</table>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Если компрессор горячий и не запускается, вероятность его замены составляет более 80%.</p></div>
+
+<h2 id="сбои-в-работе-электронного-модуля-управления">Сбои в работе электронного модуля управления</h2>
+
+<p>В современных моделях <em>Indesit</em> с системой электронного управления причиной циклического включения может стать неисправность основной платы. Модуль управления анализирует сигналы от всех датчиков и принимает решение о запуске компрессора. Если на плате сгорели симисторы, управляющие мотором, или произошел сбой в программном обеспечении, команда на запуск может подаваться импульсно и сразу отменяться.</p>
+
+<p>Визуальный осмотр платы часто выявляет вздувшиеся конденсаторы или почерневшие дорожки, что указывает на скачки напряжения в сети. Ремонт электроники требует специализированного оборудования и знаний в области микроэлектроники. В некоторых случаях помогает перезагрузка системы путем полного отключения прибора от сети на 15-20 минут, что сбрасывает временные ошибки в памяти контроллера.</p>
+
+<ul>
+<li>🔥 Выгорание симистора компрессора на плате управления.</li>
+<li>💻 Сбой прошивки модуля, требующий перепрограммирования.</li>
+<li>📉 Окисление контактов шлейфов, соединяющих плату с датчиками.</li>
+</ul>
+
+<h2 id="проблемы-с-электропроводкой-и-сетевым-напряжением">Проблемы с электропроводкой и сетевым напряжением</h2>
+
+<p>Нестабильное напряжение в бытовой сети — частая внешняя причина, из-за которой <strong>морозильная камера</strong> не может запуститься корректно. Если напряжение падает ниже допустимого порога (обычно 190-200 Вольт), мощности двигателя не хватает для преодоления сопротивления поршневой группы, и защита отключает прибор. Аналогичная ситуация возникает при плохом контакте в розетке или вилке шнура питания.</p>
+
+<p>Проверьте надежность соединения вилки с розеткой и осмотрите шнур на предмет оплавлений. Использование удлинителей для мощных холодильных приборов не рекомендуется, так как они могут создавать дополнительное сопротивление и падение напряжения. Для защиты техники от скачков напряжения рекомендуется использовать стабилизатор или реле контроля напряжения.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Используйте мультиметр для проверки напряжения в розетке в момент попытки запуска морозилки. Если напряжение падает ниже 190В, проблема в электросети квартиры.</p></div>
+
+<div class="checklist-block"><h4>☑️ Диагностика электрики</h4><label class="check-item"><input type="checkbox"><span>Проверьте напряжение в розетке мультиметром:Осмотрите вилку и шнур на предмет повреждений:Попробуйте включить прибор в другую розетку:Проверьте контакты на клеммах компрессора</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<h2 id="влияние-условий-эксплуатации-на-запуск">Влияние условий эксплуатации на запуск</h2>
+
+<p>Условия, в которых установлена <strong>морозилка Indesit</strong>, напрямую влияют на работу компрессора. Если агрегат расположен вблизи источников тепла (батареи, плиты) или в помещении с высокой температурой, теплообмен нарушается. Компрессор перегревается, и тепловое реле срабатывает быстрее, не давая мотору выйти на рабочий режим или prematurely отключая его.</p>
+
+<p>Также важно обеспечить достаточный зазор между задней стенкой камеры и стеной для циркуляции воздуха. Отсутствие вентиляции приводит к локальному перегреву конденсатора и компрессора, что провоцирует аварийные отключения. Регулярная очистка конденсатора от пыли помогает поддерживать эффективный теплообмен и снижает нагрузку на двигатель.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Установка морозильной камеры в неотапливаемом помещении при температуре ниже +5°C может привести к застыванию масла в компрессоре и невозможности запуска.</p>
+</blockquote>
+
+<h2 id="алгоритм-самостоятельной-диагностики">Алгоритм самостоятельной диагностики</h2>
+
+<p>Прежде чем вызывать мастера, можно провести базовую диагностику, чтобы сузить круг возможных неисправностей. Начните с визуального осмотра и проверки питания, затем перейдите к прослушиванию работы агрегата. Если вы не обладаете навыками работы с электроприборами, лучше ограничиться внешними проверками и вызвать специалиста.</p>
+
+<p>Последовательность действий должна быть логичной: от простого к сложному. Сначала исключаются внешние факторы (сеть, розетка), затем проверяются легкодоступные элементы (термостат, реле), и только потом рассмmatривается вариант замены компрессора или ремонта платы.</p>
+
+<details>
+<summary>Можно ли отремонтировать компрессор, если он заклинил?</summary>
+<p>В домашних условиях ремонт заклинившего компрессора невозможен и экономически нецелесообразен. Требуется замена узла целиком с соблюдением технологии запайки и заправки хладагентом.</p>
+</details>
+
+<details>
+<summary>Сколько стоит замена пускового реле?</summary>
+<p>Стоимость самого реле невысока, но цена услуги мастера складывается из диагностики, выезда и стоимости запчасти. Это один из самых дешевых видов ремонта.</p>
+</details>
+
+<details>
+<summary>Почему после разморозки морозилка не запускается?</summary>
+<p>Если после разморозки <strong>камера</strong> гудит и выключается, возможно, влага попала в электрическую часть или компрессор не успел прогреться. Дайте агрегату постоять выключенным несколько часов.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#неисправности-пускового-реле-и-электрической-цепи">Неисправности пускового реле и электрической цепи</a></li><li><a href="#проблемы-с-терморегулятором-и-датчиками-температуры">Проблемы с терморегулятором и датчиками температуры</a></li><li><a href="#механические-неисправности-компрессора">Механические неисправности компрессора</a></li><li><a href="#сбои-в-работе-электронного-модуля-управления">Сбои в работе электронного модуля управления</a></li><li><a href="#проблемы-с-электропроводкой-и-сетевым-напряжением">Проблемы с электропроводкой и сетевым напряжением</a></li><li><a href="#влияние-условий-эксплуатации-на-запуск">Влияние условий эксплуатации на запуск</a></li><li><a href="#алгоритм-самостоятельной-диагностики">Алгоритм самостоятельной диагностики</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-pomenyat-puskovoe-rele-na-kholodilnike-indezit.html" class="related-card">Как заменить пусковое реле на холодильнике Indesit: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-ustanovit-rezinki-na-kholodilnik-indezit.html" class="related-card">Как установить резинки на холодильник Индезит: инструкция</a></li><li><a href="/articles/k/ka/kak-proverit-ottajku-na-kholodilnike-indezit-nou-frost.html" class="related-card">Как проверить оттайку на холодильнике Indesit No Frost</a></li><li><a href="/articles/s/sk/skolko-po-vremeni-razmorazhivaetsya-kholodilnik-indezit-nou-frost.html" class="related-card">Сколько размораживается холодильник Indesit No Frost: время и правила</a></li><li><a href="/articles/k/ka/kak-uznat-god-proizvodstva-kholodilnika-indezit.html" class="related-card">Как узнать год выпуска холодильника Индезит: расшифровка кода</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-pomenyat-puskovoe-rele-na-kholodilnike-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как заменить пусковое реле на холодильнике Indesit: пошаговая инструкция</span><span class="related-bottom-desc">Подробная инструкция по замене пускового реле в холодильнике Индезит. Диагностика неисправности, выб</span></a><a href="/articles/k/ka/kak-ustanovit-rezinki-na-kholodilnik-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как установить резинки на холодильник Индезит: инструкция</span><span class="related-bottom-desc">Пошаговая инструкция: как заменить уплотнительную резинку на холодильнике Indesit. Советы по выбору,</span></a><a href="/articles/k/ka/kak-proverit-ottajku-na-kholodilnike-indezit-nou-frost.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить оттайку на холодильнике Indesit No Frost</span><span class="related-bottom-desc">Детальная инструкция по диагностике системы оттайки в холодильнике Indesit No Frost. Проверка ТЭНа, </span></a><a href="/articles/s/sk/skolko-po-vremeni-razmorazhivaetsya-kholodilnik-indezit-nou-frost.html" class="related-bottom-card"><span class="related-bottom-title">Сколько размораживается холодильник Indesit No Frost: время и правила</span><span class="related-bottom-desc">Узнайте, сколько времени занимает разморозка холодильника Indesit No Frost. Полное руководство по пр</span></a><a href="/articles/k/ka/kak-uznat-god-proizvodstva-kholodilnika-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как узнать год выпуска холодильника Индезит: расшифровка кода</span><span class="related-bottom-desc">Подробная инструкция по определению даты производства холодильников Indesit. Расшифровка серийного н</span></a><a href="/articles/s/sk/skolko-amper-v-kholodilnike-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Сколько Ампер Потребляет Холодильник Indesit: Норма и Диагностика</span><span class="related-bottom-desc">Узнайте, сколько ампер потребляет холодильник Индезит. Нормы тока для компрессора, причины отклонени</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

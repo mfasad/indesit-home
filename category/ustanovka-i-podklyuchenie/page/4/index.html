@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Установка и подключение — страница 4 — Индезит Хоум</title>
+    <meta name="description" content="Правильное подключение шлангов, выравнивание техники и первый запуск устройств.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+        .cat-hero {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e3a5f 100%);
+            border-bottom: none;
+            padding: 48px 0 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cat-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 40%, rgba(37,99,235,0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 60%, rgba(139,92,246,0.1) 0%, transparent 50%);
+            animation: heroShimmer 8s ease-in-out infinite alternate;
+        }
+        @keyframes heroShimmer {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(3deg); }
+        }
+        .cat-hero .container { position: relative; z-index: 1; }
+        .cat-hero-icon {
+            font-size: 3.5rem; display: block; margin-bottom: 16px;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+        }
+        .cat-hero h1 {
+            font-size: 2rem; font-weight: 800; color: #f1f5f9;
+            margin-bottom: 10px; letter-spacing: -0.02em;
+        }
+        .cat-hero p {
+            color: #94a3b8; font-size: 1.05rem; max-width: 600px;
+            margin: 0 auto; line-height: 1.6;
+        }
+        .cat-benefits {
+            display: flex; justify-content: center; gap: 12px;
+            margin-top: 24px; flex-wrap: wrap;
+        }
+        .cat-benefit {
+            display: flex; align-items: center; gap: 8px;
+            background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 10px; padding: 8px 18px;
+            font-size: 0.88rem; color: #e2e8f0; font-weight: 500;
+            transition: all 0.25s;
+        }
+        .cat-benefit:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(255,255,255,0.25);
+            transform: translateY(-2px);
+        }
+        .benefit-icon { font-size: 1.15em; }
+
+        .cat-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px; padding: 32px 0 24px;
+        }
+        .article-home-card {
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 12px;
+            padding: 0; text-decoration: none; color: #1e293b;
+            transition: all 0.25s ease; display: flex; flex-direction: column;
+            overflow: hidden; position: relative;
+        }
+        .article-home-card:hover {
+            border-color: #bfdbfe;
+            box-shadow: 0 8px 24px rgba(37,99,235,0.1);
+            transform: translateY(-4px);
+        }
+        .card-top {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 14px 20px 0;
+        }
+        .card-icon {
+            font-size: 1.4em;
+            background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+            width: 36px; height: 36px; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 2px 6px rgba(37,99,235,0.1);
+        }
+        .card-read-time {
+            font-size: 0.78rem; color: #94a3b8; font-weight: 500;
+        }
+        .article-home-title {
+            font-weight: 600; font-size: 0.97rem; line-height: 1.4;
+            padding: 12px 20px 0; transition: color 0.2s;
+        }
+        .article-home-card:hover .article-home-title { color: #2563eb; }
+        .article-home-desc {
+            font-size: 0.84rem; color: #64748b; line-height: 1.5;
+            padding: 6px 20px 0; flex: 1;
+        }
+        .card-footer {
+            display: flex; justify-content: flex-end; align-items: center;
+            padding: 12px 20px; margin-top: auto;
+            border-top: 1px solid #f1f5f9;
+        }
+        .card-read-more {
+            font-size: 0.82rem; font-weight: 600; color: #94a3b8;
+            transition: all 0.2s;
+        }
+        .article-home-card:hover .card-read-more {
+            color: #2563eb; letter-spacing: 0.02em;
+        }
+
+        .pagination {
+            display: flex; justify-content: center; gap: 6px;
+            padding: 8px 0 48px; flex-wrap: wrap; align-items: center;
+        }
+        .pag-link {
+            padding: 10px 16px; border-radius: 10px; border: 1px solid #e2e8f0;
+            color: #64748b; font-size: 0.9rem; text-decoration: none;
+            transition: all 0.2s; font-weight: 500;
+        }
+        .pag-link:hover { border-color: #2563eb; color: #2563eb; background: #eff6ff; }
+        .pag-active {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            color: #fff !important; border-color: #2563eb;
+            box-shadow: 0 3px 10px rgba(37,99,235,0.3);
+        }
+        .pag-edge { font-size: 1rem; font-weight: 700; }
+        .pag-dots { color: #94a3b8; padding: 0 4px; }
+
+        
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+
+        @media (max-width: 640px) {
+            .cat-grid { grid-template-columns: 1fr; }
+            .cat-hero h1 { font-size: 1.5rem; }
+        }
+    </style>
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container">
+            <a href="/">Главная</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Установка и подключение</span>
+        </div>
+    </nav>
+
+    <section class="cat-hero">
+        <div class="container">
+            <span class="cat-hero-icon">🔌</span>
+            <h1>Установка и подключение</h1>
+            <p>Правильное подключение шлангов, выравнивание техники и первый запуск устройств. · страница 4 из 23</p>
+            <div class="cat-benefits"><div class="cat-benefit"><span class="benefit-icon">📖</span><span>Понятные инструкции</span></div><div class="cat-benefit"><span class="benefit-icon">✅</span><span>Проверенные решения</span></div><div class="cat-benefit"><span class="benefit-icon">⚡</span><span>Без лишних слов</span></div></div>
+        </div>
+    </section>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="cat-grid">
+            <a href="/articles/k/ka/kak-udalit-transportnye-rasporki-v-kholodilnike-indesit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как удалить транспортные распорки в холодильнике Indesit: инструкция</div>
+                <div class="article-home-desc">Подробная инструкция, как удалить транспортные распорки в холодильнике Indesit. Пошаговое руководство по снятию креплени</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-vklyuchit-stiralnuyu-mashinu-indesit-wiun-102.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как включить стиральную машину Indesit WIUN 102: инструкция</div>
+                <div class="article-home-desc">Подробная инструкция: как запустить стиральную машину Indesit WIUN 102. Разбор кнопок, выбор программ, устранение блокир</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-vklyuchit-stiralnuyu-mashinu-indezit-iwub-4085.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как включить стиральную машину Indesit IWUB 4085: инструкция</div>
+                <div class="article-home-desc">Полное руководство по первому запуску Indesit IWUB 4085. Снятие транспортировочных болтов, подключение к коммуникациям и</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-zapustit-stiralnuyu-mashinu-indezit-video-na-russkom-yazyke.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как запустить стиральную машину Indesit: видео инструкция</div>
+                <div class="article-home-desc">Подробная инструкция, как запустить стиральную машину Indesit. Видео на русском языке, настройка программ, коды ошибок и</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/i/in/indesit-w43t-kak-vklyuchit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 8 мин</span>
+                </div>
+                <div class="article-home-title">Indesit W43T: как включить стиральную машину, инструкция</div>
+                <div class="article-home-desc">Полная инструкция: как включить Indesit W43T. Разбор блокировки от детей, проверка блокиратора люка и активация режима о</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-otkrutit-shlang-podachi-vody-v-stiralnoj-mashine-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как открутить шланг подачи воды в стиральной машине Indesit</div>
+                <div class="article-home-desc">Пошаговая инструкция по замене наливного шланга в стиральных машинах Indesit. Советы по устранению протечек и замене фил</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-otregulirovat-nozhki-stiralnoj-mashiny-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как отрегулировать ножки стиральной машины Indesit: пошаговая инструкция</div>
+                <div class="article-home-desc">Узнайте, как правильно отрегулировать ножки стиральной машины Indesit. Устранение вибрации, шума и прыжков при отжиме. П</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-podklyuchit-vilku-k-dukhovomu-shkafu-indezit-3-provoda.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как подключить вилку к духовому шкафу Indesit: 3 провода</div>
+                <div class="article-home-desc">Подробная инструкция, как подключить вилку к духовому шкафу Indesit с 3 проводами. Схемы, цветовая маркировка, выбор каб</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-nastroit-stiralnuyu-mashinku-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как правильно настроить стиральную машинку Indesit: пошаговая инструкция</div>
+                <div class="article-home-desc">Подробная инструкция по настройке стиральной машины Indesit. Калибровка, установка программ, режимов и устранение ошибок</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-perevozit-kholodilnik-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как перевозить холодильник Индезит: пошаговая инструкция</div>
+                <div class="article-home-desc">Подробное руководство по транспортировке холодильника Indesit. Как правильно перевозить стоя или лежа, сколько времени о</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-razblokirovat-baraban-stiralnoj-mashiny-pri-ustanovke-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как разблокировать барабан стиральной машины Indesit при установке: пошагово</div>
+                <div class="article-home-desc">Инструкция по снятию транспортировочных болтов и разблокировке барабана стиральной машины Indesit. Что делать, если закл</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-ustanovit-novuyu-stiralnuyu-mashinu-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как установить стиральную машину Indesit: пошаговая инструкция</div>
+                <div class="article-home-desc">Подробный гид, как правильно установить новую стиральную машину Индезит. Снятие транспортировки, подключение к водопрово</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-vklyuchat-mashinku-avtomat-indesit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как включить стиральную машину Indesit: пошаговая инструкция</div>
+                <div class="article-home-desc">Подробная инструкция: как включить машинку автомат Indesit. Разбор моделей с поворотными переключателями, кнопками, тайм</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-vklyuchit-kholodilnik-indezit-5200w.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как включить холодильник Indesit 5200W: запуск и настройка</div>
+                <div class="article-home-desc">Подробная инструкция: как включить холодильник Indesit 5200w после доставки. Настройка терморегулятора, время разморозки</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/w/wi/wiun-105-indesit-kak-vklyuchit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Indesit WIUN 105: как включить и запустить стирку</div>
+                <div class="article-home-desc">Подробная инструкция, как включить стиральную машину Indesit WIUN 105. Проверка блокировки, выбор программы, задержка ст</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pervyj-raz-zapustit-posudomoechnuyu-mashinu-indesit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Первый запуск посудомоечной машины Indesit: пошаговая инструкция</div>
+                <div class="article-home-desc">Подробное руководство: как правильно запустить посудомоечную машину Indesit впервые. Настройка соли, ополаскивателя и вы</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-podklyuchit-elektricheskuyu-pechku-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 8 мин</span>
+                </div>
+                <div class="article-home-title">Как подключить электрическую печку Индезит: пошаговая схема</div>
+                <div class="article-home-desc">Инструкция по подключению электроплиты Indesit к сети 220В. Схемы для 1, 2 и 3 фаз, выбор кабеля, монтаж розетки и прове</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pomenyat-napravlenie-dveri-na-kholodilnike-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как поменять направление двери на холодильнике Индезит: пошаговая инструкция</div>
+                <div class="article-home-desc">Полное руководство, как перевесить дверь холодильника Индезит. Инструкция для моделей с нижним морозильником и Side-by-S</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-dolzhen-byt-slivnoj-shlang-u-stiralnoj-mashiny-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 8 мин</span>
+                </div>
+                <div class="article-home-title">Как правильно должен быть сливной шланг у стиральной машины Indesit</div>
+                <div class="article-home-desc">Правильная установка сливного шланга стиральной машины Indesit: высота, длина, устранение ошибок и сифон. Инструкция по </div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-regulirovat-nozhki-kholodilnika-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как регулировать ножки холодильника Indesit: пошаговая инструкция</div>
+                <div class="article-home-desc">Узнайте, как правильно выровнять и регулировать ножки холодильника Indesit. Инструкция по настройке высоты, устранению ш</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-ustanovit-vytyazhku-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как установить вытяжку Индезит: пошаговая инструкция</div>
+                <div class="article-home-desc">Подробная инструкция по монтажу вытяжки Indesit. Как правильно установить, подключить к вентиляции и электричеству своим</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-vklyuchit-stiralnuyu-mashinu-indezit-82.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как включить стиральную машину Indesit 82: пошаговая инструкция</div>
+                <div class="article-home-desc">Подробное руководство, как включить стиральную машину Indesit 82. Проверка блокировки, выбор программ и запуск устройств</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-zapustit-stiralnuyu-mashinu-indesit-ws84tx.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 8 мин</span>
+                </div>
+                <div class="article-home-title">Как запустить стиральную машину Indesit WS84TX: инструкция</div>
+                <div class="article-home-desc">Подробная инструкция, как запустить стиральную машину Indesit WS84TX. Настройка программ, выбор температуры, старт и диа</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/n/na/na-kakuyu-temperaturu-stavit-kholodilnik-indezit-novyj.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">На какую температуру ставить новый холодильник Indesit: инструкция</div>
+                <div class="article-home-desc">Оптимальная температура для холодильника Indesit. Настройки для нового устройства, выбор режима, таблица продуктов и уст</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/p/po/posudomojka-indezit-kak-vklyuchit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Посудомойка Индезит: как включить — пошаговая инструкция</div>
+                <div class="article-home-desc">Узнайте, как правильно включить посудомойку Индезит. Инструкция по запуску, выбору программ и устранению причин, если ма</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/s/sk/skolko-vesit-dukhovoj-shkaf-elektricheskij-vstraivaemyj-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 8 мин</span>
+                </div>
+                <div class="article-home-title">Вес встраиваемого духового шкафа Indesit: точные данные</div>
+                <div class="article-home-desc">Узнайте, сколько весит электрический встраиваемый духовой шкаф Indesit. Точные цифры для расчета нагрузки на мебель и пр</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/g/gd/gde-transportirovochnye-bolty-v-kholodilnike-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Где транспортировочные болты в холодильнике Indesit: поиск и демонтаж</div>
+                <div class="article-home-desc">Подробная инструкция, где находятся транспортировочные болты в холодильнике Индезит. Схема расположения, пошаговый демон</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/i/in/indesit-itd-5200-w-kak-perevesit-dver.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 12 мин</span>
+                </div>
+                <div class="article-home-title">Как перевесить дверь на Indesit ITD 5200 W: инструкция</div>
+                <div class="article-home-desc">Пошаговая инструкция: как перевесить дверь на стиральной машине Indesit ITD 5200 W. Снятие петель, демонтаж ручек и пере</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/i/in/indezit-visl-82-kak-vklyuchit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как включить Indesit Wisl 82: запуск после сбоя и блокировки</div>
+                <div class="article-home-desc">Подробная инструкция, как включить стиральную машину Indesit Wisl 82. Диагностика блокировки, проверка кнопок, сброс оши</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-dolzhen-raspolagatsya-slivnoj-shlang-na-stiralnoj-mashine-avtomat-indezit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔌</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как правильно расположить сливной шланг Indesit: высота и крепление</div>
+                <div class="article-home-desc">Подробное руководство по установке сливного шланга стиральной машины Indesit. Высота, фиксация, ошибки подключения и пос</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a></div>
+            <nav class="pagination" aria-label="Страницы"><a href="/category/ustanovka-i-podklyuchenie/" class="pag-link pag-edge" title="В начало">«</a><a href="/category/ustanovka-i-podklyuchenie/page/3/" class="pag-link">← Назад</a><a href="/category/ustanovka-i-podklyuchenie/" class="pag-link">1</a><a href="/category/ustanovka-i-podklyuchenie/page/2/" class="pag-link">2</a><a href="/category/ustanovka-i-podklyuchenie/page/3/" class="pag-link">3</a><a href="/category/ustanovka-i-podklyuchenie/page/4/" class="pag-link pag-active">4</a><a href="/category/ustanovka-i-podklyuchenie/page/5/" class="pag-link">5</a><a href="/category/ustanovka-i-podklyuchenie/page/6/" class="pag-link">6</a><a href="/category/ustanovka-i-podklyuchenie/page/7/" class="pag-link">7</a><span class="pag-dots">…</span><a href="/category/ustanovka-i-podklyuchenie/page/23/" class="pag-link">23</a><a href="/category/ustanovka-i-podklyuchenie/page/5/" class="pag-link">Далее →</a><a href="/category/ustanovka-i-podklyuchenie/page/23/" class="pag-link pag-edge" title="В конец">»</a></nav>
+        </div>
+    </main>
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script>
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+        document.getElementById('mainNav')?.classList.toggle('open');
+    });
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

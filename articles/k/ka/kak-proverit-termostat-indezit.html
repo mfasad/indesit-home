@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🔧</text></svg>">
+    <title>Как проверить термостат Индезит: диагностика, прозвонка, нормы — Индезит Хоум</title>
+    <meta name="description" content="Подробная инструкция, как проверить термостат стиральной машины Indesit. Методы диагностики мультиметром, коды ошибок, таблица сопротивлений и признаки поломки.">
+    <link rel="canonical" href="https://indesit-home.vercel.app/articles/k/ka/kak-proverit-termostat-indezit.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить термостат Индезит: диагностика, прозвонка, нормы">
+    <meta property="og:description" content="Подробная инструкция, как проверить термостат стиральной машины Indesit. Методы диагностики мультиметром, коды ошибок, таблица сопротивлений и признаки поломки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778172480">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🔧</span>
+                <span>Индезит Хоум</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/stiralnye-mashiny/" class="nav-link">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="nav-link">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="nav-link">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="nav-link">🛠️ Разборка техники</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/stiralnye-mashiny/" class="dropdown-item">🧺 Стиральные машины</a>
+<a href="/category/kholodilniki/" class="dropdown-item">❄️ Холодильники</a>
+<a href="/category/plity-i-dukhovki/" class="dropdown-item">🔥 Плиты и духовки</a>
+<a href="/category/razborka-tekhniki/" class="dropdown-item">🛠️ Разборка техники</a>
+<a href="/category/zamena-podshipnikov/" class="dropdown-item">⚙️ Замена подшипников</a>
+<a href="/category/ustranenie-oshibok/" class="dropdown-item">⚠️ Устранение ошибок</a>
+<a href="/category/problemy-so-slivom/" class="dropdown-item">💧 Проблемы со сливом</a>
+<a href="/category/problemy-s-otzhimom/" class="dropdown-item">🌀 Проблемы с отжимом</a>
+<a href="/category/blokirovka-dverej/" class="dropdown-item">🔒 Блокировка дверей</a>
+<a href="/category/elektrika-i-datchiki/" class="dropdown-item">⚡ Электрика и датчики</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/ustanovka-i-podklyuchenie/" class="dropdown-item">🔌 Установка и подключение</a>
+<a href="/category/rezhimy-stirki/" class="dropdown-item">⏱️ Режимы стирки</a>
+<a href="/category/zapchasti-i-komplektuyushchie/" class="dropdown-item">📦 Запчасти и комплектующие</a>
+<a href="/category/sravnenie-brendov/" class="dropdown-item">⚖️ Сравнение брендов</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/elektrika-i-datchiki/">Электрика и датчики</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как проверить термостат Индезит: диагностика, прозвонка, нормы</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как проверить термостат Индезит: полная инструкция по диагностике</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-признаки-неисправности-термостата">Основные признаки неисправности термостата</a></li><li><a href="#подготовка-к-диагностике-и-меры-безопасности">Подготовка к диагностике и меры безопасности</a></li><li><a href="#расположение-и-устройство-термостата-в-indesit">Расположение и устройство термостата в Indesit</a></li><li><a href="#методы-проверки-мультиметром">Методы проверки мультиметром</a></li><li><a href="#типичные-ошибки-и-коды-неисправностей">Типичные ошибки и коды неисправностей</a></li><li><a href="#замена-термостата-пошаговая-инструкция">Замена термостата: пошаговая инструкция</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Отказ нагревательного элемента (ТЭНа) в стиральной машине <em>Indesit</em> чаще всего связан именно с выходом из строя термостата, который перестает подавать сигнал на включение нагрева, даже если сама программа требует повышения температуры воды. Если вы наблюдаете, что стирка проходит в холодной воде, а на дисплее или индикаторах загорается код ошибки <code>F06</code> или <code>F07</code>, то в первую очередь необходимо провести диагностику именно этого узла, так как его неисправность блокирует работу всей системы нагрева.</p>
+
+<p>Провести проверку термостата <strong>Indesit</strong> можно самостоятельно, используя базовый набор инструментов и мультиметр, что позволит избежать вызова мастера и сэкономить бюджет. В этой статье мы детально разберем алгоритм действий, необходимые замеры сопротивлений и типичные симптомы, указывающие на необходимость замены датчика температуры, чтобы вы могли точно определить причину поломки вашей техники.</p>
+
+<h2 id="основные-признаки-неисправности-термостата">Основные признаки неисправности термостата</h2>
+<p>Симптоматика поломки температурного датчика в стиральных машинах <em>Indesit</em> может варьироваться от полного отсутствия нагрева до хаотичного поведения агрегата во время цикла стирки. Чаще всего пользователь замечает, что белье после окончания программы остается холодным или еле теплым, хотя был выбран режим с высокой температурой, например, «Хлопок 60» или «Кипячение».</p>
+<p>Другим характерным признаком является преждевременное завершение этапа нагрева или, наоборот, бесконечный нагрев воды, что может привести к закипанию и аварийному сливу. <strong>Электронный модуль управления</strong> получает некорректные данные от датчика и либо не запускает ТЭН, либо не может определить момент достижения заданной температуры.</p>
+<p>Также стоит обратить внимание на появление специфических кодов ошибок на дисплее или мигание индикаторов, которые прямо указывают на проблемы в цепи нагрева. В моделях без дисплея сочетание мигающих лампочек соответствует определенной неисправности, которую можно расшифровать в инструкции.</p>
+<ul>
+    <li>🌡️ Вода в баке остается холодной независимо от выбранной программы стирки.</li>
+    <li>⏱️ Стирка длится значительно дольше обычного из-за постоянного ожидания нагрева.</li>
+    <li>💥 Срабатывает аварийный слив воды из-за перегрева (закипания).</li>
+    <li>🔌 Появление кодов ошибок F06, F07 или F16 на панели управления.</li>
+</ul>
+<blockquote>
+    <p>⚠️ <strong>Внимание:</strong> Если стиральная машина <em>Indesit</strong> начала греть воду бесконтрольно и не отключает ТЭН, немедленно остановите программу и отключите устройство от сети. Эксплуатация в таком режиме пожароопасна и может привести к повреждению пластиковых деталей бака.</p>
+</blockquote>
+
+<h2 id="подготовка-к-диагностике-и-меры-безопасности">Подготовка к диагностике и меры безопасности</h2>
+<p>Прежде чем приступить к проверке термостата, необходимо обеспечить полную безопасность проведения работ, так как вы будете иметь дело с электрическими компонентами и доступом внутрь корпуса. Первым и самым важным шагом является полное отключение стиральной машины <em>Indesit</strong> от электрической сети путем извлечения вилки из розетки.</p>
+<p>Далее следует слить остатки воды из бака, если программа была прервана, и демонтировать верхнюю крышку или заднюю панель, в зависимости от конструкции вашей модели. В большинстве случаев термостат расположен непосредственно на баке в районе нагревательного элемента, поэтому доступ к нему открывается после снятия задней стенки.</p>
+<p>Для проведения качественной диагностики вам потребуется цифровой мультиметр (тестер), способный измерять сопротивление в Омах и проверять целостность цепи. Также не лишними будут пассатижи для снятия клемм и отвертка для демонтажа крепежных элементов.</p>
+<ul>
+    <li>🔌 Обязательно отключите appliance от электросети перед снятием крышек.</li>
+    <li>💧 Слейте воду через сливной фильтр или шланг, чтобы избежать протечки.</li>
+    <li>🛠️ Подготовьте мультиметр и инструменты для разборки корпуса.</li>
+    <li>📸 Сделайте фото подключения проводов перед отсоединением, чтобы не перепутать контакты при сборке.</li>
+</ul>
+<div class="checklist-block"><h4>☑️ Чек-лист подготовки к ремонту</h4><label class="check-item"><input type="checkbox"><span>Отключение от сети</span></label><label class="check-item"><input type="checkbox"><span>Слив воды</span></label><label class="check-item"><input type="checkbox"><span>Снятие задней крышки</span></label><label class="check-item"><input type="checkbox"><span>Подготовка мультиметра</span></label><label class="check-item"><input type="checkbox"><span>Фотофиксация проводов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="расположение-и-устройство-термостата-в-indesit">Расположение и устройство термостата в Indesit</h2>
+<p>В стиральных машинах <em>Indesit</strong> термостат представляет собой небольшой круглый элемент с двумя или тремя контактами, который плотно вставлен в специальное гнездо на металлической трубке ТЭНа или непосредственно в корпус бака рядом с нагревателем. Такая компоновка позволяет датчику максимально точно считывать температуру воды.</p>
+<p>Конструктивно устройство состоит из чувствительного элемента, который реагирует на изменение температуры, и контактной группы, размыкающей или замыкающей цепь. В современных моделях часто используются биметаллические термостаты или терморезисторы (NTC), передающие данные на модуль управления.</p>
+<p>К контактам датчика подходят провода, которые могут быть защищены гофрой или пластиковыми хомутами. При визуальном осмотре важно обратить внимание на состояние изоляции, отсутствие оплавлений, окисления контактов или следов коррозии, которые могут искажать показания.</p>
+<details class="faq-item"><summary>Где точно искать датчик</summary><div class="faq-answer"><p>В моделях Indesit с вертикальной загрузкой термостат часто находится за боковой стенкой бака, доступ к которой открывается после снятия торцевой панели. В машинах с фронтальной загрузкой датчик почти всегда расположен на ТЭНе, который находится под барабаном со стороны задней стенки.</p></div></details>
+
+<h2 id="методы-проверки-мультиметром">Методы проверки мультиметром</h2>
+<p>Наиболее точным способом диагностики является проверка термостата <strong>мультиметром</strong> в режиме измерения сопротивления (Ом). Для начала необходимо отсоединить клеммы проводов от контактов датчика, аккуратно потянув их за изолированную часть, чтобы не повредить разъемы.</p>
+<p>Если в вашей модели установлен классический биметаллический термостат, то при комнатной температуре его контакты должны быть замкнуты, и прибор покажет сопротивление, близкое к нулю (или издаст звуковой сигнал в режиме прозвонки). При нагреве датчика (например, феном или погружении в теплую воду) контакты должны разомкнуться, и сопротивление уйдет в бесконечность.</p>
+<p>В случае с терморезисторами (NTC), которые часто встречаются в новых <em>Indesit</strong>, сопротивление зависит от температуры: при 20°C оно составляет примерно 20 кОм, а при нагреве до 60-80°C падает до 1-2 кОм. Если прибор показывает обрыв (единица на экране) или короткое замыкание (ноль) при комнатной температуре, датчик неисправен.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Тип датчика</th>
+            <th>Температура</th>
+            <th>Нормальное сопротивление</th>
+            <th>Действие при нагреве</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Биметаллический</td>
+            <td>20°C</td>
+            <td>0 Ом (Замкнут)</td>
+            <td>Размыкается (Обрыв)</td>
+        </tr>
+        <tr>
+            <td>NTC Терморезистор</td>
+            <td>20°C</td>
+            <td>~20 кОм</td>
+            <td>Сопротивление падает</td>
+        </tr>
+        <tr>
+            <td>NTC Терморезистор</td>
+            <td>60°C</td>
+            <td>~2 кОм</td>
+            <td>Сопротивление падает</td>
+        </tr>
+        <tr>
+            <td>Неисправный</td>
+            <td>Любая</td>
+            <td>∞ (Обрыв) или 0</td>
+            <td>Нет реакции</td>
+        </tr>
+    </tbody>
+</table>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Совет эксперта: При проверке NTC-датчика не обязательно нагревать его до 80 градусов. Достаточно зажать его в ладони или слегка подогреть феном, чтобы увидеть изменение показаний на экране мультиметра. Если цифры «застыли» на одном значении — деталь под замену.</p></div>
+
+<h2 id="типичные-ошибки-и-коды-неисправностей">Типичные ошибки и коды неисправностей</h2>
+<p>Стиральные машины <em>Indesit</strong> оснащены системой самодиагностики, которая выводит коды ошибок при обнаружении проблем с нагревом. Понимание этих кодов помогает сузить круг поиска неисправности до проверки термостата и ТЭНа.</p>
+<p>Код <code>F06</code> указывает на проблему с датчиком температуры или цепью его подключения. Машина может не начинать нагрев или, наоборот, греть воду постоянно. Код <code>F07</code> чаще свидетельствует о залипании реле ТЭНа на модуле управления, но первопричиной может быть и некорректный сигнал от термостата.</p>
+<p>Ошибка <code>F16</code> также может быть связана с датчиком уровня или температуры, если модуль получает противоречивые данные о состоянии воды в баке. В некоторых случаях ошибка не отображается цифрами, а индицируется миганием индикаторов температуры или режима отжима.</p>
+<ul>
+    <li>🔢 <strong>F06</strong> — Неисправность датчика температуры (обрыв или КЗ).</li>
+    <li>🔥 <strong>F07</strong> — Залипание реле ТЭНа или проблема с нагревом.</li>
+    <li>💧 <strong>F16</strong> — Ошибка датчика уровня (часто сопутствует проблемам нагрева).</li>
+    <li>🔄 Мигание всех индикаторов — Сбой в работе электронного модуля из-за скачков напряжения.</li>
+</ul>
+<div class="poll-widget" id="poll-eb74af18"><div class="poll-widget-question">📊 Сталкивались ли вы с кодом ошибки F06 на Indesit?</div><div class="poll-widget-option" data-poll="eb74af18" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Да, менял термостат сам</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="eb74af18" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Да, вызывал мастера</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="eb74af18" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Нет, была другая ошибка</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="eb74af18" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Пока только читаю статью</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2 id="замена-термостата-пошаговая-инструкция">Замена термостата: пошаговая инструкция</h2>
+<p>Если диагностика подтвердила неисправность термостата, его необходимо заменить на новый, идентичный по маркировке и характеристикам. Покупать рекомендуется оригинальные запчасти <em>Indesit/Ariston</strong> или качественные аналоги с такими же параметрами сопротивления и температурного диапазона.</p>
+<p>Процесс замены начинается с демонтажа старого датчика. В зависимости от конструкции, он может просто выниматься из гнезда (если это вставной элемент) или откручиваться. Будьте осторожны, чтобы не повредить резиновый уплотнитель вокруг отверстия.</p>
+<p>Новый термостат устанавливается на место старого, после чего подключаются провода согласно сделанным ранее фотографиям. Важно обеспечить плотное прилегание датчика к корпусу для корректного считывания температуры.</p>
+<blockquote>
+    <p>⚠️ <strong>Внимание:</strong> Никогда не используйте термостаты с другими номиналами сопротивления. Установка неподходящего датчика приведет к некорректной работе программы стирки и может стать причиной поломки ТЭНа или модуля управления.</p>
+</blockquote>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Главный вывод: Замена термостата — процедура несложная, но требует точного подбора детали. Ошибка в номинале сопротивления приведет к тому, что машина будет либо не догревать воду, либо кипятить белье.</p></div>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+    <summary>Можно ли стирать в Indesit, если не работает термостат?</summary>
+    <p>Технически стирка возможна, но только в режимах «Без нагрева» или «Холодная стирка». Однако модуль управления может блокировать запуск программы или выдавать ошибку, если не получает корректный сигнал от датчика. Кроме того, стирка в холодной воде неэффективна для удаления загрязнений и может привести к образованию накипи на ТЭНе из-за отсутствия термообработки.</p>
+</details>
+<details>
+    <summary>Почему после замены термостата ошибка не исчезла?</summary>
+    <p>В некоторых случаях модулю управления <em>Indesit</em> требуется сброс ошибки. Попробуйте отключить машину от сети на 15-20 минут. Если ошибка осталась, возможно, неисправен сам ТЭН (пробой на корпус) или повреждена проводка между датчиком и платой управления.</p>
+</details>
+<details>
+    <summary>Как отличить неисправность термостата от поломки ТЭНа?</summary>
+    <p>Необходимо прозвонить ТЭН мультиметром. У исправного нагревателя сопротивление между контактами составляет 20-40 Ом, а пробоя на корпус быть не должно. Если ТЭН цел, а нагрева нет — проверяют термостат и модуль управления. Часто эти элементы выходят из строя одновременно из-за скачков напряжения.</p>
+</details>
+<details>
+    <summary>Где купить оригинальный термостат для Indesit?</summary>
+    <p>Оригинальные запчасти можно приобрести в авторизованных сервисных центрах или специализированных магазинах запчастей для бытовой техники. При покупке обязательно сверяйте артикул детали, указанный в каталогах или на корпусе старого датчика.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#основные-признаки-неисправности-термостата">Основные признаки неисправности термостата</a></li><li><a href="#подготовка-к-диагностике-и-меры-безопасности">Подготовка к диагностике и меры безопасности</a></li><li><a href="#расположение-и-устройство-термостата-в-indesit">Расположение и устройство термостата в Indesit</a></li><li><a href="#методы-проверки-мультиметром">Методы проверки мультиметром</a></li><li><a href="#типичные-ошибки-и-коды-неисправностей">Типичные ошибки и коды неисправностей</a></li><li><a href="#замена-термостата-пошаговая-инструкция">Замена термостата: пошаговая инструкция</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-proverit-kondensator-na-stiralnoj-mashine-indezit.html" class="related-card">Как проверить конденсатор на стиральной машине Индезит: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-proverit-elektrodvigatel-stiralnoj-mashiny-indezit-svoimi-rukami.html" class="related-card">Как проверить электродвигатель стиральной машины Indesit</a></li><li><a href="/articles/k/ka/kak-zapustit-dvigatel-ot-stiralnoj-mashiny-avtomat-indezit.html" class="related-card">Как запустить двигатель от стиральной машины Индезит: схемы подключения</a></li><li><a href="/articles/k/ka/kak-podklyuchit-dvigatel-ot-stiralnoj-mashiny-avtomat-k-220-skhema-napryamuyu-indezit.html" class="related-card">Как подключить двигатель стиральной машины Indesit к 220В</a></li><li><a href="/articles/k/ka/kak-podsoedinit-dvigatel-indezit.html" class="related-card">Как подсоединить двигатель Indesit: схема и пошаговая инструкция</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-proverit-kondensator-na-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить конденсатор на стиральной машине Индезит: пошаговая инструкция</span><span class="related-bottom-desc">Подробный гид по диагностике конденсатора в стиральных машинах Indesit. Узнайте, как проверить детал</span></a><a href="/articles/k/ka/kak-proverit-elektrodvigatel-stiralnoj-mashiny-indezit-svoimi-rukami.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить электродвигатель стиральной машины Indesit</span><span class="related-bottom-desc">Детальная инструкция: как проверить электродвигатель стиральной машины Индезит своими руками. Мульти</span></a><a href="/articles/k/ka/kak-zapustit-dvigatel-ot-stiralnoj-mashiny-avtomat-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как запустить двигатель от стиральной машины Индезит: схемы подключения</span><span class="related-bottom-desc">Инструкция: как запустить двигатель от стиральной машины автомат Индезит. Схемы для коллекторного и </span></a><a href="/articles/k/ka/kak-podklyuchit-dvigatel-ot-stiralnoj-mashiny-avtomat-k-220-skhema-napryamuyu-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как подключить двигатель стиральной машины Indesit к 220В</span><span class="related-bottom-desc">Подробная схема подключения двигателя от стиральной машины Индезит к 220В напрямую. Инструкция по за</span></a><a href="/articles/k/ka/kak-podsoedinit-dvigatel-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как подсоединить двигатель Indesit: схема и пошаговая инструкция</span><span class="related-bottom-desc">Узнайте, как правильно подсоединить двигатель стиральной машины Indesit. Схема подключения, распинов</span></a><a href="/articles/k/ka/kak-proverit-pressostat-multimetrom-v-stiralnoj-mashine-indezit.html" class="related-bottom-card"><span class="related-bottom-title">Как проверить прессостат мультиметром в стиральной машине Indesit</span><span class="related-bottom-desc">Подробная инструкция: как прозвонить прессостат стиральной машины Indesit мультиметром. Диагностика </span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🔧 Индезит Хоум</div>
+                    <p class="footer-about">Полное руководство по ремонту, настройке и эксплуатации бытовой техники Indesit.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/stiralnye-mashiny/">🧺 Стиральные машины</a></li>
+<li><a href="/category/kholodilniki/">❄️ Холодильники</a></li>
+<li><a href="/category/plity-i-dukhovki/">🔥 Плиты и духовки</a></li>
+<li><a href="/category/razborka-tekhniki/">🛠️ Разборка техники</a></li>
+<li><a href="/category/zamena-podshipnikov/">⚙️ Замена подшипников</a></li>
+<li><a href="/category/ustranenie-oshibok/">⚠️ Устранение ошибок</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Индезит Хоум. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
